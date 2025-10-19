@@ -1,0 +1,4408 @@
+[
+    {
+        "id": "0d001302-b286-4903-9482-ca542630fb03",
+        "bouquet_type_id": "26870b60-ef66-4b12-8c23-36959f0a23a4",
+        "merchant_id": "5bb714e3-4839-47a3-98c3-e77c49a97dab",
+        "branch_id": "b6169113-88fd-4d04-9e56-602a10d81cda",
+        "name": {
+            "uz": "Moviy bo‘sa",
+            "ru": "Лазурный поцелуй",
+            "en": "Blue Kiss"
+        },
+        "description": {
+            "uz": "Nozik atirgullar, havo rang xrizantemalar va to‘yingan zangori gortenziyalarni birlashtirgan nafis guldasta uyg‘unlik va nafosatni o‘zida mujassam etadi. Tabiat go‘zalligini qadrlaydigan va eng samimiy his-tuyg‘ularni ifodalashga intiluvchilar uchun ideal tanlov.",
+            "ru": "Изящный букет, сочетающий нежные розы, воздушные хризантемы и насыщенные голубые гортензии, воплощает гармонию и элегантность. Идеальный выбор для тех, кто ценит красоту природы и стремится выразить самые искренние чувства.",
+            "en": "An exquisite bouquet, combining delicate roses, airy chrysanthemums and rich blue honeysuckle, embodies harmony and elegance. An ideal choice for those who value the beauty of nature and strive to express the most sincere feelings."
+        },
+        "rating": 5.0,
+        "quantity": 9999,
+        "price": 737000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Havo rang",
+                "ru": "Голубой",
+                "en": "Blue"
+            },
+            {
+                "uz": "Havo rang",
+                "ru": "Голубые",
+                "en": "Blue"
+            },
+            {
+                "uz": "Pushti",
+                "ru": "Розовый",
+                "en": "Pink"
+            },
+            {
+                "uz": "Pushti",
+                "ru": "Розовые",
+                "en": "Pink"
+            },
+            {
+                "uz": "Aralash",
+                "ru": "Микс",
+                "en": "Mix"
+            },
+            {
+                "uz": "O‘rtacha",
+                "ru": "Средний",
+                "en": "Average"
+            },
+            {
+                "uz": "Moret",
+                "ru": "Moret",
+                "en": "Moret"
+            },
+            {
+                "uz": "Xrizantema",
+                "ru": "Хризантема",
+                "en": "Chrysanthemum"
+            },
+            {
+                "uz": "Atirgul",
+                "ru": "Роза",
+                "en": "Rose"
+            },
+            {
+                "uz": "Sprey Atirgul",
+                "ru": "Спрей Роза",
+                "en": "Spray Rose"
+            },
+            {
+                "uz": "Gortenziya",
+                "ru": "Гортензия",
+                "en": "Hortense"
+            }
+        ],
+        "photo": "65898d27-d0fb-4c21-c04a-db53e1df5c00",
+        "photo_urls": [
+            "65898d27-d0fb-4c21-c04a-db53e1df5c00"
+        ],
+        "products_spent": [
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "55fbe720-f799-4068-b773-4c39770fa318"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "c2f15bc3-4f5f-49a0-a24c-8f3635783dac"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "ec12da21-3ab7-4445-b086-badbf6c15372"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "ed4aa938-4650-44d5-bfcc-9674274dee75"
+            }
+        ],
+        "created_at": "2025-01-27T21:34:41Z",
+        "updated_at": "2025-10-18T09:34:36.106635Z",
+        "deleted_at": null
+    },
+    {
+        "id": "433d842f-fb65-4512-b82f-6345fba9709d",
+        "bouquet_type_id": "e4e0d6d6-f167-4eb8-8752-2613932a78ab",
+        "merchant_id": "5bb714e3-4839-47a3-98c3-e77c49a97dab",
+        "branch_id": "b6169113-88fd-4d04-9e56-602a10d81cda",
+        "name": {
+            "uz": "Qirollik garmoniyasi",
+            "ru": "Королевская гармония",
+            "en": "Royal Harmony"
+        },
+        "description": {
+            "uz": "Nozik pion gullari, havoli gortenziyalar, nafis xrizantemalar va ta’sirli chinnigullarni birlashtirgan ajoyib guldasta. Ushbu kompozitsiya eng o‘ziga xos lahzalarga juda mos keladigan hashamat va nafosat muhitini yaratadi.",
+            "ru": "Великолепный букет, объединивший нежные пионовидные розы, воздушные гортензии, элегантные хризантемы и трогательные гвоздики. Эта композиция создает атмосферу роскоши и нежности, идеально подходящую для самых особенных моментов.",
+            "en": "A magnificent bouquet that combines tender pioneous roses, airy honeysuckle, elegant chrysanthemums and touching carnations. This composition creates an atmosphere of luxury and tenderness, perfectly suitable for the most special moments."
+        },
+        "rating": 5.0,
+        "quantity": 9999,
+        "price": 1437000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Oq",
+                "ru": "Белый",
+                "en": "White"
+            },
+            {
+                "uz": "Oq",
+                "ru": "Белые",
+                "en": "White"
+            },
+            {
+                "uz": "Pushti",
+                "ru": "Розовый",
+                "en": "Pink"
+            },
+            {
+                "uz": "Pushti",
+                "ru": "Розовые",
+                "en": "Pink"
+            },
+            {
+                "uz": "Aralash",
+                "ru": "Микс",
+                "en": "Mix"
+            },
+            {
+                "uz": "O‘rtacha",
+                "ru": "Средний",
+                "en": "Average"
+            },
+            {
+                "uz": "Moret",
+                "ru": "Moret",
+                "en": "Moret"
+            },
+            {
+                "uz": "Gortenziya",
+                "ru": "Гортензия",
+                "en": "Hortense"
+            },
+            {
+                "uz": "Atirgul",
+                "ru": "Роза",
+                "en": "Rose"
+            },
+            {
+                "uz": "Xrizantema",
+                "ru": "Хризантема",
+                "en": "Chrysanthemum"
+            },
+            {
+                "uz": "Mix",
+                "ru": "Гвоздика",
+                "en": "Cloves"
+            },
+            {
+                "uz": "Sprey Atirgul",
+                "ru": "Спрей Роза",
+                "en": "Spray Rose"
+            }
+        ],
+        "photo": "ed25dbfd-aa24-4779-26e1-bfec0ec88100",
+        "photo_urls": [
+            "ed25dbfd-aa24-4779-26e1-bfec0ec88100"
+        ],
+        "products_spent": [
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "040cd9ba-671a-4e61-ac91-003e773d1462"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "55fbe720-f799-4068-b773-4c39770fa318"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "c2f15bc3-4f5f-49a0-a24c-8f3635783dac"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "ec12da21-3ab7-4445-b086-badbf6c15372"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "ed4aa938-4650-44d5-bfcc-9674274dee75"
+            }
+        ],
+        "created_at": "2025-01-27T21:33:08Z",
+        "updated_at": "2025-10-18T09:34:36.106241Z",
+        "deleted_at": null
+    },
+    {
+        "id": "d1f0fcc2-31c5-4d2d-beca-4815e0abc192",
+        "bouquet_type_id": "6823bfc5-9bc0-453f-b6ab-6a7e693be50f",
+        "merchant_id": "5bb714e3-4839-47a3-98c3-e77c49a97dab",
+        "branch_id": "b6169113-88fd-4d04-9e56-602a10d81cda",
+        "name": {
+            "uz": "Qaymoqli injiqlik",
+            "ru": "Кремовый каприз",
+            "en": "Cream caprice"
+        },
+        "description": {
+            "uz": "Havo rang xrizantema, evkalipt va sprey-roz qo‘shilgan krem va pushti atirgullarning mayin kombinatsiyasi romantik va nafis kompozitsiyani yaratadi. Ushbu guldasta samimiylik, go‘zallik va quvonch ramzi bo‘lib, lahzalarning muhimligini ta’kidlaydi.",
+            "ru": "Нежное сочетание кремовых и розовых роз с добавлением воздушных хризантем, эвкалипта и спрей-роз создает романтическую и утонченную композицию. Этот букет станет символом искренности, красоты и радости, подчеркивая важность момента.",
+            "en": "A delicate combination of cream and pink roses with the addition of airy chrysanthemums, eucalyptus and sprays creates a romantic and elegant composition. This bouquet will become a symbol of sincerity, beauty and joy, emphasizing the importance of the moment."
+        },
+        "rating": 5.0,
+        "quantity": 9999,
+        "price": 687000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Oq",
+                "ru": "Белый",
+                "en": "White"
+            },
+            {
+                "uz": "Oq",
+                "ru": "Белые",
+                "en": "White"
+            },
+            {
+                "uz": "Aralash",
+                "ru": "Микс",
+                "en": "Mix"
+            },
+            {
+                "uz": "Pushti",
+                "ru": "Розовый",
+                "en": "Pink"
+            },
+            {
+                "uz": "Pushti",
+                "ru": "Розовые",
+                "en": "Pink"
+            },
+            {
+                "uz": "Moret",
+                "ru": "Moret",
+                "en": "Moret"
+            },
+            {
+                "uz": "Sprey Atirgul",
+                "ru": "Спрей Роза",
+                "en": "Spray Rose"
+            },
+            {
+                "uz": "Xrizantema",
+                "ru": "Хризантема",
+                "en": "Chrysanthemum"
+            },
+            {
+                "uz": "Mix",
+                "ru": "Гвоздика",
+                "en": "Cloves"
+            },
+            {
+                "uz": "Atirgul",
+                "ru": "Роза",
+                "en": "Rose"
+            },
+            {
+                "uz": "Evkalipt",
+                "ru": "Эвкалипт",
+                "en": "Eucalyptus"
+            }
+        ],
+        "photo": "0b4a685d-5ca6-4858-aaf8-2be93bcb6500",
+        "photo_urls": [
+            "0b4a685d-5ca6-4858-aaf8-2be93bcb6500"
+        ],
+        "products_spent": [
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "040cd9ba-671a-4e61-ac91-003e773d1462"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "1a46d684-1cb2-48da-aad9-4f31274b5458"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "55fbe720-f799-4068-b773-4c39770fa318"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "c2f15bc3-4f5f-49a0-a24c-8f3635783dac"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "ec12da21-3ab7-4445-b086-badbf6c15372"
+            }
+        ],
+        "created_at": "2025-01-27T21:34:04Z",
+        "updated_at": "2025-10-18T09:34:36.106125Z",
+        "deleted_at": null
+    },
+    {
+        "id": "5c7912df-b012-47b2-a41c-ff519ddd7246",
+        "bouquet_type_id": "57700f73-4977-4d6c-9c3f-7442aa4e1178",
+        "merchant_id": "5bb714e3-4839-47a3-98c3-e77c49a97dab",
+        "branch_id": "b6169113-88fd-4d04-9e56-602a10d81cda",
+        "name": {
+            "uz": "Shakarli joziba",
+            "ru": "Сахарный Шарм",
+            "en": "Sugar Charm"
+        },
+        "description": {
+            "uz": "Nafis krem rangidagi atirgul spreyidan yasalgan hashamatli hajmli guldasta tirik ko‘katlar bilan uyg‘unlashib, bog‘ning yangilik effektini yaratadi. Bunday sovg‘a iliq yoz tongining quchog‘iga o‘xshaydi - yengil, nozik va haqiqiy hashamatli.",
+            "ru": "Пышный объёмный букет из спрей-роз нежно-кремового оттенка в сочетании с живой зеленью, создающей эффект садовой свежести. Такой подарок словно объятие тёплого летнего утра — лёгкий, утончённый и по-настоящему роскошный.",
+            "en": "A luxurious voluminous bouquet of delicate cream-colored spray roses combined with vibrant greens creates a garden freshness effect. Such a gift is like an embrace of a warm summer morning - light, refined, and truly luxurious."
+        },
+        "rating": 5.0,
+        "quantity": 9999,
+        "price": 920000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Sariq",
+                "ru": "Желтый",
+                "en": "Yellow"
+            },
+            {
+                "uz": "Sariq",
+                "ru": "Желтые",
+                "en": "Yellow"
+            },
+            {
+                "uz": "Mono",
+                "ru": "Моно",
+                "en": "Mono"
+            },
+            {
+                "uz": "Katta",
+                "ru": "Большой",
+                "en": "Large"
+            },
+            {
+                "uz": "Moret",
+                "ru": "Moret",
+                "en": "Moret"
+            },
+            {
+                "uz": "Sprey Atirgul",
+                "ru": "Спрей Роза",
+                "en": "Spray Rose"
+            }
+        ],
+        "photo": "0fab08a7-6d51-4f0d-48d3-70b06c1dfa00",
+        "photo_urls": [
+            "0fab08a7-6d51-4f0d-48d3-70b06c1dfa00"
+        ],
+        "products_spent": [
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "55fbe720-f799-4068-b773-4c39770fa318"
+            }
+        ],
+        "created_at": "2025-08-10T07:56:11.709322Z",
+        "updated_at": "2025-10-18T09:34:36.101811Z",
+        "deleted_at": null
+    },
+    {
+        "id": "7c89294d-3ca7-40a4-b420-565d2c0381ab",
+        "bouquet_type_id": "73b1ea4c-ba89-48d9-9a89-74e9b9abcd6c",
+        "merchant_id": "5bb714e3-4839-47a3-98c3-e77c49a97dab",
+        "branch_id": "b6169113-88fd-4d04-9e56-602a10d81cda",
+        "name": {
+            "uz": "Shakarli muloyimlik",
+            "ru": "Сахарная Нежность",
+            "en": "Sugary Tenderness"
+        },
+        "description": {
+            "uz": "Bir piyola shirin choy ichidagi ertalabki yorug‘lik kabi yumshoq nur sochib turgan shaftoli-qaymoqli atirgullardan iborat havoyi guldasta. Bu guldasta iliqlik, shinamlik va yengil quvonch baxsh etadi, kunni o‘zgacha mayinlik bilan to‘ldiradi.",
+            "ru": "Воздушный букет из кремово-персиковых спрей-роз, переливающихся мягким свечением, словно утренний свет в чашке сладкого чая. Этот букет дарит тепло, уют и лёгкую радость, наполняя день особенной мягкостью.",
+            "en": "An airy bouquet of cream-peach spray roses, shimmering softly like morning light in a cup of sweet tea. This bouquet brings warmth, comfort, and a touch of joy, filling the day with a special softness."
+        },
+        "rating": 5.0,
+        "quantity": 9999,
+        "price": 620000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Sariq",
+                "ru": "Желтый",
+                "en": "Yellow"
+            },
+            {
+                "uz": "Sariq",
+                "ru": "Желтые",
+                "en": "Yellow"
+            },
+            {
+                "uz": "Mono",
+                "ru": "Моно",
+                "en": "Mono"
+            },
+            {
+                "uz": "O‘rtacha",
+                "ru": "Средний",
+                "en": "Average"
+            },
+            {
+                "uz": "Moret",
+                "ru": "Moret",
+                "en": "Moret"
+            },
+            {
+                "uz": "Sprey Atirgul",
+                "ru": "Спрей Роза",
+                "en": "Spray Rose"
+            }
+        ],
+        "photo": "ab5c801d-770c-4dd0-5c4b-68a3a48acd00",
+        "photo_urls": [
+            "ab5c801d-770c-4dd0-5c4b-68a3a48acd00"
+        ],
+        "products_spent": [
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "55fbe720-f799-4068-b773-4c39770fa318"
+            }
+        ],
+        "created_at": "2025-08-10T07:53:37.113788Z",
+        "updated_at": "2025-10-18T07:15:40.679469Z",
+        "deleted_at": null
+    },
+    {
+        "id": "6a2aa0ef-44e6-4915-bae9-8a609fce1e62",
+        "bouquet_type_id": "c17b10db-8e17-4fca-a918-ad8b266a2152",
+        "merchant_id": "5bb714e3-4839-47a3-98c3-e77c49a97dab",
+        "branch_id": "b6169113-88fd-4d04-9e56-602a10d81cda",
+        "name": {
+            "uz": "Yurak gullarda",
+            "ru": "Сердце в цветах",
+            "en": "Heart in flowers"
+        },
+        "description": {
+            "uz": "Nozik atirgullar, havo rang chinnigullar va nafis xrizantemalar bilan to‘ldirilgan yurak shaklidagi romantik kompozitsiya. Yumshoq kremdan to‘q pushti ranggacha bo‘lgan ranglar o‘yini sevgi va iliqlik muhitini yaratadi. Eng samimiy his-tuyg‘ular va e’tiroflarni ifodalash uchun ideal sovg‘a.",
+            "ru": "Романтичная композиция в форме сердца, наполненная нежными розами, воздушными гвоздиками и изысканными хризантемами. Игра оттенков от мягкого кремового до насыщенного розового создаёт атмосферу любви и тепла. Идеальный подарок для выражения самых искренних чувств и признаний.",
+            "en": "A heart-shaped romantic composition filled with delicate roses, airy carnations, and exquisite chrysanthemums. The play of shades from soft cream to deep pink creates an atmosphere of love and warmth. An ideal gift for expressing the most sincere feelings and acknowledgments."
+        },
+        "rating": 5.0,
+        "quantity": 10000,
+        "price": 300000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Moret",
+                "ru": "Moret",
+                "en": "Moret"
+            },
+            {
+                "uz": "Pion guli",
+                "ru": "Пионовидная роза",
+                "en": "A peony rose"
+            }
+        ],
+        "photo": "150c88d3-ac07-4d34-4614-efdbbc8f1800",
+        "photo_urls": [
+            "150c88d3-ac07-4d34-4614-efdbbc8f1800"
+        ],
+        "products_spent": [
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "0e963cfc-08f3-4bce-b7b4-abb55c3c7e49"
+            }
+        ],
+        "created_at": "2025-02-28T15:52:37Z",
+        "updated_at": "2025-10-01T12:22:48.432802Z",
+        "deleted_at": null
+    },
+    {
+        "id": "f6ccb7ff-35fc-4e79-a1fe-ef5baad5e366",
+        "bouquet_type_id": "19bc06e1-7a23-4fb3-8063-eb9bfbb4a2d1",
+        "merchant_id": "5bb714e3-4839-47a3-98c3-e77c49a97dab",
+        "branch_id": "b6169113-88fd-4d04-9e56-602a10d81cda",
+        "name": {
+            "uz": "Pushti bulut",
+            "ru": "Розовое Облако",
+            "en": "Pink Cloud"
+        },
+        "description": {
+            "uz": "Nafis gladiolus gulbarglari bilan bezatilgan pushti va oq rangdagi atirgullar, eustomalar va chinnigullarning nozik aralashmasi. Guldasta go‘yo ertalabki orzular va yengil bo‘salardan to‘qilgandek, romantik va beparvo baxt muhitini taqdim etardi.",
+            "ru": "Нежнейший микс роз, эустомы и гвоздики в оттенках розового и белого, украшенный изящными лепестками гладиолуса. Букет словно соткан из утренних грёз и лёгких поцелуев, даря атмосферу романтики и беззаботного счастья.",
+            "en": "A delicate blend of roses, eustomes, and carnations in pink and white hues, decorated with elegant gladiolus petals. The bouquet seemed woven from morning dreams and gentle kisses, giving an atmosphere of romance and carefree happiness."
+        },
+        "rating": 5.0,
+        "quantity": 10000,
+        "price": 680000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Pushti",
+                "ru": "Розовый",
+                "en": "Pink"
+            },
+            {
+                "uz": "Pushti",
+                "ru": "Розовые",
+                "en": "Pink"
+            },
+            {
+                "uz": "oq",
+                "ru": "Белый",
+                "en": "White"
+            },
+            {
+                "uz": "oqlar",
+                "ru": "Белые",
+                "en": "White"
+            },
+            {
+                "uz": "Aralashma",
+                "ru": "Микс",
+                "en": "Mix"
+            },
+            {
+                "uz": "Katta",
+                "ru": "Большой",
+                "en": "Large"
+            },
+            {
+                "uz": "Moret",
+                "ru": "Moret",
+                "en": "Moret"
+            },
+            {
+                "uz": "Mix",
+                "ru": "Гвоздика",
+                "en": "Cloves"
+            },
+            {
+                "uz": "Atirgul",
+                "ru": "Роза",
+                "en": "Rose"
+            },
+            {
+                "uz": "Xrizantema",
+                "ru": "Хризантема",
+                "en": "Chrysanthemum"
+            }
+        ],
+        "photo": "a0ada9a8-d041-4a90-0468-94f9ca3f1100",
+        "photo_urls": [
+            "a0ada9a8-d041-4a90-0468-94f9ca3f1100"
+        ],
+        "products_spent": [
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "040cd9ba-671a-4e61-ac91-003e773d1462"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "c2f15bc3-4f5f-49a0-a24c-8f3635783dac"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "ec12da21-3ab7-4445-b086-badbf6c15372"
+            }
+        ],
+        "created_at": "2025-08-10T07:58:20.910636Z",
+        "updated_at": "2025-09-04T00:28:12.232687Z",
+        "deleted_at": null
+    },
+    {
+        "id": "8d5d1410-3307-4ecd-9384-906ae6b38545",
+        "bouquet_type_id": "cd5e8bcd-0286-40ec-ac51-b4fc308c628b",
+        "merchant_id": "5bb714e3-4839-47a3-98c3-e77c49a97dab",
+        "branch_id": "b6169113-88fd-4d04-9e56-602a10d81cda",
+        "name": {
+            "uz": "Bahor simfoniyasi",
+            "ru": "Весенняя симфония",
+            "en": "Spring Symphony"
+        },
+        "description": {
+            "uz": "Nozik gortenziya va nafis evkalipt bilan to‘ldirilgan nozik pion va klassik atirgullarning ajoyib kompozitsiyasi. Ushbu guldasta tabiat uyg‘onishining ramzi bo‘lib, samimiy his-tuyg‘ular va quvonchlarni ifodalovchi mukammal sovg‘a bo‘ladi.",
+            "ru": "Превосходная композиция из утонченных пионовидных и классических роз, дополненная нежной гортензией и изысканным эвкалиптом. Этот букет символизирует пробуждение природы и станет идеальным подарком, выражающим искренние чувства и радость.",
+            "en": "An excellent composition of elegant pioneous and classic roses, complemented by delicate honeysuckle and exquisite eucalyptus. This bouquet symbolizes the awakening of nature and will become an ideal gift that expresses sincere feelings and joy."
+        },
+        "rating": 5.0,
+        "quantity": 10000,
+        "price": 737000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Pushti",
+                "ru": "Розовый",
+                "en": "Pink"
+            },
+            {
+                "uz": "Pushti",
+                "ru": "Розовые",
+                "en": "Pink"
+            },
+            {
+                "uz": "Oq",
+                "ru": "Белый",
+                "en": "White"
+            },
+            {
+                "uz": "Oq",
+                "ru": "Белые",
+                "en": "White"
+            },
+            {
+                "uz": "Aralash",
+                "ru": "Микс",
+                "en": "Mix"
+            },
+            {
+                "uz": "Havo rang",
+                "ru": "Голубой",
+                "en": "Blue"
+            },
+            {
+                "uz": "Havo rang",
+                "ru": "Голубые",
+                "en": "Blue"
+            },
+            {
+                "uz": "Moret",
+                "ru": "Moret",
+                "en": "Moret"
+            },
+            {
+                "uz": "Pion guli",
+                "ru": "Пионовидная роза",
+                "en": "A peony rose"
+            },
+            {
+                "uz": "Atirgul",
+                "ru": "Роза",
+                "en": "Rose"
+            },
+            {
+                "uz": "Gortenziya",
+                "ru": "Гортензия",
+                "en": "Hortense"
+            },
+            {
+                "uz": "Evkalipt",
+                "ru": "Эвкалипт",
+                "en": "Eucalyptus"
+            }
+        ],
+        "photo": "27f216a0-2d58-4c95-89ca-369df6051a00",
+        "photo_urls": [
+            "27f216a0-2d58-4c95-89ca-369df6051a00"
+        ],
+        "products_spent": [
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "0e963cfc-08f3-4bce-b7b4-abb55c3c7e49"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "1a46d684-1cb2-48da-aad9-4f31274b5458"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "ec12da21-3ab7-4445-b086-badbf6c15372"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "ed4aa938-4650-44d5-bfcc-9674274dee75"
+            }
+        ],
+        "created_at": "2025-01-27T21:33:43Z",
+        "updated_at": "2025-02-15T01:09:36Z",
+        "deleted_at": null
+    },
+    {
+        "id": "66bcfe07-0672-4066-8b67-ead65ac6cf43",
+        "bouquet_type_id": "283e46ec-8481-4e61-90ba-736895270f18",
+        "merchant_id": "5bb714e3-4839-47a3-98c3-e77c49a97dab",
+        "branch_id": "b6169113-88fd-4d04-9e56-602a10d81cda",
+        "name": {
+            "uz": "Pushti shodlik",
+            "ru": "Розовый восторг",
+            "en": "Pink enthusiasm"
+        },
+        "description": {
+            "uz": "Bu guldasta xrizantemalarning hayajonli nafosati, chinnigullarning nafisligi va atirgullarning romantikasini uyg‘unlashtirib, yengillik va quvonch hissini yaratadi. O‘z his-tuyg‘ularingizni ifodalash va har qanday lahzani unutilmas qilish uchun ideal tanlov.",
+            "ru": "Этот букет сочетает трепетную нежность хризантем, изысканность гвоздик и романтику роз, создавая ощущение легкости и радости. Идеальный выбор для того, чтобы выразить свои чувства и сделать любой момент незабываемым.",
+            "en": "This bouquet combines the tremulous tenderness of chrysanthemums, the exquisiteness of claws and the romance of roses, creating a sense of lightness and joy. An ideal choice to express your feelings and make any moment memorable."
+        },
+        "rating": 4.0,
+        "quantity": 10000,
+        "price": 1437000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Oq",
+                "ru": "Белый",
+                "en": "White"
+            },
+            {
+                "uz": "Oq",
+                "ru": "Белые",
+                "en": "White"
+            },
+            {
+                "uz": "Pushti",
+                "ru": "Розовый",
+                "en": "Pink"
+            },
+            {
+                "uz": "Pushti",
+                "ru": "Розовые",
+                "en": "Pink"
+            },
+            {
+                "uz": "Aralash",
+                "ru": "Микс",
+                "en": "Mix"
+            },
+            {
+                "uz": "O‘rtacha",
+                "ru": "Средний",
+                "en": "Average"
+            },
+            {
+                "uz": "Moret",
+                "ru": "Moret",
+                "en": "Moret"
+            },
+            {
+                "uz": "Xrizantema",
+                "ru": "Хризантема",
+                "en": "Chrysanthemum"
+            },
+            {
+                "uz": "Mix",
+                "ru": "Гвоздика",
+                "en": "Cloves"
+            },
+            {
+                "uz": "Atirgul",
+                "ru": "Роза",
+                "en": "Rose"
+            }
+        ],
+        "photo": "98a3db7c-9835-4f2d-1b2e-ca04fcf1e400",
+        "photo_urls": [
+            "98a3db7c-9835-4f2d-1b2e-ca04fcf1e400"
+        ],
+        "products_spent": [
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "040cd9ba-671a-4e61-ac91-003e773d1462"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "c2f15bc3-4f5f-49a0-a24c-8f3635783dac"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "ec12da21-3ab7-4445-b086-badbf6c15372"
+            }
+        ],
+        "created_at": "2025-01-27T21:30:10Z",
+        "updated_at": "2025-02-15T01:09:36Z",
+        "deleted_at": null
+    },
+    {
+        "id": "0dcc7b66-9458-4fe7-ab05-5478ba0f395b",
+        "bouquet_type_id": "54aed7e2-526e-444a-8382-27f59a1ec3fb",
+        "merchant_id": "5bb714e3-4839-47a3-98c3-e77c49a97dab",
+        "branch_id": "b6169113-88fd-4d04-9e56-602a10d81cda",
+        "name": {
+            "uz": "Mehr ummoni",
+            "ru": "Океан нежности",
+            "en": "An ocean of tenderness"
+        },
+        "description": {
+            "uz": "Hashamatli atirgullar, havo rang gortenziyalar, nafis chinnigullar va nafis evkalipt bilan ajoyib guldasta. Pastel ranglar va yashilliklarning ajoyib uyg‘unligi har qanday so‘zdan ko‘ra his-tuyg‘ular haqida yaxshiroq gapiradigan uyg‘unlikni yaratadi.",
+            "ru": "Восхитительный букет с роскошными розами, воздушными гортензиями, элегантными гвоздиками и утонченным эвкалиптом. Прекрасное сочетание пастельных оттенков и зелени создаёт гармонию, которая говорит о чувствах лучше любых слов.",
+            "en": "A delightful bouquet with luxurious roses, airy honeysuckle, elegant carnations and elegant eucalyptus. A beautiful combination of pastel tones and greens creates a harmony that speaks of feelings better than any words."
+        },
+        "rating": 5.0,
+        "quantity": 10000,
+        "price": 987000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Havo rang",
+                "ru": "Голубой",
+                "en": "Blue"
+            },
+            {
+                "uz": "Havo rang",
+                "ru": "Голубые",
+                "en": "Blue"
+            },
+            {
+                "uz": "Pushti",
+                "ru": "Розовый",
+                "en": "Pink"
+            },
+            {
+                "uz": "Pushti",
+                "ru": "Розовые",
+                "en": "Pink"
+            },
+            {
+                "uz": "Aralash",
+                "ru": "Микс",
+                "en": "Mix"
+            },
+            {
+                "uz": "Moret",
+                "ru": "Moret",
+                "en": "Moret"
+            },
+            {
+                "uz": "Gortenziya",
+                "ru": "Гортензия",
+                "en": "Hortense"
+            },
+            {
+                "uz": "Mix",
+                "ru": "Гвоздика",
+                "en": "Cloves"
+            },
+            {
+                "uz": "Evkalipt",
+                "ru": "Эвкалипт",
+                "en": "Eucalyptus"
+            },
+            {
+                "uz": "Atirgul",
+                "ru": "Роза",
+                "en": "Rose"
+            }
+        ],
+        "photo": "0e4fcdb5-c9af-48f0-16c8-911e37b18b00",
+        "photo_urls": [
+            "0e4fcdb5-c9af-48f0-16c8-911e37b18b00"
+        ],
+        "products_spent": [
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "040cd9ba-671a-4e61-ac91-003e773d1462"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "1a46d684-1cb2-48da-aad9-4f31274b5458"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "ec12da21-3ab7-4445-b086-badbf6c15372"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "ed4aa938-4650-44d5-bfcc-9674274dee75"
+            }
+        ],
+        "created_at": "2025-01-27T21:37:07Z",
+        "updated_at": "2025-02-15T01:09:36Z",
+        "deleted_at": null
+    },
+    {
+        "id": "32f2bcea-bd7e-4409-b949-7cc9c543cf7f",
+        "bouquet_type_id": "b5d11f24-f0e3-43f4-bb3a-85bb5dbd444f",
+        "merchant_id": "5bb714e3-4839-47a3-98c3-e77c49a97dab",
+        "branch_id": "b6169113-88fd-4d04-9e56-602a10d81cda",
+        "name": {
+            "uz": "Binafsharang bulut",
+            "ru": "Фиалковое облако",
+            "en": "Violet cloud"
+        },
+        "description": {
+            "uz": "Nozik chinnigullar, havo rang gortenziyalar va oq va lavanda rangidagi nafis xrizantemalardan iborat ajoyib guldasta xotirjamlik va nafis go‘zallik tuyg‘usini yaratadi. Yoqimtoylik va zavq-shavq talab qilinadigan alohida lahzalar uchun juda mos keladi.",
+            "ru": "Великолепный букет из нежных гвоздик, воздушных гортензий и изысканных хризантем в оттенках белого и лавандового создает ощущение спокойствия и утонченной красоты. Идеально подходит для особых моментов, где требуется выразить нежность и восхищение.",
+            "en": "A magnificent bouquet of delicate carnations, airy honeysuckle and exquisite chrysanthemums in the shades of white and lavender creates a sense of calm and refined beauty. Ideal for special moments where it is necessary to express tenderness and admiration."
+        },
+        "rating": 4.0,
+        "quantity": 10000,
+        "price": 1187000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Sirenrang",
+                "ru": "Сиреневый",
+                "en": "Syrian"
+            },
+            {
+                "uz": "Sirenlar",
+                "ru": "Сиреневые",
+                "en": "Sirene"
+            },
+            {
+                "uz": "Binafsha",
+                "ru": "Фиолетовые",
+                "en": "Violet"
+            },
+            {
+                "uz": "Binafsha",
+                "ru": "Фиолетовый",
+                "en": "Violet"
+            },
+            {
+                "uz": "Aralash",
+                "ru": "Микс",
+                "en": "Mix"
+            },
+            {
+                "uz": "O‘rtacha",
+                "ru": "Средний",
+                "en": "Average"
+            },
+            {
+                "uz": "Oq",
+                "ru": "Белый",
+                "en": "White"
+            },
+            {
+                "uz": "Oq",
+                "ru": "Белые",
+                "en": "White"
+            },
+            {
+                "uz": "Moret",
+                "ru": "Moret",
+                "en": "Moret"
+            },
+            {
+                "uz": "Mix",
+                "ru": "Гвоздика",
+                "en": "Cloves"
+            },
+            {
+                "uz": "Gortenziya",
+                "ru": "Гортензия",
+                "en": "Hortense"
+            },
+            {
+                "uz": "Xrizantema",
+                "ru": "Хризантема",
+                "en": "Chrysanthemum"
+            },
+            {
+                "uz": "Atirgul",
+                "ru": "Роза",
+                "en": "Rose"
+            }
+        ],
+        "photo": "23f6316b-ee46-46c4-9ba9-a9e97536ee00",
+        "photo_urls": [
+            "23f6316b-ee46-46c4-9ba9-a9e97536ee00"
+        ],
+        "products_spent": [
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "040cd9ba-671a-4e61-ac91-003e773d1462"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "c2f15bc3-4f5f-49a0-a24c-8f3635783dac"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "ec12da21-3ab7-4445-b086-badbf6c15372"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "ed4aa938-4650-44d5-bfcc-9674274dee75"
+            }
+        ],
+        "created_at": "2025-01-27T21:30:36Z",
+        "updated_at": "2025-02-15T01:09:36Z",
+        "deleted_at": null
+    },
+    {
+        "id": "14a30a9e-4c51-416a-94b3-2bbe13538b4a",
+        "bouquet_type_id": "50862cf8-029c-45a9-9c3d-58b80633d2b9",
+        "merchant_id": "5bb714e3-4839-47a3-98c3-e77c49a97dab",
+        "branch_id": "b6169113-88fd-4d04-9e56-602a10d81cda",
+        "name": {
+            "uz": "Moviy shabada",
+            "ru": "Лазурный бриз",
+            "en": "Blue breeze"
+        },
+        "description": {
+            "uz": "Gortenziyalarning chuqur ko‘k ranglari va piyonsimon atirgullarning nozik pastel ranglarini birlashtirgan ajoyib guldasta. Ushbu kompozitsiya dengiz salqinligi va quyosh nurini dunyoga olib o‘tgandek, unutilmas taassurot qoldiradi.",
+            "ru": "Изумительный букет, сочетающий глубокие синие тона гортензий и нежные пастельные оттенки пионовидных роз. Эта композиция словно переносит в мир морской прохлады и солнечного света, создавая незабываемое впечатление.",
+            "en": "An amazing bouquet that combines deep blue tones of honeysuckle and gentle pastel hues of pioneous roses. This composition seems to carry the sea coolness and sunlight into the world, creating an unforgettable impression."
+        },
+        "rating": 5.0,
+        "quantity": 10000,
+        "price": 915000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Havo rang",
+                "ru": "Голубой",
+                "en": "Blue"
+            },
+            {
+                "uz": "Havo rang",
+                "ru": "Голубые",
+                "en": "Blue"
+            },
+            {
+                "uz": "Aralash",
+                "ru": "Микс",
+                "en": "Mix"
+            },
+            {
+                "uz": "Sariq",
+                "ru": "Бежевый",
+                "en": "Beige"
+            },
+            {
+                "uz": "Bej",
+                "ru": "Бежевые",
+                "en": "Beige"
+            },
+            {
+                "uz": "Moret",
+                "ru": "Moret",
+                "en": "Moret"
+            },
+            {
+                "uz": "Gortenziya",
+                "ru": "Гортензия",
+                "en": "Hortense"
+            },
+            {
+                "uz": "Pion guli",
+                "ru": "Пионовидная роза",
+                "en": "A peony rose"
+            }
+        ],
+        "photo": "cda3ee03-bbf2-4c91-bc0f-6d80c809d800",
+        "photo_urls": [
+            "cda3ee03-bbf2-4c91-bc0f-6d80c809d800"
+        ],
+        "products_spent": [
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "0e963cfc-08f3-4bce-b7b4-abb55c3c7e49"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "ed4aa938-4650-44d5-bfcc-9674274dee75"
+            }
+        ],
+        "created_at": "2025-01-27T21:32:25Z",
+        "updated_at": "2025-02-15T01:09:36Z",
+        "deleted_at": null
+    },
+    {
+        "id": "9324240e-620d-43c8-a68f-ac5a04d3d221",
+        "bouquet_type_id": "5416d5d0-b758-4645-8088-af8d34e29417",
+        "merchant_id": "5bb714e3-4839-47a3-98c3-e77c49a97dab",
+        "branch_id": "b6169113-88fd-4d04-9e56-602a10d81cda",
+        "name": {
+            "uz": "Moviy joziba",
+            "ru": "Лазурное очарование",
+            "en": "Azure Charm"
+        },
+        "description": {
+            "uz": "Nozik gortenziya nafis sprey-atirgullar va nafis chinnigullar bilan uyg‘unlashgan pastel tusdagi nafis guldasta. Evkaliptning yengil novdalari kompozitsiyaga musaffolik va nafosat bag‘ishlaydi. Ushbu guldasta eng samimiy his-tuyg‘ularni ifodalash va o‘ziga xos muhit yaratish uchun ideal tanlov bo‘ladi.",
+            "ru": "Изящный букет в пастельных тонах, где нежная гортензия гармонично сочетается с элегантными спрей-розами и изысканными гвоздиками. Легкие веточки эвкалипта придают композиции свежесть и утонченность. Этот букет станет идеальным выбором для выражения самых искренних чувств и создания особенной атмосферы.",
+            "en": "An exquisite bouquet in pastel tones, where delicate honeysuckle harmoniously combines with elegant sprays and exquisite carnations. Eucalyptus's light branches give the composition freshness and elegance. This bouquet will be an ideal choice for expressing the most sincere feelings and creating a special atmosphere."
+        },
+        "rating": 5.0,
+        "quantity": 10000,
+        "price": 637000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Havo rang",
+                "ru": "Голубой",
+                "en": "Blue"
+            },
+            {
+                "uz": "Havo rang",
+                "ru": "Голубые",
+                "en": "Blue"
+            },
+            {
+                "uz": "Pushti",
+                "ru": "Розовый",
+                "en": "Pink"
+            },
+            {
+                "uz": "Pushti",
+                "ru": "Розовые",
+                "en": "Pink"
+            },
+            {
+                "uz": "Aralash",
+                "ru": "Микс",
+                "en": "Mix"
+            },
+            {
+                "uz": "Moret",
+                "ru": "Moret",
+                "en": "Moret"
+            },
+            {
+                "uz": "Atirgul",
+                "ru": "Роза",
+                "en": "Rose"
+            },
+            {
+                "uz": "Gortenziya",
+                "ru": "Гортензия",
+                "en": "Hortense"
+            },
+            {
+                "uz": "Mix",
+                "ru": "Гвоздика",
+                "en": "Cloves"
+            }
+        ],
+        "photo": "f7f8c7a3-332b-4174-57de-e6e6ccbcc700",
+        "photo_urls": [
+            "f7f8c7a3-332b-4174-57de-e6e6ccbcc700"
+        ],
+        "products_spent": [
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "040cd9ba-671a-4e61-ac91-003e773d1462"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "ec12da21-3ab7-4445-b086-badbf6c15372"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "ed4aa938-4650-44d5-bfcc-9674274dee75"
+            }
+        ],
+        "created_at": "2025-01-27T21:28:13Z",
+        "updated_at": "2025-02-15T01:09:36Z",
+        "deleted_at": null
+    },
+    {
+        "id": "e922c52d-7472-4869-9233-2478e79aebf2",
+        "bouquet_type_id": "64e46a0a-0e92-4cd5-9118-a5f90eb6b027",
+        "merchant_id": "5bb714e3-4839-47a3-98c3-e77c49a97dab",
+        "branch_id": "b6169113-88fd-4d04-9e56-602a10d81cda",
+        "name": {
+            "uz": "Havo pasteli",
+            "ru": "Воздушная пастель",
+            "en": "Air pastel"
+        },
+        "description": {
+            "uz": "Nafis pastel tusdagi hashamatli guldasta, unda nozik atirgullar, hashamatli xrizantemalar va nafis chinnigullar o‘ralgan. Ushbu kompozitsiya yumshoqlik va uyg‘unlik bilan to‘ldirilgan bo‘lib, maxsus lahzalar yoki unutilmas taassurot qoldiradigan sovg‘a sifatida juda mos keladi.",
+            "ru": "Роскошный букет в утонченных пастельных тонах, где воздушная гортензия обрамляет нежные розы, пышные хризантемы и изысканные гвоздики. Эта композиция наполнена мягкостью и гармонией, идеально подходящей для особых моментов или в качестве подарка, который оставит незабываемое впечатление.",
+            "en": "A luxurious bouquet in elegant pastel tones, where the airy hortense frames delicate roses, luxuriant chrysanthemums and exquisite carnations. This composition is full of softness and harmony, perfect for special moments or as a gift that will leave an unforgettable impression."
+        },
+        "rating": 5.0,
+        "quantity": 10000,
+        "price": 687000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Pushti",
+                "ru": "Розовый",
+                "en": "Pink"
+            },
+            {
+                "uz": "Pushti",
+                "ru": "Розовые",
+                "en": "Pink"
+            },
+            {
+                "uz": "Havo rang",
+                "ru": "Голубой",
+                "en": "Blue"
+            },
+            {
+                "uz": "Havo rang",
+                "ru": "Голубые",
+                "en": "Blue"
+            },
+            {
+                "uz": "Aralash",
+                "ru": "Микс",
+                "en": "Mix"
+            },
+            {
+                "uz": "O‘rtacha",
+                "ru": "Средний",
+                "en": "Average"
+            },
+            {
+                "uz": "Moret",
+                "ru": "Moret",
+                "en": "Moret"
+            },
+            {
+                "uz": "Atirgul",
+                "ru": "Роза",
+                "en": "Rose"
+            },
+            {
+                "uz": "Xrizantema",
+                "ru": "Хризантема",
+                "en": "Chrysanthemum"
+            },
+            {
+                "uz": "Evkalipt",
+                "ru": "Эвкалипт",
+                "en": "Eucalyptus"
+            },
+            {
+                "uz": "Mix",
+                "ru": "Гвоздика",
+                "en": "Cloves"
+            },
+            {
+                "uz": "Gortenziya",
+                "ru": "Гортензия",
+                "en": "Hortense"
+            }
+        ],
+        "photo": "d8cbcba3-ff5c-4331-360d-d1197a15d300",
+        "photo_urls": [
+            "d8cbcba3-ff5c-4331-360d-d1197a15d300"
+        ],
+        "products_spent": [
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "040cd9ba-671a-4e61-ac91-003e773d1462"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "1a46d684-1cb2-48da-aad9-4f31274b5458"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "c2f15bc3-4f5f-49a0-a24c-8f3635783dac"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "ec12da21-3ab7-4445-b086-badbf6c15372"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "ed4aa938-4650-44d5-bfcc-9674274dee75"
+            }
+        ],
+        "created_at": "2025-01-27T21:28:52Z",
+        "updated_at": "2025-02-15T01:09:36Z",
+        "deleted_at": null
+    },
+    {
+        "id": "809efc56-92c6-43c9-92c3-8f22fa214884",
+        "bouquet_type_id": "dd794f7f-14e9-499e-85f5-e7c98a44ec65",
+        "merchant_id": "5bb714e3-4839-47a3-98c3-e77c49a97dab",
+        "branch_id": "b6169113-88fd-4d04-9e56-602a10d81cda",
+        "name": {
+            "uz": "Qishki simfoniya",
+            "ru": "Зимняя симфония",
+            "en": "Winter Symphony"
+        },
+        "description": {
+            "uz": "Gortenziyaning yumshoqligi xrizantemaning hashamdorligi va atirgullarning nafisligi bilan uyg‘unlashgan nafis guldasta. Doimiy yashil novdalar bilan bezatilgan, u qishki ertak tuyg‘usini yaratadi va maxsus holatlar uchun juda mos keladi, qabul qiluvchining qalbida iliq taassurot qoldiradi.",
+            "ru": "Элегантный букет, где мягкость гортензии сочетается с пышностью хризантем и нежностью роз. Украшенный вечнозелеными веточками, он создаёт ощущение зимней сказки и прекрасно подойдёт для особенных случаев, оставляя теплое впечатление в сердце получателя.",
+            "en": "An elegant bouquet where the softness of the honeysuckle combines with the luxury of chrysanthemums and the tenderness of roses. Decorated with evergreen branches, it creates a winter fairy tale feel and is perfect for special occasions, leaving a warm impression on the recipient's heart."
+        },
+        "rating": 4.7,
+        "quantity": 10000,
+        "price": 2887000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Oq",
+                "ru": "Белый",
+                "en": "White"
+            },
+            {
+                "uz": "Oq",
+                "ru": "Белые",
+                "en": "White"
+            },
+            {
+                "uz": "Pushti",
+                "ru": "Розовый",
+                "en": "Pink"
+            },
+            {
+                "uz": "Pushti",
+                "ru": "Розовые",
+                "en": "Pink"
+            },
+            {
+                "uz": "Aralash",
+                "ru": "Микс",
+                "en": "Mix"
+            },
+            {
+                "uz": "Katta",
+                "ru": "Большой",
+                "en": "Big"
+            },
+            {
+                "uz": "Moret",
+                "ru": "Moret",
+                "en": "Moret"
+            },
+            {
+                "uz": "Gortenziya",
+                "ru": "Гортензия",
+                "en": "Hortense"
+            },
+            {
+                "uz": "Atirgul",
+                "ru": "Роза",
+                "en": "Rose"
+            },
+            {
+                "uz": "Xrizantema",
+                "ru": "Хризантема",
+                "en": "Chrysanthemum"
+            }
+        ],
+        "photo": "fad4b3d1-0ce9-4272-c9d7-440905d75b00",
+        "photo_urls": [
+            "fad4b3d1-0ce9-4272-c9d7-440905d75b00"
+        ],
+        "products_spent": [
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "c2f15bc3-4f5f-49a0-a24c-8f3635783dac"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "ec12da21-3ab7-4445-b086-badbf6c15372"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "ed4aa938-4650-44d5-bfcc-9674274dee75"
+            }
+        ],
+        "created_at": "2025-01-27T21:29:18Z",
+        "updated_at": "2025-02-15T01:09:36Z",
+        "deleted_at": null
+    },
+    {
+        "id": "556ff3b4-85fa-4655-9c9c-0605bcf050ba",
+        "bouquet_type_id": "340bb7aa-47ac-46cc-ba3c-e8eba1ddb2a1",
+        "merchant_id": "5bb714e3-4839-47a3-98c3-e77c49a97dab",
+        "branch_id": "b6169113-88fd-4d04-9e56-602a10d81cda",
+        "name": {
+            "uz": "Pushti nega",
+            "ru": "Розовая нега",
+            "en": "Pink Negga"
+        },
+        "description": {
+            "uz": "Pushti va qordek oq rangdagi nozik gortenziyalardan ajoyib kompozitsiya. Ushbu guldasta xuddi gulbarglar bulutiga o‘xshab, eng hayajonli his-tuyg‘ularni ta’kidlab, noziklik va iliqlik muhitini taqdim etadi.",
+            "ru": "Великолепная композиция из нежнейших гортензий в розовых и белоснежных оттенках. Этот букет, словно облако из лепестков, подарит атмосферу утончённости и тепла, подчеркнув самые трепетные чувства.",
+            "en": "A magnificent composition of the finest honeysuckle in pink and snow-white shades. This bouquet, like a cloud of petals, will give an atmosphere of tenderness and warmth, emphasizing the most emotional feelings."
+        },
+        "rating": 5.0,
+        "quantity": 10000,
+        "price": 1237000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Pushti",
+                "ru": "Розовый",
+                "en": "Pink"
+            },
+            {
+                "uz": "Pushti",
+                "ru": "Розовые",
+                "en": "Pink"
+            },
+            {
+                "uz": "Oq",
+                "ru": "Белый",
+                "en": "White"
+            },
+            {
+                "uz": "Oq",
+                "ru": "Белые",
+                "en": "White"
+            },
+            {
+                "uz": "Mono",
+                "ru": "Моно",
+                "en": "Mono"
+            },
+            {
+                "uz": "Katta",
+                "ru": "Большой",
+                "en": "Big"
+            },
+            {
+                "uz": "Moret",
+                "ru": "Moret",
+                "en": "Moret"
+            },
+            {
+                "uz": "Gortenziya",
+                "ru": "Гортензия",
+                "en": "Hortense"
+            }
+        ],
+        "photo": "8ffb923f-e01c-4ed3-3da8-803717532f00",
+        "photo_urls": [
+            "8ffb923f-e01c-4ed3-3da8-803717532f00"
+        ],
+        "products_spent": [
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "ed4aa938-4650-44d5-bfcc-9674274dee75"
+            }
+        ],
+        "created_at": "2025-01-27T21:31:53Z",
+        "updated_at": "2025-02-15T01:09:36Z",
+        "deleted_at": null
+    },
+    {
+        "id": "be2bfa86-1c24-4b82-9ebb-4bc039facc2d",
+        "bouquet_type_id": "c5ca2ddc-ceec-457c-8cc8-d1fdff5bd5dd",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Kompozitsiya No3",
+            "ru": "Композиция №3",
+            "en": "Composition No3"
+        },
+        "description": {
+            "uz": "Ertalabki e’tirof yoki iliq tilak uchun yaratilgandek, pushti qutidagi yoqimli gul kompozitsiyasi. Gerbera, chinnigul va atirgul spreylarining yumshoq ranglari xushbo‘y skimiya va yangi evkalipt bilan uyg‘unlashadi - so‘zsiz \"men yonidaman\" deydiganlar uchun.",
+            "ru": "Очаровательная цветочная композиция в розовой коробке, словно созданная для утреннего признания или тёплого пожелания. Мягкие оттенки герберы, гвоздик и спрей-роз переплетаются с ароматной скимией и свежим эвкалиптом — для тех, кто говорит «я рядом» без слов.",
+            "en": "A charming flower composition in a pink box, as if created for a morning's acknowledgment or a warm wish. The soft shades of herbery, carnation, and spray rose are intertwined with fragrant scythia and fresh eucalyptus - for those who say \"I'm by your side\" without words."
+        },
+        "rating": 5.0,
+        "quantity": 1988,
+        "price": 375000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Quti",
+                "ru": "Коробка",
+                "en": "Box"
+            },
+            {
+                "uz": "Qutilar",
+                "ru": "Коробки",
+                "en": "Boxes"
+            },
+            {
+                "uz": "Qutida",
+                "ru": "В коробке",
+                "en": "In the box"
+            },
+            {
+                "uz": "Aralashma",
+                "ru": "Микс",
+                "en": "Mix"
+            },
+            {
+                "uz": "O‘rtacha",
+                "ru": "Средний",
+                "en": "Average"
+            },
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "chinnigul",
+                "ru": "Гвоздика",
+                "en": "Cloves"
+            },
+            {
+                "uz": "Gerbera",
+                "ru": "Гербера",
+                "en": "Gerbera"
+            },
+            {
+                "uz": "Roza Spray",
+                "ru": "Роза Спрей",
+                "en": "Rose Spray"
+            },
+            {
+                "uz": "skimiya",
+                "ru": "Скимия",
+                "en": "Skimia"
+            },
+            {
+                "uz": "Evkalipt",
+                "ru": "Эвкалипт",
+                "en": "Eucalyptus"
+            }
+        ],
+        "photo": "8da3ac79-fe81-4be9-feda-77577c64ac00",
+        "photo_urls": [
+            "8da3ac79-fe81-4be9-feda-77577c64ac00"
+        ],
+        "products_spent": [
+            {
+                "quantity": 3.0,
+                "type": "FLOWER",
+                "type_id": "e5a524b8-8992-4f41-844b-a708d6708e57"
+            },
+            {
+                "quantity": 3.0,
+                "type": "FLOWER",
+                "type_id": "095f6836-098d-43ca-8dab-3b56602782eb"
+            },
+            {
+                "quantity": 5.0,
+                "type": "FLOWER",
+                "type_id": "25915bdc-4955-4249-aa2b-0812d46ff190"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "b555f9cf-9e4e-45e0-97b4-3958048896ab"
+            },
+            {
+                "quantity": 2.0,
+                "type": "FLOWER",
+                "type_id": "e47e8618-3647-478f-9da7-493da7c172a4"
+            }
+        ],
+        "created_at": "2025-04-17T13:53:47.097746Z",
+        "updated_at": "2025-10-09T11:30:07.729805Z",
+        "deleted_at": null
+    },
+    {
+        "id": "b7aaafa1-3980-4291-a5d8-0541de0421ae",
+        "bouquet_type_id": "7c5e083d-6188-4216-bed6-37c835ecddf9",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Yozgi o‘tloq",
+            "ru": " Летний луг",
+            "en": "Summer meadow"
+        },
+        "description": {
+            "uz": "",
+            "ru": "",
+            "en": ""
+        },
+        "rating": 5.0,
+        "quantity": 9967,
+        "price": 330000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "Eustoma",
+                "ru": "Эустома",
+                "en": "Eustoma"
+            }
+        ],
+        "photo": "3c3fa969-f84f-4ee2-5c37-767e60852900",
+        "photo_urls": [
+            "3c3fa969-f84f-4ee2-5c37-767e60852900"
+        ],
+        "products_spent": [
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "cb3b8973-cfca-4815-bc6a-c8c5f0c2ffa8"
+            }
+        ],
+        "created_at": "2025-08-14T09:31:45.38775Z",
+        "updated_at": "2025-10-08T18:05:19.409688Z",
+        "deleted_at": null
+    },
+    {
+        "id": "caf206a0-328e-42ce-82d6-484c17035fc8",
+        "bouquet_type_id": "3795f90b-7bcd-4885-9715-efa7cda636e7",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Lavanda orzusi",
+            "ru": "Лавандовая мечта",
+            "en": "Lavender Dream"
+        },
+        "description": {
+            "uz": "Bu guldasta nafislik va noziklik timsoli bo‘lib, siren va pushti shafaq ranglari bilan yozilgan hikoyaga o‘xshaydi. Binafsha liziantuslar, nafis lolalar va havo rang chinnigullar uyg‘un ranglar raqsida o‘zaro uyg‘unlashib, yengillik va romantika hissini uyg‘otadi. Pastel siren rangidagi nafis quticha kompozitsiyani yakunlab, uni haqiqiy san’at asariga aylantiradi. Bu guldasta nozik his-tuyg‘ularni ifodalash, iliq istaklarni yetkazish va lahzani unutilmas qilish uchun juda mos keladi. 💜",
+            "ru": "Этот букет — воплощение нежности и утончённости, словно история, написанная оттенками сирени и розового заката. Фиолетовые лизиантусы, изысканные тюльпаны и воздушные гвоздики переплетаются в гармоничном танце цветов, создавая ощущение легкости и романтики.\n\nЭлегантная коробка пастельного сиреневого оттенка завершает композицию, делая её настоящим произведением искусства. Этот букет идеально подойдёт для того, чтобы выразить нежные чувства, передать тёплые пожелания и сделать момент незабываемым. 💜🎀",
+            "en": "This bouquet is the embodiment of tenderness and refinement, like a story written in the shades of lilac and pink sunset. Purple lilies, exquisite tulips, and airy carnations intertwine in a harmonious dance of colors, creating a sense of ease and romance. The elegant box of pale lilac hues completes the composition, making it a true work of art. This bouquet is perfect for expressing tender feelings, conveying warm wishes, and making the moment unforgettable. 💜"
+        },
+        "rating": 5.0,
+        "quantity": 9967,
+        "price": 350000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "chinnigul",
+                "ru": "Гвоздика",
+                "en": "Cloves"
+            },
+            {
+                "uz": "Metiol",
+                "ru": "Матиола",
+                "en": "Mathiol"
+            },
+            {
+                "uz": "Eustoma",
+                "ru": "Эустома",
+                "en": "Eustoma"
+            }
+        ],
+        "photo": "f12690de-444f-4600-e21e-13d3222d9300",
+        "photo_urls": [
+            "f12690de-444f-4600-e21e-13d3222d9300"
+        ],
+        "products_spent": [
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "e5a524b8-8992-4f41-844b-a708d6708e57"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "e3c8aa24-4fe6-4035-92c9-17214101a478"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "cb3b8973-cfca-4815-bc6a-c8c5f0c2ffa8"
+            }
+        ],
+        "created_at": "2025-02-12T01:17:51Z",
+        "updated_at": "2025-10-08T18:05:19.401194Z",
+        "deleted_at": null
+    },
+    {
+        "id": "e6136543-48e5-4d00-b970-b00141019bf3",
+        "bouquet_type_id": "91c6a596-9c47-4fb5-a3c5-50ac467cc7a1",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Bu guldasta tonggi ilk nurlarning aksi kabi.",
+            "ru": "Этот букет словно отражение первых утренних лучей ",
+            "en": "This bouquet is like a reflection of the first morning rays."
+        },
+        "description": {
+            "uz": "Ushbu guldasta romantika va nafis go‘zallik sehriga ishonuvchilar uchun yaratilgan. Hashamatli pushti atirgullar, havo gortenziyasi va nafis xrizantemalar nozik ranglar simfoniyasida birlashib, bahorning ilk tonglari va baxtning shirin lahzalarini eslatadi. Har bir gulbarg go‘yo g‘amxo‘rlik va mehr bilan sug‘orilgandek, evkalipt novdalari esa nafislik hissini qo‘shadi. Bu guldasta shunchaki gullar emas, balki iliq his-tuyg‘ularning timsoli, alohida inson uchun mukammal sovg‘adir",
+            "ru": "Этот букет создан для тех, кто верит в магию романтики и утончённой красоты. Роскошные розовые розы, воздушная гортензия и изысканные хризантемы переплелись в нежной симфонии оттенков, напоминая о первых весенних рассветах и сладких мгновениях счастья.\n\nКаждый лепесток словно пропитан заботой и нежностью, а эвкалиптовые веточки добавляют нотку элегантности. Этот букет — не просто цветы, а воплощение тёплых чувств, идеальный подарок для особенного человека",
+            "en": "This bouquet is created for those who believe in the magic of romance and refined beauty. Luxurious pink roses, airy hortense, and exquisite chrysanthemums intertwined in a delicate symphony of shades, reminiscent of the first spring dawns and sweet moments of happiness. Each petal seems to be imbued with care and tenderness, while the eucalyptus branches add a touch of elegance. This bouquet is not just flowers, but a symbol of warm feelings, a perfect gift for a special person."
+        },
+        "rating": 5.0,
+        "quantity": 8901,
+        "price": 1100000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "Salal",
+                "ru": "Салал",
+                "en": "Salal"
+            },
+            {
+                "uz": "Alstromeriya",
+                "ru": "Альстромерия",
+                "en": "Alstromeria"
+            },
+            {
+                "uz": "Bir boshli atirgul",
+                "ru": "Роза Одноголовая ",
+                "en": "One-Head Rose"
+            },
+            {
+                "uz": "Pionid atirgul",
+                "ru": "Роза Пионовидная",
+                "en": "Pioneer Rose"
+            },
+            {
+                "uz": "Ledr",
+                "ru": "Ледр ",
+                "en": "Leather"
+            },
+            {
+                "uz": "Gortenziya",
+                "ru": "Гортензия",
+                "en": "Hortense"
+            }
+        ],
+        "photo": "7fb3a380-b1c0-48af-7c5e-325501e7d900",
+        "photo_urls": [
+            "7fb3a380-b1c0-48af-7c5e-325501e7d900"
+        ],
+        "products_spent": [
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "238ca11b-a11d-4589-acb7-d17e7b1157c2"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "2e8ff612-050d-4a58-9127-18ad0f78e775"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "896a699a-2e4a-42a1-b551-6cd7ca7f4a07"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "8c1853a3-acb5-49ba-9a84-9dcb38bfdec8"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "0c2993b8-6aeb-426f-b683-ce071ca213b2"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "32f3ae72-ec82-46d3-919b-9f7117e56dfb"
+            }
+        ],
+        "created_at": "2025-02-12T01:12:46Z",
+        "updated_at": "2025-10-08T18:05:18.928743Z",
+        "deleted_at": null
+    },
+    {
+        "id": "370b926c-b617-4bf6-98c8-b6f83a977b02",
+        "bouquet_type_id": "c0a49579-9461-4cb2-923f-ce9fb54072f4",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Lavanda sehri",
+            "ru": "Магия лаванды",
+            "en": "Lavender Magic"
+        },
+        "description": {
+            "uz": "",
+            "ru": "",
+            "en": ""
+        },
+        "rating": 5.0,
+        "quantity": 8901,
+        "price": 376000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "Eustoma",
+                "ru": "Эустома",
+                "en": "Eustoma"
+            },
+            {
+                "uz": "Pionid atirgul",
+                "ru": "Роза Пионовидная",
+                "en": "Pioneer Rose"
+            },
+            {
+                "uz": "Xrizantema",
+                "ru": "Хризантема ",
+                "en": "Chrysanthemum"
+            },
+            {
+                "uz": "Arslon tumshug‘i",
+                "ru": "Львиный зев",
+                "en": "Lion's Fang"
+            },
+            {
+                "uz": "Metiol",
+                "ru": "Матиола",
+                "en": "Mathiol"
+            }
+        ],
+        "photo": "b4a3c8d4-0d74-4643-644f-0cdede6fb000",
+        "photo_urls": [
+            "b4a3c8d4-0d74-4643-644f-0cdede6fb000"
+        ],
+        "products_spent": [
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "cb3b8973-cfca-4815-bc6a-c8c5f0c2ffa8"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "8c1853a3-acb5-49ba-9a84-9dcb38bfdec8"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "991c78bd-de6e-4a24-bcc4-b7a43f85b9de"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "fe163926-bc36-426d-beba-cd704274bad7"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "e3c8aa24-4fe6-4035-92c9-17214101a478"
+            }
+        ],
+        "created_at": "2025-08-14T09:34:26.590121Z",
+        "updated_at": "2025-10-08T18:05:18.928609Z",
+        "deleted_at": null
+    },
+    {
+        "id": "09c3ab54-dbcc-4b6b-9ec5-bd19e1c9c64f",
+        "bouquet_type_id": "65ba3dca-08b8-44fe-9c09-a56064b2c154",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Nozik pushti gammadagi atirgul spreyi guldastasi,",
+            "ru": "Букет  из спрей роз в нежно розовой гамме, ",
+            "en": "A bouquet of rose spray in a delicate pink range,"
+        },
+        "description": {
+            "uz": "Tonggi tuman tusidagi nozik atirgullar guldastasi iliqlik va samimiylik muhitini yaratadi. Nozikta’b inson uchun eng yaxshi maqtov - bu ona, sevimli ayol yoki hurmatli o‘qituvchi bo‘lishi mumkin.",
+            "ru": "Букет из нежнейших роз в оттенке утренней дымки создаёт атмосферу тепла и душевности. Идеальный комплимент для утончённой особы — будь то мама, любимая женщина или уважаемый педагог.",
+            "en": "A bouquet of delicate roses in the shade of morning mist creates an atmosphere of warmth and warmth. The perfect compliment for a refined individual is whether it's a mother, a beloved woman, or a respected teacher."
+        },
+        "rating": 5.0,
+        "quantity": 662,
+        "price": 560000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "Roza Spray",
+                "ru": "Роза Спрей",
+                "en": "Rose Spray"
+            }
+        ],
+        "photo": "e9111e4b-ad43-4676-6f09-110bcf1cba00",
+        "photo_urls": [
+            "e9111e4b-ad43-4676-6f09-110bcf1cba00"
+        ],
+        "products_spent": [
+            {
+                "quantity": 15.0,
+                "type": "FLOWER",
+                "type_id": "25915bdc-4955-4249-aa2b-0812d46ff190"
+            }
+        ],
+        "created_at": "2025-08-07T14:03:35.136222Z",
+        "updated_at": "2025-10-02T10:26:20.504481Z",
+        "deleted_at": null
+    },
+    {
+        "id": "6f938600-a5e0-4b3a-8fd0-5a648e21f96b",
+        "bouquet_type_id": "b7b828d8-9ad2-40ec-8bcf-b1e5ec5c7019",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Nozik pushti gammadagi atirgul spreyi guldastasi,",
+            "ru": "Букет  из спрей роз в нежно розовой гамме, ",
+            "en": "A bouquet of rose spray in a delicate pink range,"
+        },
+        "description": {
+            "uz": "Bu guldastaga qo‘shilgan mayin kukunli atirgullar tonggi sokinlik va yengillikdan to‘qilganga o‘xshaydi. Ortiqcha so‘zlarsiz \"sen men uchun mehrsan\" demoqchi bo‘lganlar uchun ideal tanlov.",
+            "ru": "Нежно-пудровые кустовые розы в этом букете словно сотканы из утренней тишины и лёгкости. Идеальный выбор для тех, кто хочет сказать «ты для меня — нежность» без лишних слов.",
+            "en": "The delicate powdery rose bushes in this bouquet seem to be woven from the morning silence and lightness. Perfect choice for those who want to say \"you are affection to me\" without extra words."
+        },
+        "rating": 5.0,
+        "quantity": 1104,
+        "price": 360000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "Roza Spray",
+                "ru": "Роза Спрей",
+                "en": "Rose Spray"
+            }
+        ],
+        "photo": "efa2f332-abe0-411e-d4f9-601b800aea00",
+        "photo_urls": [
+            "efa2f332-abe0-411e-d4f9-601b800aea00"
+        ],
+        "products_spent": [
+            {
+                "quantity": 9.0,
+                "type": "FLOWER",
+                "type_id": "25915bdc-4955-4249-aa2b-0812d46ff190"
+            }
+        ],
+        "created_at": "2025-08-07T14:00:53.687315Z",
+        "updated_at": "2025-10-02T07:18:12.675432Z",
+        "deleted_at": null
+    },
+    {
+        "id": "dc1f257b-302e-48ba-b846-822cbfb1d680",
+        "bouquet_type_id": "54a47202-be7e-45f4-a790-d999cab10e89",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Pushti mayinlik",
+            "ru": " Розовая нежность",
+            "en": "Pink tenderness"
+        },
+        "description": {
+            "uz": "",
+            "ru": "",
+            "en": ""
+        },
+        "rating": 5.0,
+        "quantity": 7981,
+        "price": 460000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "Gortenziya",
+                "ru": "Гортензия",
+                "en": "Hortense"
+            },
+            {
+                "uz": "Evkalipt",
+                "ru": "Эвкалипт",
+                "en": "Eucalyptus"
+            },
+            {
+                "uz": "Metiol",
+                "ru": "Матиола",
+                "en": "Mathiol"
+            }
+        ],
+        "photo": "d9560b73-d8ab-4a45-47df-06ea3d39d200",
+        "photo_urls": [
+            "d9560b73-d8ab-4a45-47df-06ea3d39d200"
+        ],
+        "products_spent": [
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "32f3ae72-ec82-46d3-919b-9f7117e56dfb"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "e47e8618-3647-478f-9da7-493da7c172a4"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "e3c8aa24-4fe6-4035-92c9-17214101a478"
+            }
+        ],
+        "created_at": "2025-08-14T09:31:11.600016Z",
+        "updated_at": "2025-09-30T06:41:51.274255Z",
+        "deleted_at": null
+    },
+    {
+        "id": "5a046c21-969c-48a0-8383-71836b09c9e6",
+        "bouquet_type_id": "1198cdbf-60f5-4f17-9893-0a34b6dcf1b3",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Asal tongi",
+            "ru": " Медовое утро",
+            "en": "Honey morning"
+        },
+        "description": {
+            "uz": "",
+            "ru": "",
+            "en": ""
+        },
+        "rating": 5.0,
+        "quantity": 7981,
+        "price": 795000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "Pionid atirgul",
+                "ru": "Роза Пионовидная",
+                "en": "Pioneer Rose"
+            },
+            {
+                "uz": "Evkalipt",
+                "ru": "Эвкалипт",
+                "en": "Eucalyptus"
+            },
+            {
+                "uz": "Arslon tumshug‘i",
+                "ru": "Львиный зев",
+                "en": "Lion's Fang"
+            }
+        ],
+        "photo": "e8bb995a-3579-417b-0c70-e452d0402d00",
+        "photo_urls": [
+            "e8bb995a-3579-417b-0c70-e452d0402d00"
+        ],
+        "products_spent": [
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "8c1853a3-acb5-49ba-9a84-9dcb38bfdec8"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "e47e8618-3647-478f-9da7-493da7c172a4"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "fe163926-bc36-426d-beba-cd704274bad7"
+            }
+        ],
+        "created_at": "2025-08-14T09:28:42.005562Z",
+        "updated_at": "2025-09-30T06:41:51.107606Z",
+        "deleted_at": null
+    },
+    {
+        "id": "d34cefab-a73f-4376-a04f-ee70dffef23b",
+        "bouquet_type_id": "02e92f0f-26bf-4fb0-b71f-f9e865b1859d",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Guldasta No13",
+            "ru": "Букет №13",
+            "en": "Bouquet #13"
+        },
+        "description": {
+            "uz": "Bu guldastadagi krem va shaftoli ranglarining mayin jilosi ertalabki quyoshning ilk nurlarini eslatadi. Nozik atirgullar, gortenziyalar, xrizantemalar va yengil ko‘katlar shinamlik va samimiylik muhitini yaratadi. Bulutli kunda ham iliqlik baxsh eta oladigan guldasta.",
+            "ru": "Мягкое сияние кремовых и персиковых оттенков в этом букете напоминает первые лучи утреннего солнца. Нежные розы, гортензии, хризантемы и лёгкая зелень создают атмосферу уюта и искренности. Букет, способный подарить тепло даже в пасмурный день.",
+            "en": "The soft glow of cream and peach shades in this bouquet resembles the first rays of the morning sun. Delicate roses, hortensions, chrysanthemums, and light greenery create an atmosphere of comfort and sincerity. A bouquet capable of providing warmth even on a cloudy day."
+        },
+        "rating": 5.0,
+        "quantity": 2967,
+        "price": 650000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "Pionid atirgul",
+                "ru": "Роза Пионовидная",
+                "en": "Pioneer Rose"
+            },
+            {
+                "uz": "Gortenziya",
+                "ru": "Гортензия",
+                "en": "Hortense"
+            },
+            {
+                "uz": "Xrizantema",
+                "ru": "Хризантема ",
+                "en": "Chrysanthemum"
+            },
+            {
+                "uz": "Butazor xrizantema",
+                "ru": "Хризантема Кустовая",
+                "en": "Chrysanthemum Bush"
+            },
+            {
+                "uz": "Alstromeriya",
+                "ru": "Альстромерия",
+                "en": "Alstromeria"
+            },
+            {
+                "uz": "Limonium",
+                "ru": "Лимониум",
+                "en": "Lemonium"
+            }
+        ],
+        "photo": "d2a1071f-21fb-465a-b503-677ab4bb6800",
+        "photo_urls": [
+            "d2a1071f-21fb-465a-b503-677ab4bb6800"
+        ],
+        "products_spent": [
+            {
+                "quantity": 3.0,
+                "type": "FLOWER",
+                "type_id": "8c1853a3-acb5-49ba-9a84-9dcb38bfdec8"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "32f3ae72-ec82-46d3-919b-9f7117e56dfb"
+            },
+            {
+                "quantity": 3.0,
+                "type": "FLOWER",
+                "type_id": "991c78bd-de6e-4a24-bcc4-b7a43f85b9de"
+            },
+            {
+                "quantity": 3.0,
+                "type": "FLOWER",
+                "type_id": "da73713e-a87d-4c6f-8a67-5b2e485b623d"
+            },
+            {
+                "quantity": 2.0,
+                "type": "FLOWER",
+                "type_id": "2e8ff612-050d-4a58-9127-18ad0f78e775"
+            },
+            {
+                "quantity": 2.0,
+                "type": "FLOWER",
+                "type_id": "bf53a8b7-fb09-42e6-82cb-9b4f3410bc50"
+            }
+        ],
+        "created_at": "2025-08-07T14:54:15.482856Z",
+        "updated_at": "2025-09-29T15:41:26.475409Z",
+        "deleted_at": null
+    },
+    {
+        "id": "341055d5-c642-4222-ae1a-e2a45abdc74b",
+        "bouquet_type_id": "b76087d1-bf36-4ca4-9403-3a9936916d6e",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Guldasta No23",
+            "ru": "Букет №23",
+            "en": "Bouquet No. 23"
+        },
+        "description": {
+            "uz": "Ortiqcha so‘zlarsiz his-tuyg‘ular haqida gapiradigan to‘q pushti rangdagi nozik va ixcham atirgul guldastasi. Ertalabki syurpriz yoki sevgi izhori uchun mukammal maqtov - unda hamma narsa oddiy, ammo nihoyatda samimiy.",
+            "ru": "Нежный и лаконичный букет из роз насыщенно-розового оттенка, который говорит о чувствах без лишних слов. Идеальный комплимент для утреннего сюрприза или признания в любви — в нём всё просто, но невероятно искренне.",
+            "en": "A delicate and concise bouquet of rich pink roses that speaks of feelings without extra words. An ideal compliment for a morning surprise or a love confession - it's simple, yet incredibly sincere."
+        },
+        "rating": 5.0,
+        "quantity": 830,
+        "price": 230000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Pushti",
+                "ru": "Розовый",
+                "en": "Pink"
+            },
+            {
+                "uz": "Pushti",
+                "ru": "Розовые",
+                "en": "Pink"
+            },
+            {
+                "uz": "Mono",
+                "ru": "Моно",
+                "en": "Mono"
+            },
+            {
+                "uz": "Mini",
+                "ru": "Мини",
+                "en": "Mini"
+            },
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "Mahalliy atirgul",
+                "ru": "Роза Местная",
+                "en": "Local Rose"
+            }
+        ],
+        "photo": "82ef0c75-45a2-4ff8-afd3-8a3103955f00",
+        "photo_urls": [
+            "82ef0c75-45a2-4ff8-afd3-8a3103955f00"
+        ],
+        "products_spent": [
+            {
+                "quantity": 7.0,
+                "type": "FLOWER",
+                "type_id": "12295c6a-de13-46b2-8784-8d07478b0628"
+            }
+        ],
+        "created_at": "2025-04-19T09:35:42.212774Z",
+        "updated_at": "2025-09-02T15:59:59.603256Z",
+        "deleted_at": null
+    },
+    {
+        "id": "dda76a37-9461-4baa-805f-420eb00f9676",
+        "bouquet_type_id": "3fd88b2f-b187-4c59-a84f-8b1afd7fe3ac",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Buket No25",
+            "ru": "Букет №25",
+            "en": "Bouquet No. 25"
+        },
+        "description": {
+            "uz": "Limoniumning nafis novdalariga urg‘u berilgan yorqin pushti atirgullardan yasalgan sersuv guldasta - hayratning e’tirofi sifatida. Xarakteri va didi bor ayol uchun ta’sirli, nafis va esda qolarli sovg‘a.",
+            "ru": "Сочный букет из ярко-розовых роз с акцентом на изящные веточки лимониума — как признание в восхищении. Эффектный, элегантный и запоминающийся подарок для женщины с характером и вкусом.",
+            "en": "A juicy bouquet of bright pink roses with an emphasis on delicate limonium branches - as a recognition of admiration. An impressive, elegant, and memorable gift for a woman with character and taste."
+        },
+        "rating": 5.0,
+        "quantity": 830,
+        "price": 295000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "Mahalliy atirgul",
+                "ru": "Роза Местная",
+                "en": "Local Rose"
+            },
+            {
+                "uz": "Limonium",
+                "ru": "Лимониум",
+                "en": "Lemonium"
+            }
+        ],
+        "photo": "eb980380-d8f4-4036-c383-14aa54760e00",
+        "photo_urls": [
+            "eb980380-d8f4-4036-c383-14aa54760e00"
+        ],
+        "products_spent": [
+            {
+                "quantity": 7.0,
+                "type": "FLOWER",
+                "type_id": "12295c6a-de13-46b2-8784-8d07478b0628"
+            },
+            {
+                "quantity": 2.0,
+                "type": "FLOWER",
+                "type_id": "bf53a8b7-fb09-42e6-82cb-9b4f3410bc50"
+            }
+        ],
+        "created_at": "2025-08-07T14:04:51.423758Z",
+        "updated_at": "2025-09-02T15:59:59.534585Z",
+        "deleted_at": null
+    },
+    {
+        "id": "31550324-da86-401e-8fd7-390810fafe5b",
+        "bouquet_type_id": "94535960-a7a4-4b8c-89d8-f756dd7e234d",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Guldasta No11",
+            "ru": " Букет №11",
+            "en": "Bouquet No11"
+        },
+        "description": {
+            "uz": "Shaftoli atirgullari, nozik gortenziyalar va kremli xrizantemalarning mayin ranglari qulaylik va g‘amxo‘rlik hissini uyg‘otadi. Bu guldasta sizni quchoqlagandek, iliqlik va yengil kuz kayfiyatini baxsh etgandek tuyuladi. Ruhiy xotirjamlikning bir qismini bermoqchi bo‘lganlar uchun mos keladi.",
+            "ru": "Мягкие тона персиковых роз, нежных гортензий и кремовых хризантем создают ощущение уюта и заботы. Этот букет словно обнимает, дарит тепло и лёгкое осеннее настроение. Подходит для тех, кому хочется подарить частичку душевного спокойствия.",
+            "en": "The soft tones of peach roses, tender honeysuckle, and cream chrysanthemums create a sense of comfort and care. This bouquet seems to embrace, giving warmth and a light autumn mood. It's suitable for those who want to give a little peace of mind."
+        },
+        "rating": 5.0,
+        "quantity": 1938,
+        "price": 600000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullar",
+                "en": "Tashkent Gullar"
+            },
+            {
+                "uz": "Mahalliy atirgul",
+                "ru": "Роза Местная",
+                "en": "Local Rose"
+            },
+            {
+                "uz": "Gortenziya",
+                "ru": "Гортензия",
+                "en": "Hortense"
+            },
+            {
+                "uz": "Xrizantema",
+                "ru": "Хризантема ",
+                "en": "Chrysanthemum"
+            },
+            {
+                "uz": "Alstromeriya",
+                "ru": "Альстромерия",
+                "en": "Alstromeria"
+            },
+            {
+                "uz": "Evkalipt",
+                "ru": "Эвкалипт",
+                "en": "Eucalyptus"
+            },
+            {
+                "uz": "Limonium",
+                "ru": "Лимониум",
+                "en": "Lemonium"
+            },
+            {
+                "uz": "Butazor xrizantema",
+                "ru": "Хризантема Кустовая",
+                "en": "Chrysanthemum Bush"
+            }
+        ],
+        "photo": "6708cd4e-5b68-418e-1e72-9fd83592e700",
+        "photo_urls": [
+            "6708cd4e-5b68-418e-1e72-9fd83592e700"
+        ],
+        "products_spent": [
+            {
+                "quantity": 3.0,
+                "type": "FLOWER",
+                "type_id": "12295c6a-de13-46b2-8784-8d07478b0628"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "32f3ae72-ec82-46d3-919b-9f7117e56dfb"
+            },
+            {
+                "quantity": 3.0,
+                "type": "FLOWER",
+                "type_id": "991c78bd-de6e-4a24-bcc4-b7a43f85b9de"
+            },
+            {
+                "quantity": 3.0,
+                "type": "FLOWER",
+                "type_id": "2e8ff612-050d-4a58-9127-18ad0f78e775"
+            },
+            {
+                "quantity": 2.0,
+                "type": "FLOWER",
+                "type_id": "e47e8618-3647-478f-9da7-493da7c172a4"
+            },
+            {
+                "quantity": 2.0,
+                "type": "FLOWER",
+                "type_id": "bf53a8b7-fb09-42e6-82cb-9b4f3410bc50"
+            },
+            {
+                "quantity": 3.0,
+                "type": "FLOWER",
+                "type_id": "da73713e-a87d-4c6f-8a67-5b2e485b623d"
+            }
+        ],
+        "created_at": "2025-08-07T14:35:47.628752Z",
+        "updated_at": "2025-09-02T15:59:59.534259Z",
+        "deleted_at": null
+    },
+    {
+        "id": "72405c25-cbd6-4273-ab50-cd6713756724",
+        "bouquet_type_id": "13ec1264-14c3-45ee-86a9-4ed7b5ff5f84",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Buket No1",
+            "ru": "Букет №1",
+            "en": "Bouquet #1"
+        },
+        "description": {
+            "uz": "Gulshanning 11 ta atirguldan iborat nafis va ixcham guldastasi - qadr-qimmat bilan aytilgan his-tuyg‘ularning e’tirofi sifatida. Asosiy narsa haqida ortiqcha so‘zlarsiz gapirish uchun juda mos.",
+            "ru": "Элегантный и лаконичный букет из 11 роз Гулшан — как признание в чувствах, высказанное с достоинством. Идеален для того, чтобы сказать о главном без лишних слов.",
+            "en": "The elegant and concise bouquet of 11 Gulshan roses is like a confession of feelings expressed with dignity. Perfect for speaking about the main thing without extra words."
+        },
+        "rating": 5.0,
+        "quantity": 528,
+        "price": 320000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Pushti",
+                "ru": "Розовый",
+                "en": "Pink"
+            },
+            {
+                "uz": "Pushti",
+                "ru": "Розовые",
+                "en": "Pink"
+            },
+            {
+                "uz": "Mono",
+                "ru": "Моно",
+                "en": "Mono"
+            },
+            {
+                "uz": "Mini",
+                "ru": "Мини",
+                "en": "Mini"
+            },
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "Mahalliy atirgul",
+                "ru": "Роза Местная",
+                "en": "Local Rose"
+            }
+        ],
+        "photo": "42d2c85f-e1e3-45f3-397c-44468abf3300",
+        "photo_urls": [
+            "42d2c85f-e1e3-45f3-397c-44468abf3300"
+        ],
+        "products_spent": [
+            {
+                "quantity": 11.0,
+                "type": "FLOWER",
+                "type_id": "12295c6a-de13-46b2-8784-8d07478b0628"
+            }
+        ],
+        "created_at": "2025-04-17T13:26:43.614484Z",
+        "updated_at": "2025-09-02T15:59:59.522598Z",
+        "deleted_at": null
+    },
+    {
+        "id": "d473d191-632f-4837-a73b-dd2156ca441a",
+        "bouquet_type_id": "bf4ca8ae-f36a-4733-914c-1f947bfc64b8",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Guldasta No14",
+            "ru": "Букет №14",
+            "en": "Bouquet No. 14"
+        },
+        "description": {
+            "uz": "Yorqin, ko‘p qatlamli va nafis guldasta, xuddi his-tuyg‘ular valsi bilan to‘ldirilgan pushti kuy kabi. U klassika nafosati va jonli his-tuyg‘ular hayajonini o‘zida mujassam etgan - bu hayrat va ilhom bag‘ishlash uchun mukammal sovg‘adir.",
+            "ru": "Яркий, многослойный и изысканный букет, словно розовая мелодия, исполненная вальсом чувств. Он сочетает в себе элегантность классики и трепет живых эмоций — идеальный подарок, чтобы восхищать и вдохновлять.",
+            "en": "A bright, multi-layered and elegant bouquet, like a pink melody played by a waltz of feelings. It combines the elegance of classics with the thrill of vivid emotions - a perfect gift to delight and inspire."
+        },
+        "rating": 5.0,
+        "quantity": 830,
+        "price": 850000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Pushti",
+                "ru": "Розовый",
+                "en": "Розовый"
+            },
+            {
+                "uz": "Pushti",
+                "ru": "Розовые",
+                "en": "Розовые"
+            },
+            {
+                "uz": "Aralashma",
+                "ru": "Микс",
+                "en": "Микс"
+            },
+            {
+                "uz": "O‘rtacha",
+                "ru": "Средний",
+                "en": "Средний"
+            },
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Ташкентские цветы",
+                "en": "Toshkent Gullari"
+            },
+            {
+                "uz": "Mahalliy atirgul",
+                "ru": "Роза Местная",
+                "en": "Local Rose"
+            },
+            {
+                "uz": "Pionid atirgul",
+                "ru": "Роза Пионовидная",
+                "en": "Pioneer Rose"
+            },
+            {
+                "uz": "Metiol",
+                "ru": "Матиола",
+                "en": "Mathiol"
+            },
+            {
+                "uz": "Gortenziya",
+                "ru": "Гортензия",
+                "en": "Hortense"
+            },
+            {
+                "uz": "Gerbera",
+                "ru": "Гербера",
+                "en": "Gerbera"
+            },
+            {
+                "uz": "Buta chinniguli",
+                "ru": "Гвоздика Кустовая",
+                "en": "Clovescue Bush"
+            },
+            {
+                "uz": "Ranunkulus",
+                "ru": "Ranunkulus",
+                "en": "Ranunkulus"
+            }
+        ],
+        "photo": "0ae9147f-e2bd-4b72-bded-c3c04d387a00",
+        "photo_urls": [
+            "0ae9147f-e2bd-4b72-bded-c3c04d387a00"
+        ],
+        "products_spent": [
+            {
+                "quantity": 7.0,
+                "type": "FLOWER",
+                "type_id": "12295c6a-de13-46b2-8784-8d07478b0628"
+            },
+            {
+                "quantity": 5.0,
+                "type": "FLOWER",
+                "type_id": "8c1853a3-acb5-49ba-9a84-9dcb38bfdec8"
+            },
+            {
+                "quantity": 3.0,
+                "type": "FLOWER",
+                "type_id": "e3c8aa24-4fe6-4035-92c9-17214101a478"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "32f3ae72-ec82-46d3-919b-9f7117e56dfb"
+            },
+            {
+                "quantity": 5.0,
+                "type": "FLOWER",
+                "type_id": "095f6836-098d-43ca-8dab-3b56602782eb"
+            },
+            {
+                "quantity": 3.0,
+                "type": "FLOWER",
+                "type_id": "3a6ba6c0-e8d9-4156-b63f-be2117720475"
+            },
+            {
+                "quantity": 5.0,
+                "type": "FLOWER",
+                "type_id": "6d62c9ed-8746-4a51-b861-d7b6f9e5a3cf"
+            }
+        ],
+        "created_at": "2025-04-17T15:09:09.135731Z",
+        "updated_at": "2025-09-02T15:36:05.237704Z",
+        "deleted_at": null
+    },
+    {
+        "id": "08f36c83-7477-44d8-9405-d76db8409fea",
+        "bouquet_type_id": "8c4cc077-3ff6-46a2-9e99-6373deac53f5",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Guldasta No12",
+            "ru": "Букет №12",
+            "en": "Bouquet No12"
+        },
+        "description": {
+            "uz": "Pushti-siren gammadagi havo guldastasi akvarelda chizilgan rasm kabi. Atirgullar, gortenziyalar, mattiollar va evkaliptlar yengillik, noziklik va romantika hissini uyg‘otadi. Nozik tabiat va yorqin sabab uchun mukammal tanlov.",
+            "ru": "Воздушный букет в розово-сиреневой гамме — как картина, написанная акварелью. Розы, гортензии, маттиолы и эвкалипт создают ощущение лёгкости, нежности и романтики. Идеальный выбор для утончённой натуры и светлого повода.",
+            "en": "An air bouquet in a pink-lilac range is like a painting painted in watercolor. Roses, hortensions, mattiols, and eucalyptus create a feeling of lightness, tenderness, and romance. An ideal choice for a refined nature and a bright occasion."
+        },
+        "rating": 5.0,
+        "quantity": 1938,
+        "price": 750000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "Xrizantema",
+                "ru": "Хризантема ",
+                "en": "Chrysanthemum"
+            },
+            {
+                "uz": "Butazor xrizantema",
+                "ru": "Хризантема Кустовая",
+                "en": "Chrysanthemum Bush"
+            },
+            {
+                "uz": "Mahalliy atirgul",
+                "ru": "Роза Местная",
+                "en": "Local Rose"
+            },
+            {
+                "uz": "Evkalipt",
+                "ru": "Эвкалипт",
+                "en": "Eucalyptus"
+            },
+            {
+                "uz": "Gortenziya",
+                "ru": "Гортензия",
+                "en": "Hortense"
+            },
+            {
+                "uz": "Metiol",
+                "ru": "Матиола",
+                "en": "Mathiol"
+            },
+            {
+                "uz": "Limonium",
+                "ru": "Лимониум",
+                "en": "Lemonium"
+            },
+            {
+                "uz": "Orxideya",
+                "ru": "Орхидея",
+                "en": "Orchid"
+            }
+        ],
+        "photo": "8c73c9df-89a8-42c2-0e54-31cc05552000",
+        "photo_urls": [
+            "8c73c9df-89a8-42c2-0e54-31cc05552000"
+        ],
+        "products_spent": [
+            {
+                "quantity": 2.0,
+                "type": "FLOWER",
+                "type_id": "991c78bd-de6e-4a24-bcc4-b7a43f85b9de"
+            },
+            {
+                "quantity": 3.0,
+                "type": "FLOWER",
+                "type_id": "da73713e-a87d-4c6f-8a67-5b2e485b623d"
+            },
+            {
+                "quantity": 3.0,
+                "type": "FLOWER",
+                "type_id": "12295c6a-de13-46b2-8784-8d07478b0628"
+            },
+            {
+                "quantity": 2.0,
+                "type": "FLOWER",
+                "type_id": "e47e8618-3647-478f-9da7-493da7c172a4"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "32f3ae72-ec82-46d3-919b-9f7117e56dfb"
+            },
+            {
+                "quantity": 3.0,
+                "type": "FLOWER",
+                "type_id": "e3c8aa24-4fe6-4035-92c9-17214101a478"
+            },
+            {
+                "quantity": 2.0,
+                "type": "FLOWER",
+                "type_id": "bf53a8b7-fb09-42e6-82cb-9b4f3410bc50"
+            },
+            {
+                "quantity": 2.0,
+                "type": "FLOWER",
+                "type_id": "99719027-7aa1-4e84-8bcd-fc0e3d0f3f16"
+            }
+        ],
+        "created_at": "2025-08-07T14:38:28.355995Z",
+        "updated_at": "2025-09-02T15:36:05.19368Z",
+        "deleted_at": null
+    },
+    {
+        "id": "636fd4c3-6663-495c-9c2e-328a664f38be",
+        "bouquet_type_id": "1c0904d1-4420-4a3e-9fef-86356eeb18e6",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Guldasta No15",
+            "ru": "Букет №15",
+            "en": "Bouquet No15"
+        },
+        "description": {
+            "uz": "Pushti va yashil ranglar uyg‘unligidagi nafis guldasta - eng yorqin tuyg‘ularning hayajonli e’tirofiga o‘xshaydi. U makonni qulaylik, iliqlik va yengil xayolparastlik bilan to‘ldiradi - ilhomlantiruvchilar uchun eng maqbul tanlov.",
+            "ru": "Нежный букет с гармонией оттенков розового и зелени — словно трепетное признание в самых светлых чувствах. Он наполняет пространство уютом, теплом и легкой мечтательностью — идеальный выбор для тех, кто вдохновляет.",
+            "en": "A delicate bouquet with the harmony of pink and green shades is like a trembling confession in the brightest feelings. It fills the space with comfort, warmth, and light fantasy - an ideal choice for those who inspire."
+        },
+        "rating": 5.0,
+        "quantity": 1938,
+        "price": 700000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Pushti",
+                "ru": "Розовый",
+                "en": "Pink"
+            },
+            {
+                "uz": "Pushti",
+                "ru": "Розовые",
+                "en": "Pink"
+            },
+            {
+                "uz": "Aralashma",
+                "ru": "Микс",
+                "en": "Mix"
+            },
+            {
+                "uz": "O‘rtacha",
+                "ru": "Средний",
+                "en": "Average"
+            },
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "Metiol",
+                "ru": "Матиола",
+                "en": "Mathiol"
+            },
+            {
+                "uz": "Gortenziya",
+                "ru": "Гортензия",
+                "en": "Hortense"
+            },
+            {
+                "uz": "Mahalliy atirgul",
+                "ru": "Роза Местная",
+                "en": "Local Rose"
+            },
+            {
+                "uz": "chinnigul",
+                "ru": "Гвоздика",
+                "en": "Cloves"
+            },
+            {
+                "uz": "Xrizantema",
+                "ru": "Хризантема ",
+                "en": "Chrysanthemum"
+            },
+            {
+                "uz": "Evkalipt",
+                "ru": "Эвкалипт",
+                "en": "Eucalyptus"
+            },
+            {
+                "uz": "Alstromeriya",
+                "ru": "Альстромерия",
+                "en": "Alstromeria"
+            },
+            {
+                "uz": "skimiya",
+                "ru": "Скимия",
+                "en": "Skimia"
+            }
+        ],
+        "photo": "fb98e963-71e1-4e08-f913-95b3cf5e7200",
+        "photo_urls": [
+            "fb98e963-71e1-4e08-f913-95b3cf5e7200"
+        ],
+        "products_spent": [
+            {
+                "quantity": 3.0,
+                "type": "FLOWER",
+                "type_id": "e3c8aa24-4fe6-4035-92c9-17214101a478"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "32f3ae72-ec82-46d3-919b-9f7117e56dfb"
+            },
+            {
+                "quantity": 3.0,
+                "type": "FLOWER",
+                "type_id": "12295c6a-de13-46b2-8784-8d07478b0628"
+            },
+            {
+                "quantity": 3.0,
+                "type": "FLOWER",
+                "type_id": "e5a524b8-8992-4f41-844b-a708d6708e57"
+            },
+            {
+                "quantity": 2.0,
+                "type": "FLOWER",
+                "type_id": "991c78bd-de6e-4a24-bcc4-b7a43f85b9de"
+            },
+            {
+                "quantity": 3.0,
+                "type": "FLOWER",
+                "type_id": "e47e8618-3647-478f-9da7-493da7c172a4"
+            },
+            {
+                "quantity": 5.0,
+                "type": "FLOWER",
+                "type_id": "2e8ff612-050d-4a58-9127-18ad0f78e775"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "b555f9cf-9e4e-45e0-97b4-3958048896ab"
+            }
+        ],
+        "created_at": "2025-04-17T15:18:39.49546Z",
+        "updated_at": "2025-09-02T15:36:05.143906Z",
+        "deleted_at": null
+    },
+    {
+        "id": "a748d026-0305-48f7-ab8f-bc0427c248dc",
+        "bouquet_type_id": "eeb9dd36-9eff-4812-81f0-901d682a4822",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Kompozitsiya No6",
+            "ru": "Композиция №6",
+            "en": "Composition No6"
+        },
+        "description": {
+            "uz": "Go‘yo gullab-yashnayotgan Provansning ilk tongidek, nozik pastel ranglardagi nafis kompozitsiya. Atirgul va chinnigul barglari yashillik va alstromeriya aksentlari bilan yumshoq uyg‘unlashib, iliqlik, shinamlik va g‘amxo‘rlik muhitini yaratadi. E’tirof va samimiy tabriklar uchun juda mos.",
+            "ru": "Нежная композиция в пастельных тонах, словно первое утро в цветущем Провансе. Лепестки роз и гвоздик мягко переплетаются с зеленью и акцентами альстромерии, создавая атмосферу тепла, уюта и заботы. Идеально для признаний и душевных поздравлений.",
+            "en": "A delicate composition in pastel tones, like the first morning in flourishing Provence. Rose and carnation petals softly intertwine with greenery and alstromeria accents, creating an atmosphere of warmth, comfort, and care. Perfect for recognition and heartfelt congratulations."
+        },
+        "rating": 5.0,
+        "quantity": 1938,
+        "price": 385000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Bej",
+                "ru": "Бежевый",
+                "en": "Beige"
+            },
+            {
+                "uz": "Bejlar",
+                "ru": "Бежевые",
+                "en": "Beige"
+            },
+            {
+                "uz": "Aralashma",
+                "ru": "Микс",
+                "en": "Mix"
+            },
+            {
+                "uz": "Savat",
+                "ru": "Корзина",
+                "en": "Basket"
+            },
+            {
+                "uz": "Savatlar",
+                "ru": "Корзины",
+                "en": "baskets"
+            },
+            {
+                "uz": "Savatda",
+                "ru": "В корзине",
+                "en": "In the basket"
+            },
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "Mahalliy atirgul",
+                "ru": "Роза Местная",
+                "en": "Local Rose"
+            },
+            {
+                "uz": "Buta chinniguli",
+                "ru": "Гвоздика Кустовая",
+                "en": "Clovescue Bush"
+            },
+            {
+                "uz": "Alstromeriya",
+                "ru": "Альстромерия",
+                "en": "Alstromeria"
+            },
+            {
+                "uz": "skimiya",
+                "ru": "Скимия",
+                "en": "Skimia"
+            }
+        ],
+        "photo": "3b2e4a88-9c27-4ddf-4867-5f19c57f5e00",
+        "photo_urls": [
+            "3b2e4a88-9c27-4ddf-4867-5f19c57f5e00"
+        ],
+        "products_spent": [
+            {
+                "quantity": 3.0,
+                "type": "FLOWER",
+                "type_id": "12295c6a-de13-46b2-8784-8d07478b0628"
+            },
+            {
+                "quantity": 3.0,
+                "type": "FLOWER",
+                "type_id": "3a6ba6c0-e8d9-4156-b63f-be2117720475"
+            },
+            {
+                "quantity": 4.0,
+                "type": "FLOWER",
+                "type_id": "2e8ff612-050d-4a58-9127-18ad0f78e775"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "b555f9cf-9e4e-45e0-97b4-3958048896ab"
+            }
+        ],
+        "created_at": "2025-04-17T14:25:21.471214Z",
+        "updated_at": "2025-09-02T15:03:14.066481Z",
+        "deleted_at": null
+    },
+    {
+        "id": "31ab2b0e-7ac5-4a76-a93f-a1d1eae19eb8",
+        "bouquet_type_id": "defc03c2-5d36-4457-a8d4-bf4d7b74e8df",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Buket No5",
+            "ru": "Букет №5",
+            "en": "Bouquet No5"
+        },
+        "description": {
+            "uz": "Gulshan atirgullarining yengil gulbarglari va statikaning havoyi tuzilishi bilan to‘ldirilgan nozik palitradagi nafis guldasta. G‘amxo‘rlik, e’tibor va iliq his-tuyg‘ularni ifodalash uchun eng maqbul tanlov - bu guldasta so‘zsiz gapiradi, yorug‘lik va shinamlikka chulg‘aydi.",
+            "ru": "Изысканный букет в нежной палитре, наполненный легкостью лепестков роз Гулшан и воздушной текстурой статицы. Идеальный выбор, чтобы выразить заботу, внимание и тёплые чувства — этот букет говорит без слов, окутывая светом и уютом.",
+            "en": "An elegant bouquet in a delicate palette, filled with the lightness of Gulshan rose petals and the airy texture of statics. An ideal choice to express care, attention, and warm feelings - this bouquet speaks without words, enveloping you in light and comfort."
+        },
+        "rating": 5.0,
+        "quantity": 447,
+        "price": 482000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "oq",
+                "ru": "Белый",
+                "en": "White"
+            },
+            {
+                "uz": "oqlar",
+                "ru": "Белые",
+                "en": "White"
+            },
+            {
+                "uz": "Mini",
+                "ru": "Мини",
+                "en": "Mini"
+            },
+            {
+                "uz": "Mono",
+                "ru": "Моно",
+                "en": "Mono"
+            },
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "Mahalliy atirgul",
+                "ru": "Роза Местная",
+                "en": "Local Rose"
+            }
+        ],
+        "photo": "9b9313d1-aee0-4061-6763-2b4a876d3d00",
+        "photo_urls": [
+            "9b9313d1-aee0-4061-6763-2b4a876d3d00"
+        ],
+        "products_spent": [
+            {
+                "quantity": 13.0,
+                "type": "FLOWER",
+                "type_id": "12295c6a-de13-46b2-8784-8d07478b0628"
+            }
+        ],
+        "created_at": "2025-04-17T14:21:49.181535Z",
+        "updated_at": "2025-09-02T07:15:59.011738Z",
+        "deleted_at": null
+    },
+    {
+        "id": "343223e3-feb9-477d-be5a-212dbfd65d3b",
+        "bouquet_type_id": "f5be805a-2c9e-46b3-80c0-7e958532194f",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Guldasta No24",
+            "ru": "Букет №24",
+            "en": "Bouquet No24"
+        },
+        "description": {
+            "uz": "Ipak kabi yengil, iliq shaftoli rangidagi bu guldasta bir qarashda maftunkor. Uning nafisligi va muloyimligi uni universal sovg‘aga aylantiradi - minnatdorchilikdan tortib e’tirofgacha, kechirim so‘rashdan tortib shunchaki \"chunki sen go‘zalsan\"gacha.",
+            "ru": "Лёгкий, как прикосновение шелка, этот букет в теплых персиковых тонах очаровывает с первого взгляда. Его элегантность и мягкость делают его универсальным подарком — от благодарности до признания, от извинений до просто «потому что ты прекрасна».",
+            "en": "Light as silk, this bouquet in warm peachy tones captivates at first glance. His elegance and gentleness make him a universal gift - from gratitude to acknowledgment, from apologizing to simply saying \"because you are beautiful.\""
+        },
+        "rating": 5.0,
+        "quantity": 646,
+        "price": 280000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Sariq",
+                "ru": "Желтый",
+                "en": "Yellow"
+            },
+            {
+                "uz": "Sariq",
+                "ru": "Желтые",
+                "en": "Yellow"
+            },
+            {
+                "uz": "Mono",
+                "ru": "Моно",
+                "en": "Mono"
+            },
+            {
+                "uz": "Mini",
+                "ru": "Мини",
+                "en": "Mini"
+            },
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "Mahalliy atirgul",
+                "ru": "Роза Местная",
+                "en": "Local Rose"
+            }
+        ],
+        "photo": "d17b5097-0ee4-4f48-d51b-cdac74caf200",
+        "photo_urls": [
+            "d17b5097-0ee4-4f48-d51b-cdac74caf200"
+        ],
+        "products_spent": [
+            {
+                "quantity": 9.0,
+                "type": "FLOWER",
+                "type_id": "12295c6a-de13-46b2-8784-8d07478b0628"
+            }
+        ],
+        "created_at": "2025-04-19T09:37:49.810846Z",
+        "updated_at": "2025-09-02T07:15:59.008097Z",
+        "deleted_at": null
+    },
+    {
+        "id": "6fd2fae8-27b0-4f87-b58d-c86ae9c385ae",
+        "bouquet_type_id": "827c2dcf-c92f-4f5b-ad44-4465f25f22d9",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Guldasta No8",
+            "ru": "Букет №8",
+            "en": "Bouquet No. 8"
+        },
+        "description": {
+            "uz": "Nafis va ifodali guldasta, unda Gulshanning qizil atirgullari salqin feruza bezak fonida porlayotgandek tuyuladi. Bergras chiziqlari dinamika va havoyilikni qo‘shadi, sevgi izhorini olib kelgan yengil shabada hissini yaratadi. Har bir imo-ishoradagi nafislikni qadrlaydigan odamlar uchun zamonaviy tanlov.",
+            "ru": "Изящный и выразительный букет, где алые розы Гулшан словно пылают на фоне прохладного бирюзового оформления. Линии берграса добавляют динамики и воздушности, создавая ощущение лёгкого ветерка, принесшего признание в любви. Стильный выбор для тех, кто ценит элегантность в каждом жесте.",
+            "en": "An elegant and expressive bouquet where Gulshan's crimson roses seem to blaze against the backdrop of cool turquoise decoration. Bergras lines add dynamism and airiness, creating a feeling of a gentle breeze that has brought recognition of love. A stylish choice for those who appreciate elegance in every gesture."
+        },
+        "rating": 5.0,
+        "quantity": 387,
+        "price": 550000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Qizil",
+                "ru": "Красный",
+                "en": "Red"
+            },
+            {
+                "uz": "Qizillar",
+                "ru": "Красные",
+                "en": "Reds"
+            },
+            {
+                "uz": "Mono",
+                "ru": "Моно",
+                "en": "Mono"
+            },
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "Mahalliy atirgul",
+                "ru": "Роза Местная",
+                "en": "Local Rose"
+            }
+        ],
+        "photo": "773548f4-9cd4-49f8-a444-e5d6018f4b00",
+        "photo_urls": [
+            "773548f4-9cd4-49f8-a444-e5d6018f4b00"
+        ],
+        "products_spent": [
+            {
+                "quantity": 15.0,
+                "type": "FLOWER",
+                "type_id": "12295c6a-de13-46b2-8784-8d07478b0628"
+            }
+        ],
+        "created_at": "2025-04-17T14:36:03.379132Z",
+        "updated_at": "2025-09-02T07:15:59.007549Z",
+        "deleted_at": null
+    },
+    {
+        "id": "86465278-812c-41e9-b727-907ed380dc17",
+        "bouquet_type_id": "6de13bf8-ba21-4f8d-8744-108a6666452e",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Guldasta No10",
+            "ru": " Букет №10",
+            "en": "Bouquet #10"
+        },
+        "description": {
+            "uz": "Pushtirang gerberlar, upalangan atirgullar, gortenziya va nozik alsteromeriya bilan impressionistning rasmidan chiqqandek guldasta. Har bir detal nur, tarovat va orzu bilan to‘ldirilgan. Nozik his-tuyg‘ularni ifodalash uchun juda mos.",
+            "ru": "Букет, словно сошедший с картины импрессиониста — с розовыми герберами, пудровыми розами, гортензией и нежной альстромерией. Каждая деталь наполнена светом, свежестью и мечтой. Идеален для выражения утончённых чувств.",
+            "en": "A bouquet, as if from an impressionist's painting - with pink herbs, powdered roses, hortense, and tender alster. Every detail is filled with light, freshness, and dreams. Perfect for expressing refined feelings."
+        },
+        "rating": 5.0,
+        "quantity": 1163,
+        "price": 650000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent GUllari",
+                "en": "Tashkent Gullari"
+            },
+            {
+                "uz": "Mahalliy atirgul",
+                "ru": "Роза Местная",
+                "en": "Local Rose"
+            },
+            {
+                "uz": "Limonium",
+                "ru": "Лимониум",
+                "en": "Lemonium"
+            },
+            {
+                "uz": "Alstromeriya",
+                "ru": "Альстромерия",
+                "en": "Alstromeria"
+            },
+            {
+                "uz": "Gortenziya",
+                "ru": "Гортензия",
+                "en": "Hortense"
+            },
+            {
+                "uz": "Gerbera",
+                "ru": "Гербера",
+                "en": "Gerbera"
+            },
+            {
+                "uz": "Eustoma",
+                "ru": "Эустома",
+                "en": "Eustoma"
+            }
+        ],
+        "photo": "607ae435-15a4-4af7-ecdc-c0deed041800",
+        "photo_urls": [
+            "607ae435-15a4-4af7-ecdc-c0deed041800"
+        ],
+        "products_spent": [
+            {
+                "quantity": 5.0,
+                "type": "FLOWER",
+                "type_id": "12295c6a-de13-46b2-8784-8d07478b0628"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "bf53a8b7-fb09-42e6-82cb-9b4f3410bc50"
+            },
+            {
+                "quantity": 3.0,
+                "type": "FLOWER",
+                "type_id": "2e8ff612-050d-4a58-9127-18ad0f78e775"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "32f3ae72-ec82-46d3-919b-9f7117e56dfb"
+            },
+            {
+                "quantity": 3.0,
+                "type": "FLOWER",
+                "type_id": "095f6836-098d-43ca-8dab-3b56602782eb"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "cb3b8973-cfca-4815-bc6a-c8c5f0c2ffa8"
+            }
+        ],
+        "created_at": "2025-08-07T14:12:23.488368Z",
+        "updated_at": "2025-09-02T07:15:59.005633Z",
+        "deleted_at": null
+    },
+    {
+        "id": "8c3851f2-fc4c-4888-a943-698d47e8e1b3",
+        "bouquet_type_id": "f569c4d9-9f7d-4ed0-b942-785f54adf46b",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Guldasta No9",
+            "ru": "Букет №9",
+            "en": "Bouquet No. 9"
+        },
+        "description": {
+            "uz": "Bu guldasta go‘yo quyosh botishi paytidagi akkordlardan yaratilgandek: chuqur pushti-malina atirgullari statikaning lavanda tomchilari bilan uyg‘unlashib, tuyg‘ularning nozik simfoniyasi taassurotini uyg‘otadi. Hayrat, minnatdorchilik yoki hayajonli muhabbatni ifodalash uchun mukammal tanlov.",
+            "ru": "Этот букет словно создан из закатных аккордов: глубокие розово-малиновые розы гармонируют с лавандовыми вкраплениями статицы, создавая впечатление утончённой симфонии чувств. Идеальный выбор, чтобы выразить восхищение, благодарность или трепетную любовь.",
+            "en": "This bouquet is as if created from sunset chords: deep pink- crimson roses harmonize with the lavender spots of the statics, creating the impression of a refined symphony of feelings. The perfect choice to express admiration, gratitude, or tremulous love."
+        },
+        "rating": 5.0,
+        "quantity": 387,
+        "price": 561000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Pushti",
+                "ru": "Розовый",
+                "en": "Розовый"
+            },
+            {
+                "uz": "Pushti",
+                "ru": "Розовые",
+                "en": "Розовые"
+            },
+            {
+                "uz": "Mono",
+                "ru": "Моно",
+                "en": "Моно"
+            },
+            {
+                "uz": "O‘rtacha",
+                "ru": "Средний",
+                "en": "Средний"
+            },
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Ташкентские цветы",
+                "en": "Toshkent Gullari"
+            },
+            {
+                "uz": "Mahalliy atirgul",
+                "ru": "Роза Местная",
+                "en": "Local Rose"
+            }
+        ],
+        "photo": "7316bf85-b26e-4131-8790-262b120d3f00",
+        "photo_urls": [
+            "7316bf85-b26e-4131-8790-262b120d3f00"
+        ],
+        "products_spent": [
+            {
+                "quantity": 15.0,
+                "type": "FLOWER",
+                "type_id": "12295c6a-de13-46b2-8784-8d07478b0628"
+            }
+        ],
+        "created_at": "2025-04-17T14:41:47.818203Z",
+        "updated_at": "2025-09-02T07:15:59.003134Z",
+        "deleted_at": null
+    },
+    {
+        "id": "f1861cea-dd41-46e9-bafd-8e82a25cfd5d",
+        "bouquet_type_id": "962c7cba-3837-47d1-ac79-4474b6ed2723",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Buket No4",
+            "ru": "Букет №4",
+            "en": "Bouquet No4"
+        },
+        "description": {
+            "uz": "Binafsharang limonium hoshiyasidagi yorqin pushti atirgullar shivirlab aytging keladigan iliq so‘zlar va sirlardan yig‘ilganga o‘xshaydi. Bu guldasta unutib bo‘lmaydigan tuyg‘ularning e’tirofidir.",
+            "ru": "Ярко-розовые розы в обрамлении сиреневого лимониума словно собраны из тёплых слов и тайн, которые хочется шептать. Этот букет — признание в чувствах, которое невозможно забыть.",
+            "en": "The bright pink roses in the frame of the lilac limonum seem to be gathered from warm words and secrets that you want to whisper. This bouquet is a confession of feelings that cannot be forgotten."
+        },
+        "rating": 5.0,
+        "quantity": 646,
+        "price": 390000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent GUllari",
+                "en": "Tashkent Gullari"
+            },
+            {
+                "uz": "Mahalliy atirgul",
+                "ru": "Роза Местная",
+                "en": "Local Rose"
+            },
+            {
+                "uz": "Limonium",
+                "ru": "Лимониум",
+                "en": "Lemonium"
+            }
+        ],
+        "photo": "1a03f364-ee94-4691-9754-05d7422d4e00",
+        "photo_urls": [
+            "1a03f364-ee94-4691-9754-05d7422d4e00"
+        ],
+        "products_spent": [
+            {
+                "quantity": 9.0,
+                "type": "FLOWER",
+                "type_id": "12295c6a-de13-46b2-8784-8d07478b0628"
+            },
+            {
+                "quantity": 3.0,
+                "type": "FLOWER",
+                "type_id": "bf53a8b7-fb09-42e6-82cb-9b4f3410bc50"
+            }
+        ],
+        "created_at": "2025-08-07T14:08:30.319093Z",
+        "updated_at": "2025-09-02T07:15:59.001017Z",
+        "deleted_at": null
+    },
+    {
+        "id": "c14a21de-02cc-4256-bc35-b1cdf31500a6",
+        "bouquet_type_id": "7a0193a9-5fbe-48c8-8456-69fe9ebce061",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Binafsharang simfoniya",
+            "ru": "Сиреневая Симфония",
+            "en": "Lilac Symphony"
+        },
+        "description": {
+            "uz": "Bu binafsha-pushti rangdagi nozik guldasta go‘yo xotirjamlik va quvonch baxsh etish uchun yaratilgandek. Hashamatli gortenziya va havoli eustomalar \"Gulshan\"ning asl atirgullari bilan uyg‘unlashib ketgan, evkalipt va ruskus yashilligi esa kompozitsiyaga yangilik va nafislik baxsh etadi. Nafislik va romantikani qadrlaydigan insonlar uchun ajoyib sovg‘a.",
+            "ru": "Этот нежный букет в сиренево-розовой гамме словно создан для того, чтобы дарить умиротворение и радость. Пышная гортензия и воздушные эустомы гармонично переплетаются с благородными розами «Гулшан», а зелень эвкалипта и рускуса придают композиции свежесть и утонченность. Идеальный подарок для тех, кто ценит изысканность и романтику.",
+            "en": "This delicate bouquet in a lilac-pink color scheme seems to be created to bring peace and joy. The lush gortense and airy eustomes harmoniously intertwine with the noble roses \"Gulshan,\" while the greenery of eucalyptus and rusk gives the composition freshness and elegance. An ideal gift for those who appreciate elegance and romance."
+        },
+        "rating": 5.0,
+        "quantity": 969,
+        "price": 498000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Siyohrang",
+                "ru": "Фиолетовый",
+                "en": "Purple"
+            },
+            {
+                "uz": "Binafsha",
+                "ru": "Фиолетовые",
+                "en": "Purple"
+            },
+            {
+                "uz": "Aralashma",
+                "ru": "Микс",
+                "en": "Mix"
+            },
+            {
+                "uz": "O‘rtacha",
+                "ru": "Средний",
+                "en": "Average"
+            },
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "Gortenziya",
+                "ru": "Гортензия",
+                "en": "Hortense"
+            },
+            {
+                "uz": "Golland Evkalipti",
+                "ru": "Эвкалипт Голландский ",
+                "en": "Eucalyptus of Holland"
+            },
+            {
+                "uz": "Eustoma",
+                "ru": "Эустома",
+                "en": "Eustoma"
+            },
+            {
+                "uz": "Mahalliy atirgul",
+                "ru": "Роза Местная",
+                "en": "Local Rose"
+            },
+            {
+                "uz": "Pionid atirgul",
+                "ru": "Роза Пионовидная",
+                "en": "Pioneer Rose"
+            },
+            {
+                "uz": "Rus",
+                "ru": "Рускус",
+                "en": "Ruskus"
+            }
+        ],
+        "photo": "4cd39c53-99a9-4fe3-86cd-d5d5bf19bf00",
+        "photo_urls": [
+            "4cd39c53-99a9-4fe3-86cd-d5d5bf19bf00"
+        ],
+        "products_spent": [
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "32f3ae72-ec82-46d3-919b-9f7117e56dfb"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "8f19ab8f-7505-47e2-82f9-b9e111bb32c8"
+            },
+            {
+                "quantity": 2.0,
+                "type": "FLOWER",
+                "type_id": "cb3b8973-cfca-4815-bc6a-c8c5f0c2ffa8"
+            },
+            {
+                "quantity": 6.0,
+                "type": "FLOWER",
+                "type_id": "12295c6a-de13-46b2-8784-8d07478b0628"
+            },
+            {
+                "quantity": 5.0,
+                "type": "FLOWER",
+                "type_id": "8c1853a3-acb5-49ba-9a84-9dcb38bfdec8"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "6baa6d71-e4ca-44ba-a1f4-5f716cc5f48d"
+            }
+        ],
+        "created_at": "2025-09-01T16:50:41.318615Z",
+        "updated_at": "2025-09-02T07:15:58.995584Z",
+        "deleted_at": null
+    },
+    {
+        "id": "4e09b812-91b2-450c-ad52-5b2e7ec89282",
+        "bouquet_type_id": "3d59bf32-ca02-49e6-ba77-ca3a09e9c43e",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Guldasta No19",
+            "ru": "Букет №19",
+            "en": "Bouquet #19"
+        },
+        "description": {
+            "uz": "Yorqin va to‘yingan guldasta, bu xuddi his-tuyg‘ular portlashiga o‘xshaydi - bu yerda har bir gul bayramona simfoniyada o‘z o‘yinini o‘ynaydi. Shakllar va ranglarning dadil kombinatsiyasi ilhom va ichki yorqinlik kayfiyatini yaratadi. Bunday guldastani unutib bo‘lmaydi - uni qayta-qayta ko‘rgingiz keladi.",
+            "ru": "Яркий и насыщенный букет, который словно взрыв эмоций — каждый цветок здесь играет свою партию в праздничной симфонии. Смелое сочетание форм и оттенков создаёт настроение вдохновения и внутреннего сияния. Такой букет невозможно забыть — его хочется рассматривать снова и снова.",
+            "en": "A bright and rich bouquet, like an explosion of emotions - each flower here plays its part in the festive symphony. The bold combination of forms and shades creates a mood of inspiration and inner radiance. Such a bouquet cannot be forgotten - you want to look at it again and again."
+        },
+        "rating": 5.0,
+        "quantity": 447,
+        "price": 1800000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Aralashma",
+                "ru": "Микс",
+                "en": "Mix"
+            },
+            {
+                "uz": "O‘rtacha",
+                "ru": "Средний",
+                "en": "Average"
+            },
+            {
+                "uz": "Pushti",
+                "ru": "Розовый",
+                "en": "Pink"
+            },
+            {
+                "uz": "Pushti",
+                "ru": "Розовые",
+                "en": "Pink"
+            },
+            {
+                "uz": "Siyohrang",
+                "ru": "Фиолетовый",
+                "en": "Purple"
+            },
+            {
+                "uz": "Binafsha",
+                "ru": "Фиолетовые",
+                "en": "Purple"
+            },
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "Gortenziya",
+                "ru": "Гортензия",
+                "en": "Hortense"
+            },
+            {
+                "uz": "Xrizantema",
+                "ru": "Хризантема ",
+                "en": "Chrysanthemum"
+            },
+            {
+                "uz": "Ranunkulus",
+                "ru": "Ranunkulus",
+                "en": "Ranunkulus"
+            },
+            {
+                "uz": "Metiol",
+                "ru": "Матиола",
+                "en": "Mathiol"
+            },
+            {
+                "uz": "Mahalliy atirgul",
+                "ru": "Роза Местная",
+                "en": "Local Rose"
+            },
+            {
+                "uz": "Eustoma",
+                "ru": "Эустома",
+                "en": "Eustoma"
+            },
+            {
+                "uz": "Orol",
+                "ru": "Аралия",
+                "en": "Aral"
+            }
+        ],
+        "photo": "a06ae574-f1a1-4a29-cc86-7a8249d97a00",
+        "photo_urls": [
+            "a06ae574-f1a1-4a29-cc86-7a8249d97a00"
+        ],
+        "products_spent": [
+            {
+                "quantity": 2.0,
+                "type": "FLOWER",
+                "type_id": "32f3ae72-ec82-46d3-919b-9f7117e56dfb"
+            },
+            {
+                "quantity": 5.0,
+                "type": "FLOWER",
+                "type_id": "991c78bd-de6e-4a24-bcc4-b7a43f85b9de"
+            },
+            {
+                "quantity": 7.0,
+                "type": "FLOWER",
+                "type_id": "6d62c9ed-8746-4a51-b861-d7b6f9e5a3cf"
+            },
+            {
+                "quantity": 7.0,
+                "type": "FLOWER",
+                "type_id": "e3c8aa24-4fe6-4035-92c9-17214101a478"
+            },
+            {
+                "quantity": 13.0,
+                "type": "FLOWER",
+                "type_id": "12295c6a-de13-46b2-8784-8d07478b0628"
+            },
+            {
+                "quantity": 5.0,
+                "type": "FLOWER",
+                "type_id": "cb3b8973-cfca-4815-bc6a-c8c5f0c2ffa8"
+            },
+            {
+                "quantity": 3.0,
+                "type": "FLOWER",
+                "type_id": "13203587-2209-4923-a1e2-9a2888262435"
+            }
+        ],
+        "created_at": "2025-04-19T09:23:57.641775Z",
+        "updated_at": "2025-09-02T07:15:58.934275Z",
+        "deleted_at": null
+    },
+    {
+        "id": "9c53a557-17de-4119-a2db-5d7562cf656a",
+        "bouquet_type_id": "2e73a0a7-6711-4043-bb78-7bf18e401543",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Guldasta No7",
+            "ru": "Букет №7",
+            "en": "Bouquet No. 7"
+        },
+        "description": {
+            "uz": "Gulshanning 15 ta baxmal qip-qizil atirgullaridan iborat klassik guldastasi - bu sevgi va ehtirosning bexato e’tirofidir. Har bir atirgul atlas tasmali nafis o‘ramga o‘ralgan jo‘shqin hissiyotga o‘xshaydi. So‘zlardan ko‘ra ko‘proq narsani aytmoqchi bo‘lgan muhim lahzalar uchun juda mos keladi.",
+            "ru": "Классический букет из 15 бархатных алых роз Гулшан — это безошибочное признание в любви и страсти. Каждая роза — как пульсирующее чувство, обёрнутое в элегантную упаковку с атласной лентой. Идеален для важных моментов, когда хочется сказать больше, чем словами.",
+            "en": "The classic bouquet of 15 velvet crimson roses from Gulshan is a flawless confession of love and passion. Each rose is like a pulsating feeling wrapped in elegant packaging with atlas ribbon. Ideal for important moments when you want to say more than words."
+        },
+        "rating": 5.0,
+        "quantity": 387,
+        "price": 390000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Qizil",
+                "ru": "Красный",
+                "en": "Red"
+            },
+            {
+                "uz": "Qizillar",
+                "ru": "Красные",
+                "en": "Reds"
+            },
+            {
+                "uz": "Mono",
+                "ru": "Моно",
+                "en": "Mono"
+            },
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "Mahalliy atirgul",
+                "ru": "Роза Местная",
+                "en": "Local Rose"
+            }
+        ],
+        "photo": "3ba0659c-586a-4df8-38d1-afa7441e8200",
+        "photo_urls": [
+            "3ba0659c-586a-4df8-38d1-afa7441e8200"
+        ],
+        "products_spent": [
+            {
+                "quantity": 15.0,
+                "type": "FLOWER",
+                "type_id": "12295c6a-de13-46b2-8784-8d07478b0628"
+            }
+        ],
+        "created_at": "2025-04-17T14:33:08.811991Z",
+        "updated_at": "2025-09-02T07:15:58.915881Z",
+        "deleted_at": null
+    },
+    {
+        "id": "2c708fb1-0be7-46b6-96db-686fef902438",
+        "bouquet_type_id": "a0723694-3135-4cea-ad4e-135b77effe1f",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Pushti gortenziya guldastasi",
+            "ru": "Букет из розовой гортензии",
+            "en": "Pink Hortense Bouquet"
+        },
+        "description": {
+            "uz": "Shakar paxtasi rangidagi nozik gortenziyalar ertak sahifalaridan tushib qolgandek - havoyi, yengil va ta’sirli. Ehtiyotkorlik bilan sepiladigan ko‘katlar guldastaga tabiiy tarovat va uyg‘unlik baxsh etadi. Yurakni eritish va tabassum uyg‘otish uchun hadya qiling.",
+            "ru": "Нежнейшие гортензии в оттенке сахарной ваты словно сошли со страниц сказки — воздушные, лёгкие и трогательные. Аккуратные вкрапления зелени придают букету естественную свежесть и гармонию. Дарите, чтобы растопить сердце и вызвать улыбку.",
+            "en": "The softest honeysuckle in the shade of sugar cotton seemed to have left the pages of a fairy tale - airy, light, and touching. Carefully sprinkled greens give the bouquet a natural freshness and harmony. Give to melt your heart and bring a smile."
+        },
+        "rating": 5.0,
+        "quantity": 1297,
+        "price": 721000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "Evkalipt",
+                "ru": "Эвкалипт",
+                "en": "Eucalyptus"
+            },
+            {
+                "uz": "Gortenziya",
+                "ru": "Гортензия",
+                "en": "Hortense"
+            }
+        ],
+        "photo": "b0c13158-eff7-4048-7807-babb46174400",
+        "photo_urls": [
+            "b0c13158-eff7-4048-7807-babb46174400"
+        ],
+        "products_spent": [
+            {
+                "quantity": 3.0,
+                "type": "FLOWER",
+                "type_id": "e47e8618-3647-478f-9da7-493da7c172a4"
+            },
+            {
+                "quantity": 7.0,
+                "type": "FLOWER",
+                "type_id": "32f3ae72-ec82-46d3-919b-9f7117e56dfb"
+            }
+        ],
+        "created_at": "2025-08-07T14:57:46.580999Z",
+        "updated_at": "2025-09-01T10:36:47.640919Z",
+        "deleted_at": null
+    },
+    {
+        "id": "6e1a7c8a-d7bc-4e79-8926-3fbb0d5644fe",
+        "bouquet_type_id": "f831dbe3-446f-4eb1-9ee1-5d771072a91b",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Nozik pushti gammadagi atirgul spreyi guldastasi,",
+            "ru": "Букет  из спрей роз в нежно розовой гамме, ",
+            "en": "A bouquet of rose spray in a delicate pink range,"
+        },
+        "description": {
+            "uz": "Och kukunli buta atirgullaridan yasalgan bu nafis guldasta go‘yo alohida lahzalar uchun yaratilgandek. U qulaylik va yengil romantika hissini beradi - sevgilisi, onasi yoki o‘qituvchisi uchun e’tiborning mukammal belgisi.",
+            "ru": "Этот изысканный букет из светло-пудровых кустовых роз будто создан для особенных моментов. Он дарит ощущение уюта и лёгкой романтики — идеальный знак внимания для любимой, мамы или учителя.",
+            "en": "This exquisite bouquet of light-powdered bush roses seems to be created for special moments. It gives a sense of comfort and light romance - an ideal sign of attention for your loved one, mother, or teacher."
+        },
+        "rating": 5.0,
+        "quantity": 497,
+        "price": 760000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "Roza Spray",
+                "ru": "Роза Спрей",
+                "en": "Rose Spray"
+            }
+        ],
+        "photo": "a13b6308-24ed-4dbb-c7ff-d763f4144d00",
+        "photo_urls": [
+            "a13b6308-24ed-4dbb-c7ff-d763f4144d00"
+        ],
+        "products_spent": [
+            {
+                "quantity": 20.0,
+                "type": "FLOWER",
+                "type_id": "25915bdc-4955-4249-aa2b-0812d46ff190"
+            }
+        ],
+        "created_at": "2025-08-07T14:02:36.980516Z",
+        "updated_at": "2025-08-16T06:56:45.398834Z",
+        "deleted_at": null
+    },
+    {
+        "id": "897f6cd8-c7e1-4dfd-b060-653f556ea330",
+        "bouquet_type_id": "b87cf1d9-254b-481b-b581-5b3f2c72854f",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Binafsharang gortenziya guldastasi",
+            "ru": "Букет из фиолетовый гортензии",
+            "en": "Violet Hortense Bouquet"
+        },
+        "description": {
+            "uz": "Siren gortenziyalaridan yasalgan katta guldasta nafislik, ertalabki xotirjamlik va nafosat timsolidir. Ohangga mos nafis o‘rash ranglarning nozik o‘yinini ta’kidlab, yengil xayolparastlik muhitini yaratadi. Nozik maqtov uchun eng yaxshi tanlov.",
+            "ru": "Объёмный букет из сиреневых гортензий — это воплощение нежности, утреннего спокойствия и изысканности. Элегантная обёртка в тон подчёркивает тонкую игру оттенков, создавая атмосферу лёгкой мечтательности. Идеальный выбор для утончённого комплимента.",
+            "en": "A voluminous bouquet of lilac honeysuckle is the embodiment of tenderness, morning calmness, and elegance. The elegant tone wrap emphasizes the subtle play of shades, creating an atmosphere of light fantasy. The perfect choice for refined compliment."
+        },
+        "rating": 5.0,
+        "quantity": 1297,
+        "price": 640000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent GUllari",
+                "en": "Tashkent Gullari"
+            },
+            {
+                "uz": "Gortenziya",
+                "ru": "Гортензия",
+                "en": "Hortense"
+            },
+            {
+                "uz": "Evkalipt",
+                "ru": "Эвкалипт",
+                "en": "Eucalyptus"
+            }
+        ],
+        "photo": "acdf9841-aaa9-4786-52cd-851232f0ce00",
+        "photo_urls": [
+            "acdf9841-aaa9-4786-52cd-851232f0ce00"
+        ],
+        "products_spent": [
+            {
+                "quantity": 7.0,
+                "type": "FLOWER",
+                "type_id": "32f3ae72-ec82-46d3-919b-9f7117e56dfb"
+            },
+            {
+                "quantity": 3.0,
+                "type": "FLOWER",
+                "type_id": "e47e8618-3647-478f-9da7-493da7c172a4"
+            }
+        ],
+        "created_at": "2025-08-07T14:56:48.284966Z",
+        "updated_at": "2025-08-14T11:38:06.446823Z",
+        "deleted_at": null
+    },
+    {
+        "id": "dc1dbe18-4154-4877-ac3d-fb3b8e7fad78",
+        "bouquet_type_id": "1d85cee6-4908-4127-a83e-b15f48780359",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Yashil dunyo",
+            "ru": "Зеленый мир",
+            "en": "Green world"
+        },
+        "description": {
+            "uz": "",
+            "ru": "",
+            "en": ""
+        },
+        "rating": 5.0,
+        "quantity": 8960,
+        "price": 890000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "Gerbera",
+                "ru": "Гербера",
+                "en": "Gerbera"
+            },
+            {
+                "uz": "Eustoma",
+                "ru": "Эустома",
+                "en": "Eustoma"
+            },
+            {
+                "uz": "Golland atirguli",
+                "ru": "Роза Голландская",
+                "en": "Rose of Holland"
+            }
+        ],
+        "photo": "836ab533-d00d-4db4-6a6b-f3dd1ff1a300",
+        "photo_urls": [
+            "836ab533-d00d-4db4-6a6b-f3dd1ff1a300"
+        ],
+        "products_spent": [
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "095f6836-098d-43ca-8dab-3b56602782eb"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "cb3b8973-cfca-4815-bc6a-c8c5f0c2ffa8"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "2a90f8d2-68bc-48ce-a57b-2d20799927ff"
+            }
+        ],
+        "created_at": "2025-08-14T09:35:17.812603Z",
+        "updated_at": "2025-08-14T11:31:21.5977Z",
+        "deleted_at": null
+    },
+    {
+        "id": "5fcf61f4-2f03-4472-93be-e3c0abb290c2",
+        "bouquet_type_id": "31885a4b-83b2-4815-90c3-d14b75663c99",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Minimalistik kompozitsiya",
+            "ru": "Минималистичная композиция",
+            "en": "Minimalistic composition"
+        },
+        "description": {
+            "uz": "",
+            "ru": "",
+            "en": ""
+        },
+        "rating": 5.0,
+        "quantity": 8960,
+        "price": 333000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "Gerbera",
+                "ru": "Гербера",
+                "en": "Gerbera"
+            },
+            {
+                "uz": "Eustoma",
+                "ru": "Эустома",
+                "en": "Eustoma"
+            },
+            {
+                "uz": "Golland atirguli",
+                "ru": "Роза Голландская",
+                "en": "Rose of Holland"
+            }
+        ],
+        "photo": "cb53bd20-04a1-40c5-4cde-7214fa02ce00",
+        "photo_urls": [
+            "cb53bd20-04a1-40c5-4cde-7214fa02ce00"
+        ],
+        "products_spent": [
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "095f6836-098d-43ca-8dab-3b56602782eb"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "cb3b8973-cfca-4815-bc6a-c8c5f0c2ffa8"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "2a90f8d2-68bc-48ce-a57b-2d20799927ff"
+            }
+        ],
+        "created_at": "2025-08-14T09:33:27.47235Z",
+        "updated_at": "2025-08-14T09:33:27.479647Z",
+        "deleted_at": null
+    },
+    {
+        "id": "0c46079a-8444-488b-a407-bbdb2ab67ea5",
+        "bouquet_type_id": "ebce31f6-0f1b-40ee-9a41-e58e4973c218",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Ko‘k gortenziya guldastasi",
+            "ru": "Букет из голубой гортензии",
+            "en": "Blue Hortense Bouquet"
+        },
+        "description": {
+            "uz": "Bu guldastaga terilgan havorang gortenziyalar yoz osmonining sokinligi va musaffoligini aks ettirgandek tuyuladi. Nafis tusga o‘rash kompozitsiyaning nafisligini ta’kidlaydi. Nozik go‘zallik va yengillikni qadrlaydigan insonlar uchun eng maqbul tanlov.",
+            "ru": "Небесно-голубые гортензии, собранные в этом букете, словно отражают спокойствие и чистоту летнего неба. Элегантная обёртка в тон подчёркивает изысканность композиции. Идеальный выбор для тех, кто ценит утончённую красоту и лёгкость.",
+            "en": "The sky-blue hortensions gathered in this bouquet seem to reflect the tranquility and purity of the summer sky. The elegant tone wrap emphasizes the sophistication of the composition. Ideal choice for those who appreciate refined beauty and ease."
+        },
+        "rating": 5.0,
+        "quantity": 1816,
+        "price": 550000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "Gortenziya",
+                "ru": "Гортензия",
+                "en": "Hortense"
+            },
+            {
+                "uz": "Flebodium",
+                "ru": "Флебодиум",
+                "en": "Phlebodium"
+            }
+        ],
+        "photo": "e18ef3e1-b867-479f-0774-e0ec581f0000",
+        "photo_urls": [
+            "e18ef3e1-b867-479f-0774-e0ec581f0000"
+        ],
+        "products_spent": [
+            {
+                "quantity": 5.0,
+                "type": "FLOWER",
+                "type_id": "32f3ae72-ec82-46d3-919b-9f7117e56dfb"
+            },
+            {
+                "quantity": 3.0,
+                "type": "FLOWER",
+                "type_id": "f6a6e595-5acd-4fc3-b104-d4a82f3bb504"
+            }
+        ],
+        "created_at": "2025-08-07T14:55:54.121183Z",
+        "updated_at": "2025-08-07T14:55:54.143505Z",
+        "deleted_at": null
+    },
+    {
+        "id": "559308e1-25bc-491e-b8cc-79b7782e5dc2",
+        "bouquet_type_id": "05373aaa-9d3c-428b-8a4b-9a29f72d6e4e",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Issiq-to‘q sariq rangdagi pion atirgullar guldastasi",
+            "ru": "Букет из пионовидных роз в тепло-оранжевой гамме",
+            "en": "A bouquet of peony roses in a warm orange range"
+        },
+        "description": {
+            "uz": "Qip-qizil butasimon atirgullar guldastasi yoz oqshomining taftini o‘ziga singdirgandek bo‘ldi. U g‘ayratli va sersuv bo‘lib, quvonch, ilhom va iliqlik kayfiyatini ifodalaydi.",
+            "ru": "Букет из ярко-оранжевых кустовых роз словно вобрал в себя тепло летнего вечера. Энергичный и сочный, он передаёт настроение радости, вдохновения и теплоты.",
+            "en": "A bouquet of bright orange bush roses seemed to absorb the warmth of a summer evening. Energetic and juicy, it conveys a mood of joy, inspiration, and warmth."
+        },
+        "rating": 5.0,
+        "quantity": 989,
+        "price": 430000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "Pionid atirgul",
+                "ru": "Роза Пионовидная",
+                "en": "Pioneer Rose"
+            }
+        ],
+        "photo": "073214c4-879f-4ef9-8eac-0fd134afe700",
+        "photo_urls": [
+            "073214c4-879f-4ef9-8eac-0fd134afe700"
+        ],
+        "products_spent": [
+            {
+                "quantity": 9.0,
+                "type": "FLOWER",
+                "type_id": "8c1853a3-acb5-49ba-9a84-9dcb38bfdec8"
+            }
+        ],
+        "created_at": "2025-08-07T13:59:49.510723Z",
+        "updated_at": "2025-08-07T13:59:49.51962Z",
+        "deleted_at": null
+    },
+    {
+        "id": "820965e9-d1d1-459c-9588-62dde8e01c45",
+        "bouquet_type_id": "95c4f57c-a65a-4a5d-b989-ce15ac1735f3",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Shaftoli tongi",
+            "ru": "Персиковый рассвет",
+            "en": "Peachy Dawn"
+        },
+        "description": {
+            "uz": "Bu guldasta go‘yo ufqni iliqlik va shinamlik bilan nafis o‘rab olgan quyoshning ilk tonggi nurlarining aksidir. Shaftoli atirgullari va qaymoqrang xrizantemalarning gulbarglari mayin ranglarning havo girdobiga o‘ralib, xotirjamlik va uyg‘unlik hissini uyg‘otadi. Nafislik va nafislikni qadrlaydigan insonlar uchun ajoyib sovg‘a. U mehr, g‘amxo‘rlik va cheksiz iliqlikni o‘zida mujassam etib, eng yorqin tuyg‘ularni yodga soladi",
+            "ru": "Этот букет словно отражение первых утренних лучей солнца, нежно окутывающих горизонт теплом и уютом. Лепестки персиковых роз и кремовых хризантем сплетаются в воздушный вихрь мягких оттенков, создавая ощущение спокойствия и гармонии.\n\nИдеальный подарок для тех, кто ценит элегантность и утонченность. Он несёт в себе нежность, заботу и бесконечную теплоту, напоминая о самых светлых чувствах",
+            "en": "This bouquet is like a reflection of the first morning sun's rays gently embracing the horizon with warmth and comfort. The petals of peach roses and cream chrysanthemums intertwine into an airy whirlpool of soft shades, creating a sense of calmness and harmony. An ideal gift for those who appreciate elegance and refinement. It carries tenderness, care, and endless warmth, reminding of the brightest feelings."
+        },
+        "rating": 5.0,
+        "quantity": 8967,
+        "price": 850000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "Gortenziya",
+                "ru": "Гортензия",
+                "en": "Hortense"
+            },
+            {
+                "uz": "chinnigul",
+                "ru": "Гвоздика",
+                "en": "Cloves"
+            },
+            {
+                "uz": "Bir boshli atirgul",
+                "ru": "Роза Одноголовая ",
+                "en": "One-Head Rose"
+            },
+            {
+                "uz": "Butazor xrizantema",
+                "ru": "Хризантема Кустовая",
+                "en": "Chrysanthemum Bush"
+            }
+        ],
+        "photo": "6e896ef1-7559-479e-2ec9-163f98985200",
+        "photo_urls": [
+            "6e896ef1-7559-479e-2ec9-163f98985200"
+        ],
+        "products_spent": [
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "32f3ae72-ec82-46d3-919b-9f7117e56dfb"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "e5a524b8-8992-4f41-844b-a708d6708e57"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "896a699a-2e4a-42a1-b551-6cd7ca7f4a07"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "da73713e-a87d-4c6f-8a67-5b2e485b623d"
+            }
+        ],
+        "created_at": "2025-02-12T01:13:23Z",
+        "updated_at": "2025-02-15T01:20:43Z",
+        "deleted_at": null
+    },
+    {
+        "id": "53e52fe1-964a-4235-bc3c-1a5b5e9ffdc7",
+        "bouquet_type_id": "7371249e-eda4-45f4-9b30-82fcbfa5a391",
+        "merchant_id": "0b575adc-df04-415e-858c-ff0426aaf168",
+        "branch_id": "59e7f8b8-f414-4c57-8395-764a8ef0e8cd",
+        "name": {
+            "uz": "Lavanda ilhomi",
+            "ru": "Лавандовое вдохновение",
+            "en": "Lavender inspiration"
+        },
+        "description": {
+            "uz": "Bu guldasta havosi gullar ifori va orzularning yengil shabadasi bilan to‘lgan bepoyon lavanda dalalari bo‘ylab sayrga o‘xshaydi. Nozik siren gortenziyalari, nafis atirgullar va xrizantemalarning mayin ranglari xotirjamlik va romantika tuyg‘usini uyg‘otadi. Tasma ko‘rinishidagi chuqur ko‘k aksent kompozitsiyaning nafisligini ta’kidlab, nafislik qo‘shadi. Bunday guldasta muhabbat izhori, qalb sovg‘asi va eng nozik orzuning mujassamidir",
+            "ru": "Этот букет – словно прогулка по бескрайним полям лаванды, где воздух наполнен ароматом цветов и легким ветерком грёз. Нежные сиреневые гортензии, утончённые розы и мягкие оттенки хризантем создают ощущение безмятежности и романтики.\n\nГлубокий синий акцент в виде ленты добавляет элегантности, подчёркивая изысканность композиции. Такой букет – это признание в любви, подарок для души и воплощение самой утончённой мечты",
+            "en": "This bouquet is like a stroll through the endless lavender fields, where the air is filled with the scent of flowers and a gentle breeze of dreams. Delicate lilac hortensions, delicate roses, and soft shades of chrysanthemums create a sense of serenity and romance. The deep blue accent in the form of a ribbon adds elegance, emphasizing the sophistication of the composition. Such a bouquet is a confession of love, a gift for the soul, and the embodiment of the most refined dream."
+        },
+        "rating": 5.0,
+        "quantity": 9084,
+        "price": 1650000,
+        "sold_online": true,
+        "custom": false,
+        "state": "PRIMARY",
+        "tags": [
+            {
+                "uz": "Toshkent gullari",
+                "ru": "Toshkent Gullari",
+                "en": "Tashkent Flowers"
+            },
+            {
+                "uz": "Gortenziya",
+                "ru": "Гортензия",
+                "en": "Hortense"
+            },
+            {
+                "uz": "Eustoma",
+                "ru": "Эустома",
+                "en": "Eustoma"
+            },
+            {
+                "uz": "Xrizantema",
+                "ru": "Хризантема ",
+                "en": "Chrysanthemum"
+            },
+            {
+                "uz": "chinnigul",
+                "ru": "Гвоздика",
+                "en": "Cloves"
+            },
+            {
+                "uz": "Metiol",
+                "ru": "Матиола",
+                "en": "Mathiol"
+            },
+            {
+                "uz": "Alstromeriya",
+                "ru": "Альстромерия",
+                "en": "Alstromeria"
+            },
+            {
+                "uz": "Bir boshli atirgul",
+                "ru": "Роза Одноголовая ",
+                "en": "One-Head Rose"
+            },
+            {
+                "uz": "Limonium",
+                "ru": "Лимониум",
+                "en": "Lemonium"
+            }
+        ],
+        "photo": "bebb28de-9142-40bd-1bb0-5ad1465b2e00",
+        "photo_urls": [
+            "bebb28de-9142-40bd-1bb0-5ad1465b2e00"
+        ],
+        "products_spent": [
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "32f3ae72-ec82-46d3-919b-9f7117e56dfb"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "cb3b8973-cfca-4815-bc6a-c8c5f0c2ffa8"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "991c78bd-de6e-4a24-bcc4-b7a43f85b9de"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "e5a524b8-8992-4f41-844b-a708d6708e57"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "e3c8aa24-4fe6-4035-92c9-17214101a478"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "2e8ff612-050d-4a58-9127-18ad0f78e775"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "896a699a-2e4a-42a1-b551-6cd7ca7f4a07"
+            },
+            {
+                "quantity": 1.0,
+                "type": "FLOWER",
+                "type_id": "bf53a8b7-fb09-42e6-82cb-9b4f3410bc50"
+            }
+        ],
+        "created_at": "2025-02-12T01:10:51Z",
+        "updated_at": "2025-02-15T01:20:43Z",
+        "deleted_at": null
+    }
+]

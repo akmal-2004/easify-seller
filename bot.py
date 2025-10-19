@@ -6,7 +6,7 @@ import requests
 from typing import Optional
 from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters import Command
-from aiogram.types import Message, InputMediaPhoto
+from aiogram.types import Message, InputMediaPhoto, InlineKeyboardMarkup, InlineKeyboardButton
 from dotenv import load_dotenv
 from agent import AISellerAgent
 from logger_config import get_logger
@@ -218,10 +218,28 @@ Need more help? Just ask! 😊"""
         
         return text
 
+    def create_payment_keyboard(self, payment_url: str) -> InlineKeyboardMarkup:
+        """Create inline keyboard with payment button."""
+        keyboard = InlineKeyboardMarkup(inline_keyboard=[
+            [InlineKeyboardButton(text="💳 Pay Now", url=payment_url)]
+        ])
+        return keyboard
+
+    def extract_payment_url(self, text: str) -> Optional[str]:
+        """Extract payment URL from text if present."""
+        # Look for Click payment URLs - more precise pattern to avoid HTML artifacts
+        payment_pattern = r'https://my\.click\.uz/services/pay/\?service_id=\d+&merchant_id=\d+&amount=[\d.]+&transaction_param=[a-f0-9\-]+&return_url=https://t\.me/[a-zA-Z0-9_]+'
+        match = re.search(payment_pattern, text)
+        return match.group(0) if match else None
+
     async def send_response_with_photos(self, message: Message, response: str):
         """Send response with photos if URLs are found."""
         user_id = message.from_user.id
         try:
+            # Check for payment URL first
+            payment_url = self.extract_payment_url(response)
+            keyboard = self.create_payment_keyboard(payment_url) if payment_url else None
+            
             # Extract photo URLs from response - more precise regex to avoid HTML tags
             photo_urls = re.findall(r'https://imagedelivery\.net/[a-zA-Z0-9\-]+/[a-zA-Z0-9\-]+/public', response)
             self.logger.debug(f"Found {len(photo_urls)} photo URLs for user {user_id}")
@@ -258,7 +276,8 @@ Need more help? Just ask! 😊"""
                         await message.answer_photo(
                             photo=photo_urls[0],
                             caption=response,
-                            parse_mode="HTML"
+                            parse_mode="HTML",
+                            reply_markup=keyboard
                         )
                     else:
                         # Multiple photos in media group
@@ -277,6 +296,13 @@ Need more help? Just ask! 😊"""
                                 media_group.append(InputMediaPhoto(media=photo_url))
                         
                         await message.answer_media_group(media=media_group)
+                        
+                        # Send payment button separately if there's a payment URL
+                        if payment_url:
+                            await message.answer(
+                                "💳 Click the button below to complete your purchase:",
+                                reply_markup=keyboard
+                            )
                     
                     self.logger.info(f"Successfully sent photos to user {user_id}")
                     
@@ -284,33 +310,37 @@ Need more help? Just ask! 😊"""
                     self.logger.warning(f"Failed to send photos to user {user_id}: {photo_error}")
                     # If photos fail, try HTML formatting first, then plain text
                     try:
-                        await message.answer(response, parse_mode="HTML")
+                        await message.answer(response, parse_mode="HTML", reply_markup=keyboard)
                     except Exception as html_error:
                         self.logger.warning(f"HTML formatting failed, sending plain text: {html_error}")
                         # If HTML fails, send plain text
                         plain_text = self.strip_html_formatting(response)
-                        await message.answer(plain_text)
+                        await message.answer(plain_text, reply_markup=keyboard)
             else:
                 # No photos found, try HTML formatting first, then plain text
                 self.logger.debug(f"No photos found, sending text only to user {user_id}")
                 try:
-                    await message.answer(response, parse_mode="HTML")
+                    await message.answer(response, parse_mode="HTML", reply_markup=keyboard)
                 except Exception as html_error:
                     self.logger.warning(f"HTML formatting failed, sending plain text: {html_error}")
                     # If HTML fails, send plain text
                     plain_text = self.strip_html_formatting(response)
-                    await message.answer(plain_text)
+                    await message.answer(plain_text, reply_markup=keyboard)
                 
         except Exception as e:
             self.logger.error(f"Error in send_response_with_photos for user {user_id}: {e}", exc_info=True)
             # Last resort: try HTML first, then plain text
             try:
-                await message.answer(response, parse_mode="HTML")
+                payment_url = self.extract_payment_url(response)
+                keyboard = self.create_payment_keyboard(payment_url) if payment_url else None
+                await message.answer(response, parse_mode="HTML", reply_markup=keyboard)
             except Exception as html_error:
                 self.logger.warning(f"HTML formatting failed in fallback, sending plain text: {html_error}")
                 # If HTML fails, send plain text
                 plain_text = self.strip_html_formatting(response)
-                await message.answer(plain_text)
+                payment_url = self.extract_payment_url(plain_text)
+                keyboard = self.create_payment_keyboard(payment_url) if payment_url else None
+                await message.answer(plain_text, reply_markup=keyboard)
     
     async def start_polling(self):
         """Start the bot polling."""

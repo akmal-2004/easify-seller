@@ -2,7 +2,7 @@ import litellm
 import json
 import os
 from typing import Dict, List, Any, Optional
-from search_tools import search_products_by_text, search_products_by_photo, format_price, get_product_name, get_product_description
+from search_tools import search_products_by_text, search_products_by_photo, format_price, get_product_name, get_product_description, generate_payment_url
 from logger_config import get_logger
 
 class AISellerAgent:
@@ -80,10 +80,37 @@ class AISellerAgent:
                         "required": ["photo_path"]
                     }
                 }
+            },
+            {
+                "type": "function",
+                "function": {
+                    "name": "generate_payment_link",
+                    "description": "Generate a payment link for a specific product when customer wants to buy",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "price": {
+                                "type": "number",
+                                "description": "Price of the product in the smallest currency units"
+                            }
+                        },
+                        "required": ["price"]
+                    }
+                }
             }
         ]
         
         self.system_prompt = f"""You are an expert flower bouquet sales agent with extensive knowledge of floral arrangements, occasions, and customer preferences. You speak like a real salesperson - friendly, knowledgeable, and persuasive.
+
+FORMATTING RULES:
+!!! ALWAYS USE ONLY TELEGRAM SUPPORTED HTML MARKDOWN LISTED BELOW:
+<blockquote>quote</blockquote>
+<b>bold</b> (do not use **text**, just use <b>text</b>)
+<i>italic</i>
+<u>underline</u>
+<s>strike</s>
+<a href="photo_url">photo name</a>
+!!! DO NOT USE ANY OTHER MARKDOWN LIKE: **, #, <br> and etc...
 
 Your personality:
 - Proactive and helpful - ask clarifying questions to understand customer needs
@@ -105,20 +132,22 @@ When customers ask about bouquets:
 1. First understand their needs (occasion, recipient, preferences, budget)
 2. DO NOT ask too many questions. Show products more often.
 3. DO NOT try to get a lot of information if he is strugling to describe his needs. Just show products.
-2. Search for relevant products using the available functions
-3. Present results in an engaging, persuasive way
-4. Highlight key features like flower types, colors, price, and why it's perfect for their needs
-5. Ask follow-up questions to narrow down choices if needed
+4. Search for relevant products using the available functions
+5. Present results in an engaging, persuasive way
+6. Highlight key features like flower types, colors, price, and why it's perfect for their needs
+7. Ask follow-up questions to narrow down choices if needed
 
-FORMATTING RULES:
-!!! ALWAYS USE ONLY TELEGRAM SUPPORTED HTML MARKDOWN LISTED BELOW:
-<blockquote>quote</blockquote>
-<b>bold</b> (do not use **text**, just use <b>text</b>)
-<i>italic</i>
-<u>underline</u>
-<s>strike</s>
-<a href="photo_url">photo name</a>
-!!! DO NOT USE ANY OTHER MARKDOWN LIKE: **, #, <br> and etc...
+When customers upload photos:
+1. System will automatically search for similar bouquets based on their photo
+2. Present the similar products in an engaging way
+3. Explain why each bouquet matches their photo
+4. Highlight similarities in colors, flower types, or style
+5. Ask if they want to see variations or have specific preferences
+
+When customers want to buy:
+2. Provide the payment link with the correct amount
+4. Be helpful and reassuring about the purchase
+
 - Always format prices properly and include relevant details like flower types, colors, and occasion appropriateness
 - When presenting products, make sure to include the photo URLs so customers can see what they look like
 
@@ -181,6 +210,48 @@ Default language for responses: {default_language}"""
             
             # Add user message to context
             self.add_to_context(user_id, "user", message)
+            
+            # If photo is provided, automatically search by photo first
+            if photo_path:
+                self.logger.info(f"Photo provided for user {user_id}, performing photo search")
+                try:
+                    # Search by photo
+                    results = search_products_by_photo(
+                        photo_path=photo_path,
+                        min_price=None,
+                        max_price=None,
+                        k=3
+                    )
+                    
+                    if results:
+                        search_results = self.format_search_results_for_ai(results)
+                        self.logger.info(f"Photo search completed for user {user_id}, found {len(results)} results")
+                        
+                        # Add photo search results to context
+                        self.add_to_context(user_id, "assistant", f"Tool results:\n\n{search_results}")
+                        
+                        # Now let the AI process the results and provide a natural response
+                        messages = [{"role": "system", "content": self.system_prompt}]
+                        messages.extend(self.get_conversation_context(user_id))
+                        
+                        # Make API call without tools since we already have results
+                        self.logger.debug(f"Making LLM API call to process photo search results for user {user_id}")
+                        response = await litellm.acompletion(
+                            model="gpt-4o",
+                            messages=messages,
+                            api_key=self.openai_api_key
+                        )
+                        
+                        ai_response = response.choices[0].message.content
+                        self.logger.info(f"AI processed photo search results for user {user_id}")
+                        return ai_response
+                    else:
+                        self.logger.warning(f"No results found for photo search for user {user_id}")
+                        # Continue with normal text processing
+                        
+                except Exception as photo_error:
+                    self.logger.error(f"Photo search failed for user {user_id}: {photo_error}", exc_info=True)
+                    # Continue with normal text processing
             
             # Prepare messages for LLM
             messages = [{"role": "system", "content": self.system_prompt}]
@@ -254,6 +325,25 @@ Default language for responses: {default_language}"""
                                 self.logger.error(f"Error in photo search for user {user_id}: {search_error}", exc_info=True)
                                 error_result = f"Error: Failed to search products by photo - {str(search_error)}"
                                 self.add_to_context(user_id, "tool", error_result, tool_call_id=tool_call.id)
+                    
+                    elif function_name == "generate_payment_link":
+                        try:
+                            price = function_args.get("price")
+                            
+                            # Generate payment URL
+                            payment_url = generate_payment_url(price)
+                            
+                            # Format the payment result for AI
+                            payment_result = f"Payment link generated (Price: {price} uzs):\n{payment_url}"
+                            
+                            self.logger.info(f"Payment link generated for user {user_id}: {price} uzs")
+                            
+                            # Add tool result to context
+                            self.add_to_context(user_id, "tool", payment_result, tool_call_id=tool_call.id)
+                        except Exception as payment_error:
+                            self.logger.error(f"Error generating payment link for user {user_id}: {payment_error}", exc_info=True)
+                            error_result = f"Error: Failed to generate payment link - {str(payment_error)}"
+                            self.add_to_context(user_id, "tool", error_result, tool_call_id=tool_call.id)
                 
                 # Make another API call to get AI's response to the tool results
                 self.logger.debug(f"Making follow-up LLM API call for user {user_id}")

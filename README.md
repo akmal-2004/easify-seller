@@ -17,6 +17,13 @@ An intelligent Telegram bot that acts as a proactive sales agent, helping custom
 - **Vector Search** - Uses ChromaDB for semantic similarity matching
 - **Visual Results** - Automatically displays product photos with search results
 
+### 💳 Payment Integration
+- **Click Payment** - Secure payment processing via Click.uz
+- **Automatic Pricing** - Dynamic price calculation based on product selection
+- **Payment Links** - Direct payment URLs generated for each product
+- **Payment Buttons** - One-click payment buttons in Telegram messages
+- **Return Handling** - Seamless return to bot after payment completion
+
 ### 💬 Telegram Bot Features
 - `/start` - Welcome message and introduction
 - `/help` - Usage instructions and examples
@@ -118,6 +125,19 @@ Bot: [Sends similar photos] "What a beautiful bouquet! I can see you're drawn to
 ```
 User: "Show me bouquets under $50"
 Bot: [Sends photos] "I'll find some wonderful bouquets within your budget! Here are options that give you great value..."
+```
+
+**Purchase Flow:**
+```
+User: "I want to buy the red roses bouquet"
+Bot: "Excellent choice! 🌹 The 'Red Roses Romance' bouquet is perfect for expressing your love.
+
+Price: 850,000 uzs
+
+Here's your secure payment link:
+https://my.click.uz/services/pay/?service_id=30067&merchant_id=22535&amount=850000.00&transaction_param=165884&return_url=https://t.me/easify_seller_bot
+
+[💳 Pay Now] <- Clickable button"
 ```
 
 ## Configuration

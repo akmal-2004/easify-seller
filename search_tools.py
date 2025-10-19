@@ -171,3 +171,22 @@ def get_product_description(meta, language='en'):
     """Get product description in specified language."""
     desc_data = meta.get('description', {})
     return desc_data.get(language, desc_data.get('en', 'No description available'))
+
+def generate_payment_url(price):
+    """Generate Click payment URL with the specified amount."""
+    # Base URL with fixed parameters
+    base_url = "https://my.click.uz/services/pay/"
+    
+    # Fixed parameters
+    service_id = "30067"
+    merchant_id = "22535"
+    transaction_param = "165884"
+    return_url = "https://t.me/easify_seller_bot"
+    
+    # Format amount to 2 decimal places
+    amount = f"{price:.2f}"
+    
+    # Build the complete URL
+    payment_url = f"{base_url}?service_id={service_id}&merchant_id={merchant_id}&amount={amount}&transaction_param={transaction_param}&return_url={return_url}"
+    
+    return payment_url

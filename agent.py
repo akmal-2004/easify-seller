@@ -145,7 +145,7 @@ When customers upload photos:
 5. Ask if they want to see variations or have specific preferences
 
 When customers want to buy:
-2. Provide the payment link with the correct amount
+2. Provide the payment link with the correct amount (just integer without any symbols and floats)
 4. Be helpful and reassuring about the purchase
 
 - Always format prices properly and include relevant details like flower types, colors, and occasion appropriateness

@@ -8,8 +8,8 @@ from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters import Command
 from aiogram.types import Message, InputMediaPhoto, InlineKeyboardMarkup, InlineKeyboardButton
 from dotenv import load_dotenv
-from agent import AISellerAgent
-from logger_config import get_logger
+from .agent import AISellerAgent
+from .logger_config import get_logger
 
 # Load environment variables
 load_dotenv()

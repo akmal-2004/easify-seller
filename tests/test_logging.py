@@ -4,7 +4,7 @@ Test script to verify logging functionality
 """
 
 import os
-from logger_config import setup_logger
+from app.logger_config import setup_logger
 
 def test_logging():
     """Test logging functionality."""

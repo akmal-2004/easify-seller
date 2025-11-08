@@ -4,7 +4,7 @@ import json
 import os
 from PIL import Image
 from io import BytesIO
-from logger_config import get_logger
+from .logger_config import get_logger
 
 # Initialize logger
 logger = get_logger("search_tools")

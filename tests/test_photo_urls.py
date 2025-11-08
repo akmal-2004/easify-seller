@@ -4,7 +4,7 @@ Test script to verify photo URLs are accessible
 """
 
 import requests
-from search_tools import search_products_by_text
+from app.search_tools import search_products_by_text
 
 def test_photo_urls():
     """Test if photo URLs are accessible."""

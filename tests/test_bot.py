@@ -7,7 +7,7 @@ Run this to test the bot functionality without starting the full telegram bot
 import asyncio
 import os
 from dotenv import load_dotenv
-from agent import AISellerAgent
+from app.agent import AISellerAgent
 
 async def test_agent():
     """Test the AI agent functionality."""

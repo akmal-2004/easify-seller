@@ -2,8 +2,8 @@ import asyncio
 import os
 import sys
 from dotenv import load_dotenv
-from bot import TelegramBot
-from logger_config import setup_logger
+from app.bot import TelegramBot
+from app.logger_config import setup_logger
 
 def main():
     """Main entry point for the AI Seller Bot."""

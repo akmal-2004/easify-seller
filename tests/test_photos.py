@@ -6,7 +6,7 @@ Test script to verify photo functionality
 import asyncio
 import os
 from dotenv import load_dotenv
-from search_tools import search_products_by_text, get_product_photo_url, get_product_photo_urls
+from app.search_tools import search_products_by_text
 
 def test_photo_extraction():
     """Test photo extraction from search results."""
@@ -34,20 +34,12 @@ def test_photo_extraction():
         print(f"Price: ${price:.2f}")
         
         # Test photo extraction
-        main_photo = get_product_photo_url(meta)
-        all_photos = get_product_photo_urls(meta)
+        main_photo = meta.get('photo_url')
         
         if main_photo:
             print(f"Main Photo: {main_photo}")
         else:
             print("❌ No main photo found")
-        
-        if all_photos:
-            print(f"All Photos: {len(all_photos)} photos")
-            for j, photo in enumerate(all_photos[:3]):  # Show first 3
-                print(f"  Photo {j+1}: {photo}")
-        else:
-            print("❌ No photos found")
         
         print("-" * 30)
 

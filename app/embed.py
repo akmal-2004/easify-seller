@@ -1,6 +1,5 @@
 from sentence_transformers import SentenceTransformer
 import chromadb
-from chromadb.config import Settings
 import json  # Assuming your DB is a JSON list of bouquets
 
 # Load separate models
@@ -10,7 +9,7 @@ client = chromadb.PersistentClient(path="./chroma_db")
 collection = client.get_or_create_collection(name="bouquets")
 
 # Load your bouquet DB (e.g., from file or API)
-bouquets = json.load(open('bouquets.json'))  # List of dicts like your sample
+bouquets = json.load(open('data/bouquets.json'))  # List of dicts like your sample
 
 def embed_text(bouquet):
     tags_en = [tag['en'] for tag in bouquet['tags']]

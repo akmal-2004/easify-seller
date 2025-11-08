@@ -2,8 +2,8 @@ import litellm
 import json
 import os
 from typing import Dict, List, Any, Optional
-from search_tools import search_products_by_text, search_products_by_photo, format_price, get_product_name, get_product_description, generate_payment_url
-from logger_config import get_logger
+from .search_tools import search_products_by_text, search_products_by_photo, format_price, get_product_name, get_product_description, generate_payment_url
+from .logger_config import get_logger
 
 class AISellerAgent:
     def __init__(self, openai_api_key: str, default_language: str = 'en'):

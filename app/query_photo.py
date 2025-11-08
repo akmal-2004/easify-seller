@@ -1,6 +1,5 @@
 from sentence_transformers import SentenceTransformer
 import chromadb
-from chromadb.config import Settings
 import json  # Assuming your DB is a JSON list of bouquets
 import requests
 from PIL import Image
@@ -11,7 +10,7 @@ client = chromadb.PersistentClient(path="./chroma_db")
 collection = client.get_or_create_collection(name="bouquets")
 
 def photo_query(image_url, min_price=None, max_price=None, k=5):
-    response = requests.get(image_url)
+    response = requests.get(image_url, timeout=30)
     query_image = Image.open(BytesIO(response.content)).convert('RGB')
     query_emb = image_model.encode(query_image).tolist()
     
@@ -37,7 +36,7 @@ def photo_query(image_url, min_price=None, max_price=None, k=5):
     
     # Similar dedupe as above, but since photo docs link to bouquets, group by bouquet_id
     bouquet_scores = {}
-    for doc_ids, distances, metadatas in zip(results['ids'], results['distances'], results['metadatas']):
+    for doc_ids, distances, metadatas in zip(results['ids'], results['distances'], results['metadatas'], strict=True):
         for i in range(len(doc_ids)):
             meta = metadatas[i]
             bid = meta['bouquet_id']

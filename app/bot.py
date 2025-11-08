@@ -2,7 +2,8 @@ import asyncio
 import os
 import tempfile
 import re
-from typing import Optional
+import time
+from typing import Optional, Dict, Set
 from aiogram import Bot, Dispatcher, F
 from aiogram.filters import Command
 from aiogram.types import Message, InputMediaPhoto, InlineKeyboardMarkup, InlineKeyboardButton
@@ -22,6 +23,18 @@ class TelegramBot:
         
         # Track users who have sent their first message
         self.first_message_sent = set()
+
+        # Track last message time per user (when user sent message)
+        self.last_message_time: Dict[int, float] = {}
+
+        # Track last bot response time per user (when bot sent message)
+        self.last_bot_response_time: Dict[int, float] = {}
+
+        # Track pending follow-up tasks per user
+        self.pending_followups: Dict[int, Dict[str, asyncio.Task]] = {}
+
+        # Track which follow-ups have been sent per user
+        self.sent_followups: Dict[int, Set[str]] = {}
 
         if not self.bot_token or not self.openai_api_key:
             self.logger.error("Missing required environment variables: TELEGRAM_BOT_TOKEN and OPENAI_API_KEY")
@@ -136,6 +149,9 @@ Need more help? Just ask! 😊"""
                     await asyncio.sleep(15)
                     self.logger.info(f"15 second delay completed for user {user_id}, processing with AI...")
 
+                # Update last message time and cancel pending follow-ups
+                self.update_user_activity(user_id)
+
                 # Get the highest resolution photo
                 photo = message.photo[-1]
                 self.logger.debug(f"Photo file_id: {photo.file_id}, size: {photo.file_size}")
@@ -164,6 +180,10 @@ Need more help? Just ask! 😊"""
                 
                 # Check if response contains photo URLs and send them
                 await self.send_response_with_photos(message, response)
+
+                # Update bot response time and schedule follow-up messages
+                self.update_bot_response_time(user_id)
+                self.schedule_followups(user_id)
                 
             except Exception as e:
                 self.logger.error(f"Error processing photo from user {user_id}: {e}", exc_info=True)
@@ -210,6 +230,9 @@ Need more help? Just ask! 😊"""
                     await asyncio.sleep(15)
                     self.logger.info(f"15 second delay completed for user {user_id}, processing with AI...")
 
+                # Update last message time and cancel pending follow-ups
+                self.update_user_activity(user_id)
+
                 # Send typing indicator
                 await self.bot.send_chat_action(user_id, "typing")
 
@@ -253,6 +276,10 @@ Need more help? Just ask! 😊"""
                 # Check if response contains photo URLs and send them
                 await self.send_response_with_photos(message, response)
 
+                # Update bot response time and schedule follow-up messages
+                self.update_bot_response_time(user_id)
+                self.schedule_followups(user_id)
+
             except Exception as e:
                 self.logger.error(f"Error processing voice message from user {user_id}: {e}", exc_info=True)
                 # Try HTML first, then plain text for error message
@@ -290,6 +317,9 @@ Need more help? Just ask! 😊"""
                     await asyncio.sleep(15)
                     self.logger.info(f"15 second delay completed for user {user_id}, processing with AI...")
 
+                # Update last message time and cancel pending follow-ups
+                self.update_user_activity(user_id)
+
                 # Send typing indicator
                 await self.bot.send_chat_action(user_id, "typing")
                 
@@ -299,6 +329,10 @@ Need more help? Just ask! 😊"""
                 
                 # Check if response contains photo URLs and send them
                 await self.send_response_with_photos(message, response)
+
+                # Update bot response time and schedule follow-up messages
+                self.update_bot_response_time(user_id)
+                self.schedule_followups(user_id)
                 
             except Exception as e:
                 self.logger.error(f"Error processing text message from user {user_id}: {e}", exc_info=True)
@@ -459,6 +493,125 @@ Need more help? Just ask! 😊"""
                 payment_url = self.extract_payment_url(plain_text)
                 keyboard = self.create_payment_keyboard(payment_url) if payment_url else None
                 await message.answer(plain_text, reply_markup=keyboard)
+
+    def update_user_activity(self, user_id: int):
+        """Update last message time and cancel pending follow-ups."""
+        self.last_message_time[user_id] = time.time()
+
+        # Cancel any pending follow-up tasks
+        if user_id in self.pending_followups:
+            for followup_type, task in self.pending_followups[user_id].items():
+                if not task.done():
+                    task.cancel()
+                    self.logger.debug(f"Cancelled pending {followup_type} follow-up for user {user_id}")
+            self.pending_followups[user_id] = {}
+
+        # Reset sent follow-ups when user is active
+        if user_id in self.sent_followups:
+            self.sent_followups[user_id] = set()
+
+    def update_bot_response_time(self, user_id: int):
+        """Update last bot response time when bot sends a message."""
+        self.last_bot_response_time[user_id] = time.time()
+
+    def schedule_followups(self, user_id: int):
+        """Schedule follow-up messages for inactive users."""
+        # Initialize pending followups dict for user if needed
+        if user_id not in self.pending_followups:
+            self.pending_followups[user_id] = {}
+
+        # Initialize sent followups set for user if needed
+        if user_id not in self.sent_followups:
+            self.sent_followups[user_id] = set()
+
+        # Schedule first follow-up: 20 seconds
+        if "first" not in self.pending_followups[user_id] or self.pending_followups[user_id]["first"].done():
+            task1 = asyncio.create_task(self.send_followup(user_id, "first", 20))
+            self.pending_followups[user_id]["first"] = task1
+
+        # Schedule second follow-up: 5 minutes (300 seconds)
+        if "second" not in self.pending_followups[user_id] or self.pending_followups[user_id]["second"].done():
+            task2 = asyncio.create_task(self.send_followup(user_id, "second", 300))
+            self.pending_followups[user_id]["second"] = task2
+
+        # Schedule third follow-up: 5 hours (18000 seconds)
+        if "third" not in self.pending_followups[user_id] or self.pending_followups[user_id]["third"].done():
+            task3 = asyncio.create_task(self.send_followup(user_id, "third", 18000))
+            self.pending_followups[user_id]["third"] = task3
+
+    async def send_followup(self, user_id: int, followup_type: str, delay_seconds: float):
+        """Send a follow-up message after delay if user hasn't responded."""
+        try:
+            # Wait for the delay
+            await asyncio.sleep(delay_seconds)
+
+            # Check if user has sent a message since the bot's last response
+            if user_id in self.last_bot_response_time:
+                bot_response_time = self.last_bot_response_time[user_id]
+
+                # If user responded after bot's last message, don't send follow-up
+                if user_id in self.last_message_time:
+                    user_message_time = self.last_message_time[user_id]
+                    if user_message_time > bot_response_time:
+                        self.logger.info(f"Skipping {followup_type} follow-up for user {user_id} - user responded after bot's message")
+                        return
+
+            # Check if this follow-up was already sent
+            if user_id in self.sent_followups and followup_type in self.sent_followups[user_id]:
+                self.logger.debug(f"{followup_type} follow-up already sent for user {user_id}")
+                return
+
+            # Mark this follow-up as sent
+            if user_id not in self.sent_followups:
+                self.sent_followups[user_id] = set()
+            self.sent_followups[user_id].add(followup_type)
+
+            self.logger.info(f"Sending {followup_type} follow-up to user {user_id} after {delay_seconds} seconds")
+
+            # Create context message about user not responding
+            time_description = self._format_time_description(delay_seconds)
+            context_message = f"user did not answer in {time_description}"
+
+            # Use the agent's process_message to generate follow-up response
+            # This ensures it uses the same conversation context
+            try:
+                followup_message = await self.agent.process_message(user_id, context_message)
+
+                if followup_message:
+                    # Send the follow-up message
+                    await self.bot.send_message(user_id, followup_message, parse_mode="HTML")
+                    self.logger.info(f"Follow-up message sent to user {user_id}")
+                else:
+                    self.logger.warning(f"Failed to generate follow-up message for user {user_id}")
+            except Exception as e:
+                self.logger.error(f"Error generating follow-up message for user {user_id}: {e}", exc_info=True)
+                # Fallback messages based on follow-up type
+                fallback_messages = {
+                    "first": "Did you like what you saw? 😊",
+                    "second": "Do you want something different? I'm here to help! 💐",
+                    "third": "Waiting for your answer! Maybe you want something different like... 🌸"
+                }
+                fallback = fallback_messages.get(followup_type, "How can I help you find the perfect bouquet? 💐")
+                await self.bot.send_message(user_id, fallback, parse_mode="HTML")
+                # Add fallback to context
+                self.agent.add_to_context(user_id, "assistant", fallback)
+
+        except asyncio.CancelledError:
+            self.logger.debug(f"Follow-up {followup_type} for user {user_id} was cancelled")
+        except Exception as e:
+            self.logger.error(f"Error sending {followup_type} follow-up to user {user_id}: {e}", exc_info=True)
+
+    def _format_time_description(self, seconds: float) -> str:
+        """Format time description for context messages."""
+        if seconds < 60:
+            return f"{int(seconds)}sec"
+        elif seconds < 3600:
+            minutes = int(seconds / 60)
+            return f"{minutes} minutes"
+        else:
+            hours = int(seconds / 3600)
+            return f"{hours} hours"
+
 
     async def start_polling(self):
         """Start the bot polling."""

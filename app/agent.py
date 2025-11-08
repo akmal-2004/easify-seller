@@ -1,8 +1,7 @@
 import litellm
 import json
-import os
-from typing import Dict, List, Any, Optional
-from .search_tools import search_products_by_text, search_products_by_photo, format_price, get_product_name, get_product_description, generate_payment_url
+from typing import Dict, List
+from .search_tools import search_products_by_text, search_products_by_photo, generate_payment_url
 from .logger_config import get_logger
 
 class AISellerAgent:
@@ -11,7 +10,7 @@ class AISellerAgent:
         self.openai_api_key = openai_api_key
         self.default_language = default_language
         self.conversation_contexts = {}  # Store conversation context per user
-        
+
         # Set up LiteLLM
         litellm.set_verbose = False
         self.logger.info("AISellerAgent initialized")
@@ -100,7 +99,8 @@ class AISellerAgent:
             }
         ]
         
-        self.system_prompt = f"""You are an expert flower bouquet sales agent with extensive knowledge of floral arrangements, occasions, and customer preferences. You speak like a real salesperson - friendly, knowledgeable, and persuasive.
+        self.system_prompt = f"""You are Lola, an expert flower bouquet sales agent with extensive knowledge of floral arrangements, occasions, and customer preferences. You speak like a real salesperson - friendly, knowledgeable, and persuasive.
+When a customer writes their first message to you (when there is no previous conversation history), shortly introduce yourself (your name is Lola), ask how you can call them (their name), then after their reply ask what they are looking for.
 
 FORMATTING RULES:
 !!! ALWAYS USE ONLY TELEGRAM SUPPORTED HTML MARKDOWN LISTED BELOW:
@@ -120,6 +120,7 @@ Your personality:
 - Use natural, conversational language
 - Write shortly so user can read it fast and easy.
 - Use emojis and telegram supported markdown.
+- Call the customer by their name when you know it.
 
 Your capabilities:
 - Search for bouquets by text description or uploaded photos
@@ -190,7 +191,6 @@ Default language for responses: {default_language}"""
         
         for i, result in enumerate(results, 1):
             meta = result['meta']
-            score = result['score']
             
             name = meta.get('name_en', 'Unknown Product')
             description = meta.get('description_en', 'No description available')
@@ -370,7 +370,7 @@ Default language for responses: {default_language}"""
             
         except Exception as e:
             self.logger.error(f"Error processing message for user {user_id}: {e}", exc_info=True)
-            error_msg = f"I apologize, but I encountered an error while processing your request. Please try again."
+            error_msg = "I apologize, but I encountered an error while processing your request. Please try again."
             self.add_to_context(user_id, "assistant", error_msg)
             return error_msg
 
@@ -378,3 +378,26 @@ Default language for responses: {default_language}"""
         """Clear conversation context for a user."""
         if user_id in self.conversation_contexts:
             del self.conversation_contexts[user_id]
+
+    async def transcribe_voice(self, audio_path: str) -> str:
+        """Transcribe voice message to text using OpenAI Whisper via LiteLLM."""
+        try:
+            self.logger.debug(f"Starting transcription for file: {audio_path}")
+
+            # Use LiteLLM to transcribe with OpenAI Whisper (consistent with other AI operations)
+            with open(audio_path, 'rb') as audio_file:
+                # LiteLLM transcription API
+                response = await litellm.atranscription(
+                    model="gpt-4o-mini-transcribe",
+                    file=audio_file,
+                    api_key=self.openai_api_key
+                )
+
+            # LiteLLM returns a dict with 'text' key
+            transcribed_text = response.get('text', '').strip()
+            self.logger.debug(f"Transcription completed: {transcribed_text[:100]}...")
+            return transcribed_text
+
+        except Exception as e:
+            self.logger.error(f"Error transcribing voice: {e}", exc_info=True)
+            raise

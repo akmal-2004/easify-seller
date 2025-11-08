@@ -2,9 +2,8 @@ import asyncio
 import os
 import tempfile
 import re
-import requests
 from typing import Optional
-from aiogram import Bot, Dispatcher, types, F
+from aiogram import Bot, Dispatcher, F
 from aiogram.filters import Command
 from aiogram.types import Message, InputMediaPhoto, InlineKeyboardMarkup, InlineKeyboardButton
 from dotenv import load_dotenv
@@ -21,6 +20,9 @@ class TelegramBot:
         self.openai_api_key = os.getenv("OPENAI_API_KEY")
         self.default_language = os.getenv("DEFAULT_LANGUAGE", "en")
         
+        # Track users who have sent their first message
+        self.first_message_sent = set()
+
         if not self.bot_token or not self.openai_api_key:
             self.logger.error("Missing required environment variables: TELEGRAM_BOT_TOKEN and OPENAI_API_KEY")
             raise ValueError("Missing required environment variables: TELEGRAM_BOT_TOKEN and OPENAI_API_KEY")
@@ -32,7 +34,7 @@ class TelegramBot:
             
             # Initialize AI agent
             self.agent = AISellerAgent(self.openai_api_key, self.default_language)
-            
+
             # Register handlers
             self.register_handlers()
             self.logger.info("TelegramBot initialized successfully")
@@ -54,10 +56,11 @@ I'm your personal flower consultant, here to help you find the perfect bouquet f
 
 • Search for bouquets by describing what you're looking for
 • Find similar bouquets by uploading a photo
+• Understand voice messages - just speak to me! 🎤
 • Help you choose based on occasion, budget, or preferences
 • Answer questions about our beautiful arrangements
 
-Just tell me what you need, or send me a photo of a bouquet you like, and I'll help you find the perfect match!
+Just tell me what you need, send me a photo, or record a voice message, and I'll help you find the perfect match!
 
 What can I help you with today? 💐"""
                 
@@ -82,6 +85,9 @@ Just describe what you're looking for! For example:
 
 **Photo Search:**
 Upload a photo of a bouquet you like, and I'll find similar ones in our collection.
+
+**Voice Messages:**
+Send me a voice message describing what you're looking for, and I'll understand and help you find the perfect bouquet! 🎤
 
 **Price Filters:**
 I can help you find bouquets within your budget. Just mention your price range!
@@ -118,6 +124,18 @@ Need more help? Just ask! 😊"""
             try:
                 self.logger.info(f"User {user_id} uploaded a photo")
                 
+                # Check if this is the first message from this user
+                is_first_message = user_id not in self.first_message_sent
+
+                if is_first_message:
+                    # Mark that this user has sent their first message
+                    self.first_message_sent.add(user_id)
+                    self.logger.info(f"First message from user {user_id}, waiting 15 seconds before responding...")
+
+                    # Wait 15 seconds to simulate human-like response time
+                    await asyncio.sleep(15)
+                    self.logger.info(f"15 second delay completed for user {user_id}, processing with AI...")
+
                 # Get the highest resolution photo
                 photo = message.photo[-1]
                 self.logger.debug(f"Photo file_id: {photo.file_id}, size: {photo.file_size}")
@@ -164,6 +182,94 @@ Need more help? Just ask! 😊"""
                     except Exception as cleanup_error:
                         self.logger.warning(f"Failed to clean up temporary file {temp_path}: {cleanup_error}")
         
+        @self.dp.message(F.voice | F.video_note)
+        async def voice_handler(message: Message):
+            """Handle voice messages and video notes."""
+            user_id = message.from_user.id
+            temp_path = None
+            try:
+                # Determine if it's a voice message or video note
+                if message.voice:
+                    audio_file = message.voice
+                    self.logger.info(f"User {user_id} sent a voice message")
+                elif message.video_note:
+                    audio_file = message.video_note
+                    self.logger.info(f"User {user_id} sent a video note")
+                else:
+                    return
+
+                # Check if this is the first message from this user
+                is_first_message = user_id not in self.first_message_sent
+
+                if is_first_message:
+                    # Mark that this user has sent their first message
+                    self.first_message_sent.add(user_id)
+                    self.logger.info(f"First message from user {user_id}, waiting 15 seconds before responding...")
+
+                    # Wait 15 seconds to simulate human-like response time
+                    await asyncio.sleep(15)
+                    self.logger.info(f"15 second delay completed for user {user_id}, processing with AI...")
+
+                # Send typing indicator
+                await self.bot.send_chat_action(user_id, "typing")
+
+                # Download voice file
+                file_info = await self.bot.get_file(audio_file.file_id)
+                file_path = file_info.file_path
+
+                # Determine file extension based on MIME type or default to ogg
+                file_extension = '.ogg'  # Default for Telegram voice messages
+                if hasattr(audio_file, 'mime_type') and audio_file.mime_type:
+                    if 'mpeg' in audio_file.mime_type or 'mp3' in audio_file.mime_type:
+                        file_extension = '.mp3'
+                    elif 'ogg' in audio_file.mime_type:
+                        file_extension = '.ogg'
+                    elif 'wav' in audio_file.mime_type:
+                        file_extension = '.wav'
+
+                # Create temporary file
+                with tempfile.NamedTemporaryFile(delete=False, suffix=file_extension) as temp_file:
+                    temp_path = temp_file.name
+
+                # Download voice file to temporary file
+                await self.bot.download_file(file_path, temp_path)
+                self.logger.debug(f"Voice file downloaded to: {temp_path}")
+
+                # Transcribe voice to text using agent
+                self.logger.info(f"Transcribing voice message for user {user_id}")
+                transcribed_text = await self.agent.transcribe_voice(temp_path)
+
+                if not transcribed_text or not transcribed_text.strip():
+                    self.logger.warning(f"Empty transcription for user {user_id}")
+                    await message.answer("I couldn't understand the voice message. Could you please try again or send a text message?")
+                    return
+
+                self.logger.info(f"Voice transcribed for user {user_id}: {transcribed_text[:100]}...")
+
+                # Process transcribed text with AI agent
+                response = await self.agent.process_message(user_id, transcribed_text)
+                self.logger.info(f"AI response generated for user {user_id}")
+
+                # Check if response contains photo URLs and send them
+                await self.send_response_with_photos(message, response)
+
+            except Exception as e:
+                self.logger.error(f"Error processing voice message from user {user_id}: {e}", exc_info=True)
+                # Try HTML first, then plain text for error message
+                try:
+                    await message.answer("I apologize, but I had trouble processing your voice message. Please try sending it again or use text instead.", parse_mode="HTML")
+                except Exception as html_error:
+                    self.logger.warning(f"HTML formatting failed for error message: {html_error}")
+                    await message.answer("I apologize, but I had trouble processing your voice message. Please try sending it again or use text instead.")
+            finally:
+                # Clean up temporary file
+                if temp_path and os.path.exists(temp_path):
+                    try:
+                        os.unlink(temp_path)
+                        self.logger.debug(f"Cleaned up temporary file: {temp_path}")
+                    except Exception as cleanup_error:
+                        self.logger.warning(f"Failed to clean up temporary file {temp_path}: {cleanup_error}")
+
         @self.dp.message()
         async def text_handler(message: Message):
             """Handle text messages."""
@@ -172,6 +278,18 @@ Need more help? Just ask! 😊"""
                 user_message = message.text
                 self.logger.info(f"User {user_id} sent text message: {user_message[:100]}...")
                 
+                # Check if this is the first message from this user
+                is_first_message = user_id not in self.first_message_sent
+
+                if is_first_message:
+                    # Mark that this user has sent their first message
+                    self.first_message_sent.add(user_id)
+                    self.logger.info(f"First message from user {user_id}, waiting 15 seconds before responding...")
+
+                    # Wait 15 seconds to simulate human-like response time
+                    await asyncio.sleep(15)
+                    self.logger.info(f"15 second delay completed for user {user_id}, processing with AI...")
+
                 # Send typing indicator
                 await self.bot.send_chat_action(user_id, "typing")
                 
@@ -341,7 +459,7 @@ Need more help? Just ask! 😊"""
                 payment_url = self.extract_payment_url(plain_text)
                 keyboard = self.create_payment_keyboard(payment_url) if payment_url else None
                 await message.answer(plain_text, reply_markup=keyboard)
-    
+
     async def start_polling(self):
         """Start the bot polling."""
         self.logger.info("🤖 AI Seller Bot is starting...")

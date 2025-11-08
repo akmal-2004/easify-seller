@@ -13,6 +13,7 @@ An intelligent Telegram bot that acts as a proactive sales agent, helping custom
 ### 🔍 Smart Search Capabilities
 - **Text Search** - Describe what you're looking for in natural language
 - **Photo Search** - Upload images to find similar bouquets
+- **Voice Messages** - Send voice messages describing what you need - the bot will transcribe and understand! 🎤
 - **Smart Filtering** - Automatic price range, occasion, and preference detection
 - **Vector Search** - Uses ChromaDB for semantic similarity matching
 - **Visual Results** - Automatically displays product photos with search results
@@ -29,6 +30,7 @@ An intelligent Telegram bot that acts as a proactive sales agent, helping custom
 - `/help` - Usage instructions and examples
 - `/clear` - Reset conversation context
 - **Photo upload handling** - Direct image processing
+- **Voice message support** - Transcribe and process voice messages using OpenAI Whisper
 - **Typing indicators** - Better user experience
 - **Error handling** - Graceful error recovery
 
@@ -119,6 +121,12 @@ Bot: [Sends photo] "I'd love to help you find the perfect romantic bouquet! Here
 ```
 User: [Uploads photo of a bouquet]
 Bot: [Sends similar photos] "What a beautiful bouquet! I can see you're drawn to [description]. Here are similar arrangements that capture that same elegance..."
+```
+
+**Voice Messages:**
+```
+User: [Sends voice message: "I need a romantic bouquet for my anniversary"]
+Bot: [Transcribes and processes] [Sends photos] "I'd love to help you find the perfect romantic bouquet for your anniversary! Here are some beautiful options..."
 ```
 
 **Price Filtering:**

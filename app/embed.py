@@ -1,6 +1,9 @@
 from sentence_transformers import SentenceTransformer
 import chromadb
 import json  # Assuming your DB is a JSON list of bouquets
+from PIL import Image
+import requests
+from io import BytesIO
 
 # Load separate models
 text_model = SentenceTransformer('sentence-transformers/clip-ViT-B-32-multilingual-v1')  # For text (multilingual)
@@ -40,16 +43,12 @@ def embed_text(bouquet):
     )
 
 
-from PIL import Image
-import requests
-from io import BytesIO
-
 def embed_photo(bouquet):
     if not bouquet['photo_urls']:
         return
     photo_uuid = bouquet['photo_urls'][0]
     img_url = f"https://imagedelivery.net/kjxkUqyuhQCleQqPHYxkVQ/{photo_uuid}/public"  # Your resolver
-    response = requests.get(img_url)
+    response = requests.get(img_url, timeout=30)
     image = Image.open(BytesIO(response.content)).convert('RGB')
     embedding = image_model.encode(image).tolist()  # CLIP image encoder
     doc_id = f"photo_{bouquet['id']}"

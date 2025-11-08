@@ -33,7 +33,7 @@ def text_query(query_text, document_type=None, min_price=None, max_price=None, k
     
     # Dedupe and rank by bouquet_id
     bouquet_scores = {}
-    for doc_ids, distances, metadatas in zip(results['ids'], results['distances'], results['metadatas']):
+    for doc_ids, distances, metadatas in zip(results['ids'], results['distances'], results['metadatas'], strict=True):
         for i in range(len(doc_ids)):
             meta = metadatas[i]
             bid = meta['bouquet_id']

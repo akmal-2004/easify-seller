@@ -1,9 +1,6 @@
 from sentence_transformers import SentenceTransformer
 import chromadb
-import json
-import os
 from PIL import Image
-from io import BytesIO
 from .logger_config import get_logger
 
 # Initialize logger
@@ -77,7 +74,7 @@ def search_products_by_text(query_text, document_type=None, min_price=None, max_
         
         # Dedupe and rank by bouquet_id
         bouquet_scores = {}
-        for doc_ids, distances, metadatas in zip(results['ids'], results['distances'], results['metadatas']):
+        for doc_ids, distances, metadatas in zip(results['ids'], results['distances'], results['metadatas'], strict=True):
             for i in range(len(doc_ids)):
                 meta = metadatas[i]
                 bid = meta['bouquet_id']
@@ -142,7 +139,7 @@ def search_products_by_photo(photo_path, min_price=None, max_price=None, k=5):
         
         # Similar dedupe as above, but since photo docs link to bouquets, group by bouquet_id
         bouquet_scores = {}
-        for doc_ids, distances, metadatas in zip(results['ids'], results['distances'], results['metadatas']):
+        for doc_ids, distances, metadatas in zip(results['ids'], results['distances'], results['metadatas'], strict=True):
             for i in range(len(doc_ids)):
                 meta = metadatas[i]
                 bid = meta['bouquet_id']

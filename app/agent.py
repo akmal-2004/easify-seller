@@ -216,8 +216,82 @@ Default language for responses: {default_language}"""
         
         return "\n".join(formatted_results)
 
+    def _execute_tool_call(self, user_id: int, tool_call, photo_path: str = None):
+        """Execute a single tool call and add result to context."""
+        function_name = tool_call.function.name
+        function_args = json.loads(tool_call.function.arguments)
+
+        self.logger.debug(f"Executing tool call: {function_name} with args: {function_args}")
+
+        # Execute the function
+        if function_name == "search_products_by_text":
+            try:
+                results = search_products_by_text(
+                    query_text=function_args.get("query_text"),
+                    document_type=function_args.get("document_type"),
+                    min_price=function_args.get("min_price"),
+                    max_price=function_args.get("max_price"),
+                    k=function_args.get("k", 5)
+                )
+                search_results = self.format_search_results_for_ai(results)
+                self.logger.info(f"Text search completed for user {user_id}, found {len(results)} results")
+
+                # Add tool result to context
+                self.add_to_context(user_id, "tool", search_results, tool_call_id=tool_call.id)
+            except Exception as search_error:
+                self.logger.error(f"Error in text search for user {user_id}: {search_error}", exc_info=True)
+                error_result = f"Error: Failed to search products - {str(search_error)}"
+                self.add_to_context(user_id, "tool", error_result, tool_call_id=tool_call.id)
+
+        elif function_name == "search_products_by_photo":
+            if not photo_path:
+                self.logger.warning(f"No photo path provided for photo search for user {user_id}")
+                error_result = "Error: No photo provided for photo search"
+                self.add_to_context(user_id, "tool", error_result, tool_call_id=tool_call.id)
+            else:
+                try:
+                    results = search_products_by_photo(
+                        photo_path=photo_path,
+                        min_price=function_args.get("min_price"),
+                        max_price=function_args.get("max_price"),
+                        k=function_args.get("k", 5)
+                    )
+                    search_results = self.format_search_results_for_ai(results)
+                    self.logger.info(f"Photo search completed for user {user_id}, found {len(results)} results")
+
+                    # Add tool result to context
+                    self.add_to_context(user_id, "tool", search_results, tool_call_id=tool_call.id)
+                except Exception as search_error:
+                    self.logger.error(f"Error in photo search for user {user_id}: {search_error}", exc_info=True)
+                    error_result = f"Error: Failed to search products by photo - {str(search_error)}"
+                    self.add_to_context(user_id, "tool", error_result, tool_call_id=tool_call.id)
+
+        elif function_name == "generate_payment_link":
+            try:
+                price = function_args.get("price")
+
+                # Generate payment URL
+                payment_url = generate_payment_url(price)
+
+                # Format the payment result for AI
+                payment_result = f"Payment link generated (Price: {price} uzs):\n{payment_url}"
+
+                self.logger.info(f"Payment link generated for user {user_id}: {price} uzs")
+
+                # Add tool result to context
+                self.add_to_context(user_id, "tool", payment_result, tool_call_id=tool_call.id)
+            except Exception as payment_error:
+                self.logger.error(f"Error generating payment link for user {user_id}: {payment_error}", exc_info=True)
+                error_result = f"Error: Failed to generate payment link - {str(payment_error)}"
+                self.add_to_context(user_id, "tool", error_result, tool_call_id=tool_call.id)
+
     async def process_message(self, user_id: int, message: str, photo_path: str = None) -> str:
-        """Process a user message and return response."""
+        """Process a user message and return response.
+
+        Supports multiple sequential tool calls - the AI can make one tool call,
+        evaluate the results, and if needed, make another tool call with different
+        parameters until it's satisfied with the results.
+        """
         try:
             self.logger.info(f"Processing message for user {user_id}: {message[:100]}...")
             
@@ -247,17 +321,34 @@ Default language for responses: {default_language}"""
                         messages = [{"role": "system", "content": self.system_prompt}]
                         messages.extend(self.get_conversation_context(user_id))
                         
-                        # Make API call without tools since we already have results
+                        # Make API call with tools available for follow-up searches if needed
                         self.logger.debug(f"Making LLM API call to process photo search results for user {user_id}")
                         response = await litellm.acompletion(
                             model="gpt-4o",
                             messages=messages,
+                            tools=self.tools,
+                            tool_choice="auto",
                             api_key=self.openai_api_key
                         )
                         
-                        ai_response = response.choices[0].message.content
-                        self.logger.info(f"AI processed photo search results for user {user_id}")
-                        return ai_response
+                        message_response = response.choices[0].message
+
+                        # If AI wants to make additional tool calls, continue with the loop
+                        if message_response.tool_calls:
+                            # Add the assistant's message with tool calls to context
+                            self.add_to_context(user_id, "assistant", message_response.content, tool_calls=message_response.tool_calls)
+
+                            # Execute tool calls
+                            for tool_call in message_response.tool_calls:
+                                self._execute_tool_call(user_id, tool_call, photo_path)
+
+                            # Continue to the main loop below to handle sequential tool calls
+                        else:
+                            # AI is satisfied with the photo search results
+                            ai_response = message_response.content
+                            self.add_to_context(user_id, "assistant", ai_response)
+                            self.logger.info(f"AI processed photo search results for user {user_id}")
+                            return ai_response
                     else:
                         self.logger.warning(f"No results found for photo search for user {user_id}")
                         # Continue with normal text processing
@@ -266,120 +357,73 @@ Default language for responses: {default_language}"""
                     self.logger.error(f"Photo search failed for user {user_id}: {photo_error}", exc_info=True)
                     # Continue with normal text processing
             
-            # Prepare messages for LLM
-            messages = [{"role": "system", "content": self.system_prompt}]
-            messages.extend(self.get_conversation_context(user_id))
+            # Main loop: Continue until AI doesn't request more tool calls or max iterations reached
+            max_iterations = 5  # Prevent infinite loops
+            iteration = 0
             
-            # Make API call with tools
-            self.logger.debug(f"Making LLM API call for user {user_id}")
-            response = await litellm.acompletion(
-                model="gpt-4o",
-                messages=messages,
-                tools=self.tools,
-                tool_choice="auto",
-                api_key=self.openai_api_key
-            )
-            
-            message_response = response.choices[0].message
-            
-            # Handle tool calls
-            if message_response.tool_calls:
-                self.logger.info(f"LLM requested tool calls for user {user_id}: {[tc.function.name for tc in message_response.tool_calls]}")
+            while iteration < max_iterations:
+                iteration += 1
+                self.logger.debug(f"Tool call iteration {iteration} for user {user_id}")
                 
-                # Add the assistant's message with tool calls to context
-                self.add_to_context(user_id, "assistant", message_response.content, tool_calls=message_response.tool_calls)
+                # Prepare messages for LLM
+                messages = [{"role": "system", "content": self.system_prompt}]
+                messages.extend(self.get_conversation_context(user_id))
                 
-                # Execute each tool call
-                for tool_call in message_response.tool_calls:
-                    function_name = tool_call.function.name
-                    function_args = json.loads(tool_call.function.arguments)
-                    
-                    self.logger.debug(f"Executing tool call: {function_name} with args: {function_args}")
-                    
-                    # Execute the function
-                    if function_name == "search_products_by_text":
-                        try:
-                            results = search_products_by_text(
-                                query_text=function_args.get("query_text"),
-                                document_type=function_args.get("document_type"),
-                                min_price=function_args.get("min_price"),
-                                max_price=function_args.get("max_price"),
-                                k=function_args.get("k", 5)
-                            )
-                            search_results = self.format_search_results_for_ai(results)
-                            self.logger.info(f"Text search completed for user {user_id}, found {len(results)} results")
-                            
-                            # Add tool result to context
-                            self.add_to_context(user_id, "tool", search_results, tool_call_id=tool_call.id)
-                        except Exception as search_error:
-                            self.logger.error(f"Error in text search for user {user_id}: {search_error}", exc_info=True)
-                            error_result = f"Error: Failed to search products - {str(search_error)}"
-                            self.add_to_context(user_id, "tool", error_result, tool_call_id=tool_call.id)
-                    
-                    elif function_name == "search_products_by_photo":
-                        if not photo_path:
-                            self.logger.warning(f"No photo path provided for photo search for user {user_id}")
-                            error_result = "Error: No photo provided for photo search"
-                            self.add_to_context(user_id, "tool", error_result, tool_call_id=tool_call.id)
-                        else:
-                            try:
-                                results = search_products_by_photo(
-                                    photo_path=photo_path,
-                                    min_price=function_args.get("min_price"),
-                                    max_price=function_args.get("max_price"),
-                                    k=function_args.get("k", 5)
-                                )
-                                search_results = self.format_search_results_for_ai(results)
-                                self.logger.info(f"Photo search completed for user {user_id}, found {len(results)} results")
-                                
-                                # Add tool result to context
-                                self.add_to_context(user_id, "tool", search_results, tool_call_id=tool_call.id)
-                            except Exception as search_error:
-                                self.logger.error(f"Error in photo search for user {user_id}: {search_error}", exc_info=True)
-                                error_result = f"Error: Failed to search products by photo - {str(search_error)}"
-                                self.add_to_context(user_id, "tool", error_result, tool_call_id=tool_call.id)
-                    
-                    elif function_name == "generate_payment_link":
-                        try:
-                            price = function_args.get("price")
-                            
-                            # Generate payment URL
-                            payment_url = generate_payment_url(price)
-                            
-                            # Format the payment result for AI
-                            payment_result = f"Payment link generated (Price: {price} uzs):\n{payment_url}"
-                            
-                            self.logger.info(f"Payment link generated for user {user_id}: {price} uzs")
-                            
-                            # Add tool result to context
-                            self.add_to_context(user_id, "tool", payment_result, tool_call_id=tool_call.id)
-                        except Exception as payment_error:
-                            self.logger.error(f"Error generating payment link for user {user_id}: {payment_error}", exc_info=True)
-                            error_result = f"Error: Failed to generate payment link - {str(payment_error)}"
-                            self.add_to_context(user_id, "tool", error_result, tool_call_id=tool_call.id)
-                
-                # Make another API call to get AI's response to the tool results
-                self.logger.debug(f"Making follow-up LLM API call for user {user_id}")
-                follow_up_messages = [{"role": "system", "content": self.system_prompt}]
-                follow_up_messages.extend(self.get_conversation_context(user_id))
-                
-                follow_up_response = await litellm.acompletion(
+                # Make API call with tools
+                self.logger.debug(f"Making LLM API call for user {user_id} (iteration {iteration})")
+                response = await litellm.acompletion(
                     model="gpt-4o",
-                    messages=follow_up_messages,
+                    messages=messages,
                     tools=self.tools,
+                    tool_choice="auto",
                     api_key=self.openai_api_key
                 )
+
+                message_response = response.choices[0].message
+
+                # Check if AI wants to make tool calls
+                if message_response.tool_calls:
+                    self.logger.info(f"LLM requested tool calls for user {user_id} (iteration {iteration}): {[tc.function.name for tc in message_response.tool_calls]}")
+                    
+                    # Add the assistant's message with tool calls to context
+                    self.add_to_context(user_id, "assistant", message_response.content, tool_calls=message_response.tool_calls)
+                    
+                    # Execute each tool call
+                    for tool_call in message_response.tool_calls:
+                        self._execute_tool_call(user_id, tool_call, photo_path)
+                    
+                    # Continue the loop to let AI evaluate results and potentially make another tool call
+                    continue
                 
-                final_response = follow_up_response.choices[0].message.content
-                self.add_to_context(user_id, "assistant", final_response)
-                self.logger.info(f"Final response generated for user {user_id}")
-                return final_response
-            
-            # Regular response without tool calls
-            response_text = message_response.content
-            self.add_to_context(user_id, "assistant", response_text)
-            self.logger.info(f"Regular response generated for user {user_id}")
-            return response_text
+                # No more tool calls - AI is ready to respond
+                response_text = message_response.content
+                self.add_to_context(user_id, "assistant", response_text)
+                self.logger.info(f"Final response generated for user {user_id} after {iteration} iteration(s)")
+                return response_text
+
+            # Max iterations reached - return the last response even if it has tool calls
+            if message_response.tool_calls:
+                self.logger.warning(f"Max iterations ({max_iterations}) reached for user {user_id}, returning last response")
+                # Still execute the tool calls and return a message
+                self.add_to_context(user_id, "assistant", message_response.content or "I've reached the maximum number of search attempts. Let me provide you with the best results I found.", tool_calls=message_response.tool_calls)
+                for tool_call in message_response.tool_calls:
+                    self._execute_tool_call(user_id, tool_call, photo_path)
+                
+                # Get final response
+                messages = [{"role": "system", "content": self.system_prompt}]
+                messages.extend(self.get_conversation_context(user_id))
+                final_response_obj = await litellm.acompletion(
+                    model="gpt-4o",
+                    messages=messages,
+                    api_key=self.openai_api_key
+                )
+                final_text = final_response_obj.choices[0].message.content
+                self.add_to_context(user_id, "assistant", final_text)
+                return final_text
+            else:
+                response_text = message_response.content
+                self.add_to_context(user_id, "assistant", response_text)
+                return response_text
             
         except Exception as e:
             self.logger.error(f"Error processing message for user {user_id}: {e}", exc_info=True)

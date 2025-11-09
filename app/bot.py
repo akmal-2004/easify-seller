@@ -90,27 +90,27 @@ What can I help you with today? 💐"""
                 self.logger.info(f"User {message.from_user.id} requested help")
                 help_text = """🆘 How to use our AI Flower Shop:
 
-**Text Search:**
+<b>Text Search:</b>
 Just describe what you're looking for! For example:
 • "I need a romantic bouquet for my girlfriend"
 • "Show me white roses under $50"
 • "I want something for a birthday party"
 
-**Photo Search:**
+<b>Photo Search:</b>
 Upload a photo of a bouquet you like, and I'll find similar ones in our collection.
 
-**Voice Messages:**
+<b>Voice Messages:</b>
 Send me a voice message describing what you're looking for, and I'll understand and help you find the perfect bouquet! 🎤
 
-**Price Filters:**
+<b>Price Filters:</b>
 I can help you find bouquets within your budget. Just mention your price range!
 
-**Occasions:**
+<b>Occasions:</b>
 I know about all kinds of occasions - birthdays, anniversaries, apologies, congratulations, and more!
 
 Need more help? Just ask! 😊"""
                 
-                await message.answer(help_text)
+                await message.answer(help_text, parse_mode="HTML")
                 self.logger.info(f"Help message sent to user {message.from_user.id}")
             except Exception as e:
                 self.logger.error(f"Error in help handler: {e}", exc_info=True)

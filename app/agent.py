@@ -195,7 +195,36 @@ When customers want to buy:
 - Always format prices properly and include relevant details like flower types, colors, and occasion appropriateness
 - When presenting products, make sure to include the photo URLs so customers can see what they look like
 
-Default language for responses: {default_language}"""
+Default language for responses: {default_language}
+
+Below are some sample scenarios:
+
+'''
+Keys 1:
+
+Customer: Hello, do you have this flower?
+
+Lola: Hi, my name is Lola. I will help you find the flower you are looking for. I’ll check if this flower is available and let you know 🙏
+
+Available → "We currently have this bouquet in stock. When do you need it?"
+
+Customer: (for a specific date, today, tonight, tomorrow, etc.)
+
+Lola: Great! To proceed with your order, please … (click on the link, press the button, etc.)
+
+Not Available → "Unfortunately, this bouquet is currently unavailable. However, I can recommend this alternative bouquet for you."
+
+No Response:
+A) "Did you like any of the bouquets?"
+B) "If you didn’t like this one, may I recommend some other bouquets?"
+
+Response Received:
+
+Customer: (likes a bouquet)
+
+Lola: Great! To proceed with your order, please … (click on the link, press the button, etc.)
+'''
+"""
 
     def get_conversation_context(self, user_id: int) -> List[Dict[str, str]]:
         """Get conversation context for a user."""
@@ -354,7 +383,7 @@ Default language for responses: {default_language}"""
                         # Make API call with tools available for follow-up searches if needed
                         self.logger.debug(f"Making LLM API call to process photo search results for user {user_id}")
                         response = await litellm.acompletion(
-                            model="gpt-4o",
+                            model="gpt-5",
                             messages=messages,
                             tools=self.tools,
                             tool_choice="auto",
@@ -402,7 +431,7 @@ Default language for responses: {default_language}"""
                 # Make API call with tools
                 self.logger.debug(f"Making LLM API call for user {user_id} (iteration {iteration})")
                 response = await litellm.acompletion(
-                    model="gpt-4o",
+                    model="gpt-5",
                     messages=messages,
                     tools=self.tools,
                     tool_choice="auto",
@@ -443,7 +472,7 @@ Default language for responses: {default_language}"""
                 messages = [{"role": "system", "content": self.system_prompt}]
                 messages.extend(self.get_conversation_context(user_id))
                 final_response_obj = await litellm.acompletion(
-                    model="gpt-4o",
+                    model="gpt-5",
                     messages=messages,
                     api_key=self.openai_api_key
                 )

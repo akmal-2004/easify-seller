@@ -524,20 +524,15 @@ Need more help? Just ask! 😊"""
         if user_id not in self.sent_followups:
             self.sent_followups[user_id] = set()
 
-        # Schedule first follow-up: 20 seconds
+        # Schedule first follow-up: 5 minutes (300 seconds)
         if "first" not in self.pending_followups[user_id] or self.pending_followups[user_id]["first"].done():
-            task1 = asyncio.create_task(self.send_followup(user_id, "first", 20))
+            task1 = asyncio.create_task(self.send_followup(user_id, "first", 300))
             self.pending_followups[user_id]["first"] = task1
 
-        # Schedule second follow-up: 5 minutes (300 seconds)
+        # Schedule second follow-up: 3 hours (10800 seconds)
         if "second" not in self.pending_followups[user_id] or self.pending_followups[user_id]["second"].done():
-            task2 = asyncio.create_task(self.send_followup(user_id, "second", 300))
+            task2 = asyncio.create_task(self.send_followup(user_id, "second", 10800))
             self.pending_followups[user_id]["second"] = task2
-
-        # Schedule third follow-up: 5 hours (18000 seconds)
-        if "third" not in self.pending_followups[user_id] or self.pending_followups[user_id]["third"].done():
-            task3 = asyncio.create_task(self.send_followup(user_id, "third", 18000))
-            self.pending_followups[user_id]["third"] = task3
 
     async def send_followup(self, user_id: int, followup_type: str, delay_seconds: float):
         """Send a follow-up message after delay if user hasn't responded."""
@@ -588,8 +583,7 @@ Need more help? Just ask! 😊"""
                 # Fallback messages based on follow-up type
                 fallback_messages = {
                     "first": "Did you like what you saw? 😊",
-                    "second": "Do you want something different? I'm here to help! 💐",
-                    "third": "Waiting for your answer! Maybe you want something different like... 🌸"
+                    "second": "Do you want something different? I'm here to help! 💐"
                 }
                 fallback = fallback_messages.get(followup_type, "How can I help you find the perfect bouquet? 💐")
                 await self.bot.send_message(user_id, fallback, parse_mode="HTML")

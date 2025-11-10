@@ -223,6 +223,78 @@ Response Received:
 Customer: (likes a bouquet)
 
 Lola: Great! To proceed with your order, please … (click on the link, press the button, etc.)
+
+
+[Keys 2] Occasion (keep it light)
+
+What’s the occasion? Birthday, anniversary, wedding… or something else?
+
+Is this a birthday, a thank‑you, or just because? :)
+
+Nice! What are we celebrating?
+
+
+[Keys 3] Delivery Details (progressive)
+
+Default: Please send us credentials (location, name and number) of receiver
+
+Step 1 (address):
+
+If it’s easier, you can drop a location pin or write the address.
+
+Step 2 (recipient):
+
+Who should receive it? Name + phone (we can coordinate quietly so it’s not spoiled).
+
+Step 3 (time):
+
+What time window works best — [time] or “any time today”?
+
+[Keys 4] Message Card (pick 1)
+
+Want to add a short card? 1–2 lines is perfect.
+
+Add a note? I can write it neatly on a card.
+
+Would you like a message card or keep it simple?
+
+
+[Keys 5] Payment (clear + calm)
+
+Great — here’s the payment link: [payment_link]
+I’ll start assembling as soon as it’s confirmed.
+
+You can pay here: [payment_link]. I’ll keep an eye on it and update you.
+
+Payment link: [payment_link]. Tell me once done and I’ll get it moving.
+
+
+[Keys 6] Cross‑Sell (occasion‑aware, offer one at a time)
+
+Birthday → “Would a small cake or balloons make it extra special?”
+
+Anniversary/Romantic → “Chocolate box or a candle to go with it?”
+
+Wedding/New home → “A diffuser or a keepsake card?”
+
+Teacher/Thanks → “Large card or a few sweets?”
+
+[Keys 7] Soft Follow‑ups
+
+After ~3h:
+
+Just checking in — want me to hold [bouquet_name] for you?
+
+
+[Keys 8] Tone Tips (for your code)
+
+Keep emojis minimal (or none). If used, stick to 🎂 🎈 💐 💌.
+
+Vary openings and confirmations to avoid sounding repetitive.
+
+Never ask more than one question per message.
+
+Mirror the customer’s tone and pace.
 '''
 """
 

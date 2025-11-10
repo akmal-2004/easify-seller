@@ -392,15 +392,26 @@ Need more help? Just ask! 😊"""
             payment_url = self.extract_payment_url(response)
             keyboard = self.create_payment_keyboard(payment_url) if payment_url else None
             
-            # Extract photo URLs from response - more precise regex to avoid HTML tags
-            photo_urls = re.findall(r'https://imagedelivery\.net/[a-zA-Z0-9\-]+/[a-zA-Z0-9\-]+/public', response)
+            # Extract photo URLs from response - supports both imagedelivery.net and static.tildacdn.com formats
+            # Pattern 1: imagedelivery.net URLs
+            imagedelivery_urls = re.findall(r'https://imagedelivery\.net/[a-zA-Z0-9\-]+/[a-zA-Z0-9\-]+/public', response)
+            # Pattern 2: static.tildacdn.com URLs (using non-capturing group to avoid tuple results)
+            tildacdn_urls = re.findall(r'https://static\.tildacdn\.com/[a-zA-Z0-9\-/]+\.(?:jpg|jpeg|png|gif|webp)', response, re.IGNORECASE)
+
+            photo_urls = imagedelivery_urls + tildacdn_urls
             self.logger.debug(f"Found {len(photo_urls)} photo URLs for user {user_id}")
             
             # Clean up any URLs that might have extra characters
             cleaned_urls = []
             for url in photo_urls:
-                # First, try to extract just the URL part using a more precise regex
+                # First, try to extract just the URL part using regex patterns
+                url_match = None
+                # Try imagedelivery.net pattern
                 url_match = re.search(r'(https://imagedelivery\.net/[a-zA-Z0-9\-]+/[a-zA-Z0-9\-]+/public)', url)
+                if not url_match:
+                    # Try static.tildacdn.com pattern
+                    url_match = re.search(r'(https://static\.tildacdn\.com/[a-zA-Z0-9\-/]+\.(jpg|jpeg|png|gif|webp))', url, re.IGNORECASE)
+
                 if url_match:
                     clean_url = url_match.group(1)
                 else:
@@ -409,10 +420,18 @@ Need more help? Just ask! 😊"""
                     # Additional cleanup for common HTML artifacts
                     clean_url = clean_url.replace('">', '').replace('>', '').replace('"', '')
                 
-                # Validate the URL format
-                if (clean_url.startswith('https://imagedelivery.net/') and 
-                    clean_url.endswith('/public') and 
-                    len(clean_url.split('/')) == 6):  # Should have 6 parts when split by /
+                # Validate the URL format - support both formats
+                is_valid = False
+                if clean_url.startswith('https://imagedelivery.net/'):
+                    # imagedelivery.net format: should end with /public and have 6 parts
+                    if clean_url.endswith('/public') and len(clean_url.split('/')) == 6:
+                        is_valid = True
+                elif clean_url.startswith('https://static.tildacdn.com/'):
+                    # static.tildacdn.com format: should be a valid image URL
+                    if re.match(r'https://static\.tildacdn\.com/[a-zA-Z0-9\-/]+\.(jpg|jpeg|png|gif|webp)$', clean_url, re.IGNORECASE):
+                        is_valid = True
+
+                if is_valid:
                     cleaned_urls.append(clean_url)
                 else:
                     self.logger.warning(f"Invalid photo URL format: {url} -> {clean_url}")

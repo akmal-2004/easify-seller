@@ -455,7 +455,7 @@ Mirror the customer’s tone and pace.
                         # Make API call with tools available for follow-up searches if needed
                         self.logger.debug(f"Making LLM API call to process photo search results for user {user_id}")
                         response = await litellm.acompletion(
-                            model="gpt-5",
+                            model="gpt-4o",
                             messages=messages,
                             tools=self.tools,
                             tool_choice="auto",
@@ -503,7 +503,7 @@ Mirror the customer’s tone and pace.
                 # Make API call with tools
                 self.logger.debug(f"Making LLM API call for user {user_id} (iteration {iteration})")
                 response = await litellm.acompletion(
-                    model="gpt-5",
+                    model="gpt-4o",
                     messages=messages,
                     tools=self.tools,
                     tool_choice="auto",
@@ -544,7 +544,7 @@ Mirror the customer’s tone and pace.
                 messages = [{"role": "system", "content": self.system_prompt}]
                 messages.extend(self.get_conversation_context(user_id))
                 final_response_obj = await litellm.acompletion(
-                    model="gpt-5",
+                    model="gpt-4o",
                     messages=messages,
                     api_key=self.openai_api_key
                 )

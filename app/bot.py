@@ -312,6 +312,62 @@ Need more help? Just ask! 😊"""
                     except Exception as cleanup_error:
                         self.logger.warning(f"Failed to clean up temporary file {temp_path}: {cleanup_error}")
 
+        @self.dp.message(F.location)
+        async def location_handler(message: Message):
+            """Handle location messages - convert to text with coordinates."""
+            user_id = message.from_user.id
+            try:
+                location = message.location
+                if not location:
+                    return
+
+                # Extract latitude and longitude
+                latitude = location.latitude
+                longitude = location.longitude
+
+                # Convert location to text format with coordinates
+                location_text = f"Location: {latitude}, {longitude}"
+
+                self.logger.info(f"User {user_id} sent location: {latitude}, {longitude}")
+
+                # Check if this is the first message from this user
+                is_first_message = user_id not in self.first_message_sent
+
+                if is_first_message:
+                    # Mark that this user has sent their first message
+                    self.first_message_sent.add(user_id)
+                    self.logger.info(f"First message from user {user_id}, waiting 15 seconds before responding...")
+
+                    # Wait 15 seconds to simulate human-like response time
+                    await asyncio.sleep(15)
+                    self.logger.info(f"15 second delay completed for user {user_id}, processing with AI...")
+
+                # Update last message time and cancel pending follow-ups
+                self.update_user_activity(user_id)
+
+                # Send typing indicator
+                await self.bot.send_chat_action(user_id, "typing")
+
+                # Process location as text with coordinates through AI agent
+                response = await self.agent.process_message(user_id, location_text)
+                self.logger.info(f"AI response generated for user {user_id} for location")
+
+                # Check if response contains photo URLs and send them
+                await self.send_response_with_photos(message, response)
+
+                # Update bot response time and schedule follow-up messages
+                self.update_bot_response_time(user_id)
+                self.schedule_followups(user_id)
+
+            except Exception as e:
+                self.logger.error(f"Error processing location from user {user_id}: {e}", exc_info=True)
+                # Try HTML first, then plain text for error message
+                try:
+                    await message.answer("I apologize, but I had trouble processing your location. Please try sending it again or describe your location in text.", parse_mode="HTML")
+                except Exception as html_error:
+                    self.logger.warning(f"HTML formatting failed for error message: {html_error}")
+                    await message.answer("I apologize, but I had trouble processing your location. Please try sending it again or describe your location in text.")
+
         @self.dp.message()
         async def text_handler(message: Message):
             """Handle text messages."""

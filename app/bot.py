@@ -61,27 +61,42 @@ class TelegramBot:
         @self.dp.message(Command("start"))
         async def start_handler(message: Message):
             """Handle /start command."""
+            user_id = message.from_user.id
             try:
-                self.logger.info(f"User {message.from_user.id} started the bot")
-                welcome_text = """🌸 Welcome to our AI Flower Shop! 🌸
+                self.logger.info(f"User {user_id} started the bot")
 
-I'm your personal flower consultant, here to help you find the perfect bouquet for any occasion. I can:
+                # Reset first message tracking
+                if user_id in self.first_message_sent:
+                    self.first_message_sent.remove(user_id)
 
-• Search for bouquets by describing what you're looking for
-• Find similar bouquets by uploading a photo
-• Understand voice messages - just speak to me! 🎤
-• Help you choose based on occasion, budget, or preferences
-• Answer questions about our beautiful arrangements
+                # Create a special instruction message for the AI to greet the user
+                # This simulates a user message that instructs the AI to greet in multiple languages
+                greeting_instruction = "start conversation in russian, kazakh, uzbek separated by new line. After my response, continue on that language I replied in."
 
-Just tell me what you need, send me a photo, or record a voice message, and I'll help you find the perfect match!
+                # Send typing indicator
+                await self.bot.send_chat_action(user_id, "typing")
 
-What can I help you with today? 💐"""
-                
-                await message.answer(welcome_text)
-                self.logger.info(f"Welcome message sent to user {message.from_user.id}")
+                # Process the greeting instruction through the AI agent
+                response = await self.agent.process_message(user_id, greeting_instruction)
+                self.logger.info(f"AI greeting response generated for user {user_id}")
+
+                # Send the AI response
+                await self.send_response_with_photos(message, response)
+
+                # Mark that this user has sent their first message (so subsequent messages won't have the 15s delay)
+                self.first_message_sent.add(user_id)
+
+                # Update bot response time
+                self.update_bot_response_time(user_id)
+
+                self.logger.info(f"Welcome message sent to user {user_id}")
             except Exception as e:
                 self.logger.error(f"Error in start handler: {e}", exc_info=True)
-                await message.answer("Welcome! I'm here to help you find the perfect bouquet. How can I assist you today?")
+                # Fallback to a simple welcome message if AI processing fails
+                try:
+                    await message.answer("Welcome! I'm here to help you find the perfect bouquet. How can I assist you today?", parse_mode="HTML")
+                except Exception:
+                    await message.answer("Welcome! I'm here to help you find the perfect bouquet. How can I assist you today?")
         
         @self.dp.message(Command("help"))
         async def help_handler(message: Message):

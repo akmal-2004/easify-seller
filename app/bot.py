@@ -71,7 +71,7 @@ class TelegramBot:
 
                 # Create a special instruction message for the AI to greet the user
                 # This simulates a user message that instructs the AI to greet in multiple languages
-                greeting_instruction = "start conversation in russian, kazakh, uzbek separated by new line. After my response, continue on that language I replied in."
+                greeting_instruction = "start conversation in russian, kazakh, uzbek separated by new line and space between lines. After my response, continue on that language I replied in."
 
                 # Send typing indicator
                 await self.bot.send_chat_action(user_id, "typing")
